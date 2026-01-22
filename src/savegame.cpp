@@ -2,6 +2,7 @@
 
 #include <algorithm>
 #include <map>
+#include <ranges>
 #include <sstream>
 #include <string>
 #include <type_traits>
@@ -35,6 +36,7 @@
 #include "overmap.h"
 #include "overmap_types.h"
 #include "overmapbuffer.h"
+#include "plumbing_grid.h"
 #include "popup.h"
 #include "regional_settings.h"
 #include "scent_map.h"
@@ -460,17 +462,34 @@ void overmap::unserialize( std::istream &fin, const std::string &file_path )
             jsin.start_array();
             while( !jsin.end_array() ) {
                 jsin.start_array();
-                tripoint_om_omt origin;
+                auto origin = tripoint_om_omt{};
                 jsin.read( origin );
                 auto &conn = electric_grid_connections[origin];
                 while( !jsin.end_array() ) {
-                    tripoint offset;
+                    auto offset = tripoint{};
                     jsin.read( offset );
-                    for( size_t i = 0; i < conn.size(); i++ ) {
-                        if( offset == six_cardinal_directions[i] ) {
-                            conn.set( i, true );
-                            break;
-                        }
+                    const auto iter = std::ranges::find( six_cardinal_directions, offset );
+                    if( iter != six_cardinal_directions.end() ) {
+                        const auto index = std::distance( six_cardinal_directions.begin(), iter );
+                        conn.set( index, true );
+                    }
+                }
+            }
+        } else if( name == "plumbing_grid_connections" ) {
+            auto &plumbing_connections = plumbing_grid::connections_for( *this );
+            jsin.start_array();
+            while( !jsin.end_array() ) {
+                jsin.start_array();
+                auto origin = tripoint_om_omt{};
+                jsin.read( origin );
+                auto &conn = plumbing_connections[origin];
+                while( !jsin.end_array() ) {
+                    auto offset = tripoint{};
+                    jsin.read( offset );
+                    const auto iter = std::ranges::find( six_cardinal_directions, offset );
+                    if( iter != six_cardinal_directions.end() ) {
+                        const auto index = std::distance( six_cardinal_directions.begin(), iter );
+                        conn.set( index, true );
                     }
                 }
             }
@@ -1036,6 +1055,22 @@ void overmap::serialize( std::ostream &fout ) const
         json.end_array();
 
     }
+    json.end_array();
+
+    const auto &plumbing_connections = plumbing_grid::connections_for( *this );
+    json.member( "plumbing_grid_connections" );
+    json.start_array();
+    std::ranges::for_each( plumbing_connections, [&]( const auto &conn ) {
+        json.start_array();
+        json.write( conn.first );
+        std::ranges::for_each( std::views::iota( size_t{ 0 }, six_cardinal_directions.size() ),
+        [&]( size_t i ) {
+            if( conn.second[i] ) {
+                json.write( six_cardinal_directions[i] );
+            }
+        } );
+        json.end_array();
+    } );
     json.end_array();
 
     std::vector<std::pair<om_pos_dir, std::string>> flattened_joins_used(
