@@ -8888,6 +8888,7 @@ auto iuse::report_plumbing_connections( player *p, item *, bool, const tripoint 
 {
     const auto pos_abs = project_to<coords::omt>( tripoint_abs_ms( get_map().getabs( pos ) ) );
     const auto connections = plumbing_grid::grid_connectivity_at( pos_abs );
+    const auto water_stats = plumbing_grid::water_storage_at( pos_abs );
 
     auto connection_names = std::vector<std::string>{};
     connection_names.reserve( connections.size() );
@@ -8903,6 +8904,10 @@ auto iuse::report_plumbing_connections( player *p, item *, bool, const tripoint 
                              enumerate_as_string( connection_names ) );
     }
     p->add_msg_if_player( msg );
+    p->add_msg_if_player( string_format( _( "Water stored: %1$s/%2$s %3$s." ),
+                                         format_volume( water_stats.stored ),
+                                         format_volume( water_stats.capacity ),
+                                         volume_units_abbr() ) );
 
     return 0;
 }

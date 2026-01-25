@@ -81,6 +81,7 @@
 #include "output.h"
 #include "overmapbuffer.h"
 #include "pickup.h"
+#include "plumbing_grid.h"
 #include "pimpl.h"
 #include "player.h"
 #include "player_activity.h"
@@ -138,6 +139,7 @@ static const itype_id itype_charcoal( "charcoal" );
 static const itype_id itype_chem_carbide( "chem_carbide" );
 static const itype_id itype_corpse( "corpse" );
 static const itype_id itype_electrohack( "electrohack" );
+static const auto itype_plumber_toolkit = itype_id( "plumber_toolkit" );
 static const itype_id itype_fake_milling_item( "fake_milling_item" );
 static const itype_id itype_fake_cloning_vat( "fake_cloning_vat_item" );
 static const itype_id itype_fake_smoke_plume( "fake_smoke_plume" );
@@ -3482,8 +3484,20 @@ void iexamine::keg( player &p, const tripoint &examp )
 {
     none( p, examp );
     map &here = get_map();
+    static const auto furn_standing_tank = furn_id( "f_standing_tank" );
+    static const auto furn_standing_tank_plumbed = furn_id( "f_standing_tank_plumbed" );
     const auto keg_name = here.name( examp );
     units::volume keg_cap = get_keg_capacity( examp );
+    const auto furn = here.furn( examp );
+    const auto can_plumb_tank = furn == furn_standing_tank &&
+                                p.has_amount( itype_plumber_toolkit, 1 );
+    const auto can_disconnect_tank = furn == furn_standing_tank_plumbed &&
+                                     p.has_amount( itype_plumber_toolkit, 1 );
+    const auto notify_contents_changed = [&]( const tripoint &where ) {
+        if( here.furn( where ) == furn_standing_tank_plumbed ) {
+            plumbing_grid::on_contents_changed( here.getglobal( where ) );
+        }
+    };
 
     const bool has_container_with_liquid = map_cursor( examp ).has_item_with( []( const item & it ) {
         return !it.is_container_empty() && it.can_unload_liquid();
@@ -3494,6 +3508,40 @@ void iexamine::keg( player &p, const tripoint &examp )
 
     if( !liquid_present || has_container_with_liquid ) {
         add_msg( m_info, _( "It is empty." ) );
+        if( can_plumb_tank || can_disconnect_tank ) {
+            enum options {
+                ADD_TO_PLUMBING_GRID,
+                DISCONNECT_FROM_PLUMBING_GRID,
+                FILL,
+            };
+            uilist selectmenu;
+            if( can_plumb_tank ) {
+                selectmenu.addentry( ADD_TO_PLUMBING_GRID, true, MENU_AUTOASSIGN,
+                                     _( "Add to plumbing grid" ) );
+            }
+            if( can_disconnect_tank ) {
+                selectmenu.addentry( DISCONNECT_FROM_PLUMBING_GRID, true, MENU_AUTOASSIGN,
+                                     _( "Disconnect from plumbing grid" ) );
+            }
+            selectmenu.addentry( FILL, true, MENU_AUTOASSIGN, _( "Fill" ) );
+            selectmenu.text = _( "Select an action" );
+            selectmenu.query();
+            if( selectmenu.ret == ADD_TO_PLUMBING_GRID ) {
+                displace_items_except_one_liquid( examp );
+                here.furn_set( examp, furn_standing_tank_plumbed );
+                plumbing_grid::on_structure_changed( here.getglobal( examp ) );
+                add_msg( m_info, _( "You connect the %s to the plumbing grid." ), keg_name );
+                return;
+            } else if( selectmenu.ret == DISCONNECT_FROM_PLUMBING_GRID ) {
+                plumbing_grid::disconnect_tank( here.getglobal( examp ) );
+                here.furn_set( examp, furn_standing_tank );
+                plumbing_grid::on_structure_changed( here.getglobal( examp ) );
+                add_msg( m_info, _( "You disconnect the %s from the plumbing grid." ), keg_name );
+                return;
+            } else if( selectmenu.ret < 0 ) {
+                return;
+            }
+        }
         // Get list of all drinks
         auto drinks_inv = p.items_with( []( const item & it ) {
             return it.made_of( LIQUID );
@@ -3560,6 +3608,7 @@ void iexamine::keg( player &p, const tripoint &examp )
         p.moves -= to_moves<int>( 10_seconds );
         here.i_clear( examp );
         here.add_item( examp, std::move( drink ) );
+        notify_contents_changed( examp );
         return;
     } else {
         // First empty the keg of foreign objects
@@ -3574,6 +3623,8 @@ void iexamine::keg( player &p, const tripoint &examp )
             HAVE_A_DRINK,
             REFILL,
             EXAMINE,
+            ADD_TO_PLUMBING_GRID,
+            DISCONNECT_FROM_PLUMBING_GRID,
         };
         uilist selectmenu;
         selectmenu.addentry( DISPENSE, drink.made_of( LIQUID ), MENU_AUTOASSIGN,
@@ -3582,6 +3633,14 @@ void iexamine::keg( player &p, const tripoint &examp )
                              MENU_AUTOASSIGN, _( "Have a drink" ) );
         selectmenu.addentry( REFILL, true, MENU_AUTOASSIGN, _( "Refill" ) );
         selectmenu.addentry( EXAMINE, true, MENU_AUTOASSIGN, _( "Examine" ) );
+        if( can_plumb_tank ) {
+            selectmenu.addentry( ADD_TO_PLUMBING_GRID, true, MENU_AUTOASSIGN,
+                                 _( "Add to plumbing grid" ) );
+        }
+        if( can_disconnect_tank ) {
+            selectmenu.addentry( DISCONNECT_FROM_PLUMBING_GRID, true, MENU_AUTOASSIGN,
+                                 _( "Disconnect from plumbing grid" ) );
+        }
 
         selectmenu.text = _( "Select an action" );
         selectmenu.query();
@@ -3592,6 +3651,7 @@ void iexamine::keg( player &p, const tripoint &examp )
                     add_msg( _( "You squeeze the last drops of %1$s from the %2$s." ),
                              drink_tname, keg_name );
                 }
+                notify_contents_changed( examp );
                 return;
 
             case HAVE_A_DRINK:
@@ -3604,6 +3664,7 @@ void iexamine::keg( player &p, const tripoint &examp )
                              drink_tname, keg_name );
                     here.i_clear( examp );
                 }
+                notify_contents_changed( examp );
                 p.moves -= to_moves<int>( 5_seconds );
                 return;
 
@@ -3622,6 +3683,7 @@ void iexamine::keg( player &p, const tripoint &examp )
                 tmp = pour_into_keg( examp, std::move( tmp ) );
                 p.use_charges( drink.typeId(), charges_held - tmp->charges );
                 add_msg( _( "You fill the %1$s with %2$s." ), keg_name, drink_nname );
+                notify_contents_changed( examp );
                 p.moves -= to_moves<int>( 10_seconds );
                 return;
             }
@@ -3631,6 +3693,20 @@ void iexamine::keg( player &p, const tripoint &examp )
                          drink_tname, drink.charges, drink.volume() * 100.0 / keg_cap );
                 return;
             }
+
+            case ADD_TO_PLUMBING_GRID:
+                displace_items_except_one_liquid( examp );
+                here.furn_set( examp, furn_standing_tank_plumbed );
+                plumbing_grid::on_structure_changed( here.getglobal( examp ) );
+                add_msg( m_info, _( "You connect the %s to the plumbing grid." ), keg_name );
+                return;
+
+            case DISCONNECT_FROM_PLUMBING_GRID:
+                plumbing_grid::disconnect_tank( here.getglobal( examp ) );
+                here.furn_set( examp, furn_standing_tank );
+                plumbing_grid::on_structure_changed( here.getglobal( examp ) );
+                add_msg( m_info, _( "You disconnect the %s from the plumbing grid." ), keg_name );
+                return;
 
             default:
                 return;
@@ -3650,6 +3726,12 @@ detached_ptr<item> iexamine::pour_into_keg( const tripoint &pos, detached_ptr<it
         return std::move( liquid );
     }
     map &here = get_map();
+    static const auto furn_standing_tank_plumbed = furn_id( "f_standing_tank_plumbed" );
+    const auto notify_contents_changed = [&]( const tripoint &where ) {
+        if( here.furn( where ) == furn_standing_tank_plumbed ) {
+            plumbing_grid::on_contents_changed( here.getglobal( where ) );
+        }
+    };
     const auto keg_name = here.name( pos );
     item &obj = *liquid;
 
@@ -3666,8 +3748,10 @@ detached_ptr<item> iexamine::pour_into_keg( const tripoint &pos, detached_ptr<it
         if( charges > 0 ) {
             detached_ptr<item> ret = item::spawn( obj );
             ret->charges = charges;
+            notify_contents_changed( pos );
             return ret;
         }
+        notify_contents_changed( pos );
         return detached_ptr<item>();
     } else if( stack.only_item().typeId() != liquid->typeId() ) {
         add_msg( _( "The %s already contains some %s, you can't add a different liquid to it." ),
@@ -3685,10 +3769,12 @@ detached_ptr<item> iexamine::pour_into_keg( const tripoint &pos, detached_ptr<it
         }
         add_msg( _( "You pour %1$s into the %2$s." ), obj.tname(), keg_name );
         if( liquid->charges == 0 ) {
+            notify_contents_changed( pos );
             return detached_ptr<item>();
         }
     }
 
+    notify_contents_changed( pos );
     return std::move( liquid );
 }
 
