@@ -462,16 +462,17 @@ void overmap::unserialize( std::istream &fin, const std::string &file_path )
             jsin.start_array();
             while( !jsin.end_array() ) {
                 jsin.start_array();
-                auto origin = tripoint_om_omt{};
+                tripoint_om_omt origin;
                 jsin.read( origin );
                 auto &conn = electric_grid_connections[origin];
                 while( !jsin.end_array() ) {
-                    auto offset = tripoint{};
+                    tripoint offset;
                     jsin.read( offset );
-                    const auto iter = std::ranges::find( six_cardinal_directions, offset );
-                    if( iter != six_cardinal_directions.end() ) {
-                        const auto index = std::distance( six_cardinal_directions.begin(), iter );
-                        conn.set( index, true );
+                    for( size_t i = 0; i < conn.size(); i++ ) {
+                        if( offset == six_cardinal_directions[i] ) {
+                            conn.set( i, true );
+                            break;
+                        }
                     }
                 }
             }
@@ -1080,7 +1081,7 @@ void overmap::serialize( std::ostream &fout ) const
     const auto &plumbing_connections = plumbing_grid::connections_for( *this );
     json.member( "plumbing_grid_connections" );
     json.start_array();
-    std::ranges::for_each( plumbing_connections, [&]( const auto &conn ) {
+    std::ranges::for_each( plumbing_connections, [&]( const auto & conn ) {
         json.start_array();
         json.write( conn.first );
         std::ranges::for_each( std::views::iota( size_t{ 0 }, six_cardinal_directions.size() ),
@@ -1096,7 +1097,7 @@ void overmap::serialize( std::ostream &fout ) const
     const auto &plumbing_storage = plumbing_grid::storage_for( *this );
     json.member( "plumbing_grid_storage" );
     json.start_array();
-    std::ranges::for_each( plumbing_storage, [&]( const auto &entry ) {
+    std::ranges::for_each( plumbing_storage, [&]( const auto & entry ) {
         json.start_array();
         json.write( entry.first );
         json.write( units::to_milliliter<int>( entry.second.capacity ) );
