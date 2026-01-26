@@ -33,9 +33,26 @@ using grid_member_ptr = shared_ptr_fast<grid_member_set>;
 using grid_member_map = std::map<tripoint_om_omt, grid_member_ptr>;
 using grid_member_cache_store = std::map<point_abs_om, grid_member_map>;
 using submap_capacity_cache_store = std::map<tripoint_abs_sm, units::volume>;
-static const auto furn_standing_tank_plumbed_str = furn_str_id( "f_standing_tank_plumbed" );
 static const itype_id itype_water( "water" );
 static const itype_id itype_water_clean( "water_clean" );
+
+auto tank_capacity_for_furn( const furn_t &furn ) -> std::optional<units::volume>
+{
+    if( !furn.plumbing ) {
+        return std::nullopt;
+    }
+    const auto &plumbing = *furn.plumbing;
+    if( plumbing.role != plumbing_role::tank ) {
+        return std::nullopt;
+    }
+    if( plumbing.capacity ) {
+        return plumbing.capacity;
+    }
+    if( plumbing.use_keg_capacity ) {
+        return furn.keg_capacity;
+    }
+    return std::nullopt;
+}
 
 auto plumbing_grid_store() -> connection_store &
 {
@@ -265,8 +282,10 @@ auto submap_capacity_at( const tripoint_abs_sm &sm_coord, mapbuffer &mb ) -> uni
     std::ranges::for_each( std::views::iota( 0, SEEX ), [&]( int x ) {
         std::ranges::for_each( std::views::iota( 0, SEEY ), [&]( int y ) {
             const auto pos = point( x, y );
-            if( sm->get_furn( pos ).id() == furn_standing_tank_plumbed_str ) {
-                total += sm->get_furn( pos ).obj().keg_capacity;
+            const auto &furn = sm->get_furn( pos ).obj();
+            const auto tank_capacity = tank_capacity_for_furn( furn );
+            if( tank_capacity ) {
+                total += *tank_capacity;
             }
         } );
     } );
@@ -504,7 +523,7 @@ class plumbing_grid_tracker
         std::map<tripoint_abs_sm, shared_ptr_fast<plumbing_storage_grid>> parent_storage_grids;
         mapbuffer &mb;
 
-        auto make_storage_grid_at( const tripoint_abs_sm &sm_pos ) -> plumbing_storage_grid& {
+        auto make_storage_grid_at( const tripoint_abs_sm &sm_pos ) -> plumbing_storage_grid & {
             const auto overmap_positions = plumbing_grid::grid_at( project_to<coords::omt>( sm_pos ) );
             auto submap_positions = std::vector<tripoint_abs_sm> {};
             submap_positions.reserve( overmap_positions.size() * 4 );
@@ -550,7 +569,7 @@ class plumbing_grid_tracker
 
         explicit plumbing_grid_tracker( mapbuffer &buffer ) : mb( buffer ) {}
 
-        auto storage_at( const tripoint_abs_omt &p ) -> plumbing_storage_grid& {
+        auto storage_at( const tripoint_abs_omt &p ) -> plumbing_storage_grid & {
             const auto sm_pos = project_to<coords::sm>( p );
             const auto iter = parent_storage_grids.find( sm_pos );
             if( iter != parent_storage_grids.end() ) {
@@ -584,12 +603,15 @@ class plumbing_grid_tracker
             }
 
             const auto &furn = target_submap->get_furn( target_pos.raw() ).obj();
-            const auto tank_capacity = furn.keg_capacity;
+            const auto tank_capacity = tank_capacity_for_furn( furn );
+            if( !tank_capacity ) {
+                return;
+            }
 
             auto &grid = storage_at( project_to<coords::omt>( p ) );
             auto state = grid.get_state();
-            const auto new_capacity = state.capacity > tank_capacity
-                                      ? state.capacity - tank_capacity
+            const auto new_capacity = state.capacity > *tank_capacity
+                                      ? state.capacity - *tank_capacity
                                       : 0_ml;
             const auto overflow_volume = state.stored_total() > new_capacity
                                          ? state.stored_total() - new_capacity

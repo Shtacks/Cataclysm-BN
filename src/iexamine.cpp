@@ -3442,9 +3442,36 @@ void iexamine::fvat_full( player &p, const tripoint &examp )
     }
 }
 
-static units::volume get_keg_capacity( const tripoint &pos )
+static auto plumbing_tank_capacity( const furn_t &furn ) -> std::optional<units::volume>
+{
+    if( !furn.plumbing ) {
+        return std::nullopt;
+    }
+    const auto &plumbing = *furn.plumbing;
+    if( plumbing.role != plumbing_role::tank ) {
+        return std::nullopt;
+    }
+    if( plumbing.capacity ) {
+        return plumbing.capacity;
+    }
+    if( plumbing.use_keg_capacity ) {
+        return furn.keg_capacity;
+    }
+    return std::nullopt;
+}
+
+static auto is_plumbing_tank( const furn_t &furn ) -> bool
+{
+    return plumbing_tank_capacity( furn ).has_value();
+}
+
+static auto get_keg_capacity( const tripoint &pos ) -> units::volume
 {
     const furn_t &furn = get_map().furn( pos ).obj();
+    const auto capacity = plumbing_tank_capacity( furn );
+    if( capacity ) {
+        return *capacity;
+    }
     return furn.keg_capacity;
 }
 
@@ -3488,17 +3515,17 @@ void iexamine::keg( player &p, const tripoint &examp )
 {
     none( p, examp );
     map &here = get_map();
-    static const auto furn_standing_tank = furn_id( "f_standing_tank" );
-    static const auto furn_standing_tank_plumbed = furn_id( "f_standing_tank_plumbed" );
     const auto keg_name = here.name( examp );
     units::volume keg_cap = get_keg_capacity( examp );
-    const auto furn = here.furn( examp );
-    const auto can_plumb_tank = furn == furn_standing_tank &&
-                                p.has_amount( itype_plumber_toolkit, 1 );
-    const auto can_disconnect_tank = furn == furn_standing_tank_plumbed &&
-                                     p.has_amount( itype_plumber_toolkit, 1 );
+    const auto furn_id = here.furn( examp );
+    const auto &furn = furn_id.obj();
+    const auto is_plumbed_tank = is_plumbing_tank( furn );
+    const auto plumbed_variant = plumbing_plumbed_variant( furn_id );
+    const auto unplumbed_variant = plumbing_unplumbed_variant( furn_id );
+    const auto can_plumb_tank = plumbed_variant && p.has_amount( itype_plumber_toolkit, 1 );
+    const auto can_disconnect_tank = unplumbed_variant && p.has_amount( itype_plumber_toolkit, 1 );
     const auto notify_contents_changed = [&]( const tripoint & where ) {
-        if( here.furn( where ) == furn_standing_tank_plumbed ) {
+        if( is_plumbing_tank( here.furn( where ).obj() ) ) {
             plumbing_grid::on_contents_changed( here.getglobal( where ) );
         }
     };
@@ -3527,7 +3554,7 @@ void iexamine::keg( player &p, const tripoint &examp )
         here.i_clear( where );
     };
 
-    if( furn == furn_standing_tank_plumbed ) {
+    if( is_plumbed_tank ) {
         const auto pos_abs_ms = here.getglobal( examp );
         const auto pos_abs_omt = project_to<coords::omt>( pos_abs_ms );
         const auto clean_available = plumbing_grid::liquid_charges_at( pos_abs_omt, itype_water_clean );
@@ -3693,7 +3720,10 @@ void iexamine::keg( player &p, const tripoint &examp )
 
             case DISCONNECT_FROM_PLUMBING_GRID:
                 plumbing_grid::disconnect_tank( pos_abs_ms );
-                here.furn_set( examp, furn_standing_tank );
+                if( !unplumbed_variant ) {
+                    return;
+                }
+                here.furn_set( examp, *unplumbed_variant );
                 plumbing_grid::on_structure_changed( pos_abs_ms );
                 add_msg( m_info, _( "You disconnect the %s from the plumbing grid." ), keg_name );
                 return;
@@ -3735,14 +3765,20 @@ void iexamine::keg( player &p, const tripoint &examp )
                     return;
                 }
                 displace_items_except_one_liquid( examp );
-                here.furn_set( examp, furn_standing_tank_plumbed );
+                if( !plumbed_variant ) {
+                    return;
+                }
+                here.furn_set( examp, *plumbed_variant );
                 plumbing_grid::on_structure_changed( here.getglobal( examp ) );
                 transfer_tank_liquid_to_grid( examp );
                 add_msg( m_info, _( "You connect the %s to the plumbing grid." ), keg_name );
                 return;
             } else if( selectmenu.ret == DISCONNECT_FROM_PLUMBING_GRID ) {
                 plumbing_grid::disconnect_tank( here.getglobal( examp ) );
-                here.furn_set( examp, furn_standing_tank );
+                if( !unplumbed_variant ) {
+                    return;
+                }
+                here.furn_set( examp, *unplumbed_variant );
                 plumbing_grid::on_structure_changed( here.getglobal( examp ) );
                 add_msg( m_info, _( "You disconnect the %s from the plumbing grid." ), keg_name );
                 return;
@@ -3907,7 +3943,10 @@ void iexamine::keg( player &p, const tripoint &examp )
                     return;
                 }
                 displace_items_except_one_liquid( examp );
-                here.furn_set( examp, furn_standing_tank_plumbed );
+                if( !plumbed_variant ) {
+                    return;
+                }
+                here.furn_set( examp, *plumbed_variant );
                 plumbing_grid::on_structure_changed( here.getglobal( examp ) );
                 transfer_tank_liquid_to_grid( examp );
                 add_msg( m_info, _( "You connect the %s to the plumbing grid." ), keg_name );
@@ -3915,7 +3954,10 @@ void iexamine::keg( player &p, const tripoint &examp )
 
             case DISCONNECT_FROM_PLUMBING_GRID:
                 plumbing_grid::disconnect_tank( here.getglobal( examp ) );
-                here.furn_set( examp, furn_standing_tank );
+                if( !unplumbed_variant ) {
+                    return;
+                }
+                here.furn_set( examp, *unplumbed_variant );
                 plumbing_grid::on_structure_changed( here.getglobal( examp ) );
                 add_msg( m_info, _( "You disconnect the %s from the plumbing grid." ), keg_name );
                 return;
@@ -3938,10 +3980,9 @@ detached_ptr<item> iexamine::pour_into_keg( const tripoint &pos, detached_ptr<it
         return std::move( liquid );
     }
     map &here = get_map();
-    static const auto furn_standing_tank_plumbed = furn_id( "f_standing_tank_plumbed" );
-    const auto is_plumbed = here.furn( pos ) == furn_standing_tank_plumbed;
+    const auto is_plumbed = is_plumbing_tank( here.furn( pos ).obj() );
     const auto notify_contents_changed = [&]( const tripoint & where ) {
-        if( here.furn( where ) == furn_standing_tank_plumbed ) {
+        if( is_plumbing_tank( here.furn( where ).obj() ) ) {
             plumbing_grid::on_contents_changed( here.getglobal( where ) );
         }
     };
@@ -4442,21 +4483,35 @@ void iexamine::liquid_source( player &, const tripoint &examp )
                                    calendar::turn, item::INFINITE_CHARGES ) );
 }
 
-auto iexamine::plumbing_sink( player &, const tripoint &examp ) -> void
+auto iexamine::plumbing_fixture( player &, const tripoint &examp ) -> void
 {
     map &here = get_map();
-    const auto pos_abs_ms = here.getglobal( examp );
-    const auto pos_abs_omt = project_to<coords::omt>( pos_abs_ms );
-
-    const auto clean_available = plumbing_grid::liquid_charges_at( pos_abs_omt, itype_water_clean );
-    const auto dirty_available = plumbing_grid::liquid_charges_at( pos_abs_omt, itype_water );
-    const auto available = clean_available > 0 ? clean_available : dirty_available;
-    if( available <= 0 ) {
-        add_msg( m_info, _( "The sink is dry." ) );
+    const auto &furn = here.furn( examp ).obj();
+    if( !furn.plumbing || furn.plumbing->role != plumbing_role::fixture ) {
+        add_msg( m_info, _( "It is not connected to a plumbing fixture." ) );
+        return;
+    }
+    const auto &plumbing = *furn.plumbing;
+    const auto fixture_name = here.name( examp );
+    if( !plumbing.allow_output ) {
+        add_msg( m_info, _( "The %s has no usable output." ), fixture_name );
         return;
     }
 
-    const auto &liquid_type = clean_available > 0 ? itype_water_clean : itype_water;
+    const auto pos_abs_ms = here.getglobal( examp );
+    const auto pos_abs_omt = project_to<coords::omt>( pos_abs_ms );
+
+    const auto available_liquid = std::ranges::find_if( plumbing.allowed_liquids,
+    [&]( const itype_id & liquid ) {
+        return plumbing_grid::liquid_charges_at( pos_abs_omt, liquid ) > 0;
+    } );
+    if( available_liquid == plumbing.allowed_liquids.end() ) {
+        add_msg( m_info, _( "The %s is dry." ), fixture_name );
+        return;
+    }
+
+    const auto &liquid_type = *available_liquid;
+    const auto available = plumbing_grid::liquid_charges_at( pos_abs_omt, liquid_type );
     auto target_sm = tripoint_abs_sm{};
     auto target_pos = point_sm_ms{};
     std::tie( target_sm, target_pos ) = project_remain<coords::sm>( pos_abs_ms );
@@ -7272,7 +7327,7 @@ iexamine_function iexamine_function_from_string( const std::string &function_nam
             { "water_source", &iexamine::water_source },
             { "clean_water_source", &iexamine::clean_water_source },
             { "liquid_source", &iexamine::liquid_source },
-            { "plumbing_sink", &iexamine::plumbing_sink },
+            { "plumbing_fixture", &iexamine::plumbing_fixture },
             { "reload_furniture", &iexamine::reload_furniture },
             { "use_furn_fake_item", &iexamine::use_furn_fake_item },
             { "curtains", &iexamine::curtains },
