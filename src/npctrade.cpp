@@ -261,7 +261,10 @@ auto npc_trading::trade( npc &np, int cost, const std::string &deal ) -> bool
     }
     //np.drop_items( np.weight_carried() - np.weight_capacity(),
     //               np.volume_carried() - np.volume_capacity() );
-    np.drop_invalid_inventory();
+    // skip drop invalid inventory for merchants to avoid item dump on floor
+    if ( !np.is_shopkeeper() ) {
+        np.drop_invalid_inventory();
+    }
 
     auto state = trade_state{};
     npc_trading::setup_trade_state( state, cost, np );
