@@ -1177,7 +1177,7 @@
     "city_distance": [ 2, 14 ],
     "city_sizes": [ 4, -1 ],
     "occurrences": [ 0, 2 ],
-    "flags": [ "CLASSIC", "URBAN", "ELECTRIC_GRID" ]
+    "flags": [ "CLASSIC", "URBAN", "ELECTRIC_GRID", "PLUMBING_GRID" ]
   },
   {
     "type": "overmap_special",
