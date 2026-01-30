@@ -832,14 +832,16 @@ auto trading_window::perform_trade( npc &np, const std::string &deal ) -> bool
         size_t &cursor;
         size_t &offset;
     };
-    const auto clamp_cursor_to_list = [&]( const clamp_cursor_options &opts ) -> void {
-        if( opts.filtered.empty() ) {
+    const auto clamp_cursor_to_list = [&]( const clamp_cursor_options & opts ) -> void {
+        if( opts.filtered.empty() )
+        {
             opts.cursor = 0;
             opts.offset = 0;
             return;
         }
         opts.cursor = std::min( opts.cursor, opts.filtered.size() - 1 );
-        if( entries_per_page == 0 ) {
+        if( entries_per_page == 0 )
+        {
             opts.offset = 0;
             return;
         }
@@ -848,7 +850,7 @@ auto trading_window::perform_trade( npc &np, const std::string &deal ) -> bool
         opts.offset = page_starts[page_index];
     };
 
-    const auto affects_npc_capacity = [&]( const item &it ) -> bool {
+    const auto affects_npc_capacity = [&]( const item & it ) -> bool {
         return it.where() == item_location_type::character && &it != &np.primary_weapon();
     };
     const auto apply_trade_change = [&]( item_pricing & ip, int new_amount ) -> void {
@@ -879,22 +881,25 @@ auto trading_window::perform_trade( npc &np, const std::string &deal ) -> bool
         }
     };
     const auto sync_category_cursor = [&]( const std::vector<item_pricing> &list,
-    const std::vector<size_t> &filtered_indices,
-    const std::vector<category_range> &category_ranges,
-    size_t &category_cursor,
+                                           const std::vector<size_t> &filtered_indices,
+                                           const std::vector<category_range> &category_ranges,
+                                           size_t &category_cursor,
     size_t cursor ) -> void {
-        if( category_ranges.empty() || filtered_indices.empty() ) {
+        if( category_ranges.empty() || filtered_indices.empty() )
+        {
             return;
         }
         const auto cursor_category = list[filtered_indices[cursor]]
-                                     .locs.front()->get_category().get_id();
+        .locs.front()->get_category().get_id();
         const auto match = std::ranges::find_if( category_ranges,
-        [&]( const category_range & entry ) {
+                [&]( const category_range & entry )
+        {
             return entry.id == cursor_category;
         } );
-        if( match != category_ranges.end() ) {
+        if( match != category_ranges.end() )
+        {
             category_cursor = static_cast<size_t>(
-                                  std::distance( category_ranges.begin(), match ) );
+                std::distance( category_ranges.begin(), match ) );
         }
     };
     const auto get_current_amount = [&]( const item_pricing & ip ) -> int {
