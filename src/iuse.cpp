@@ -9074,8 +9074,7 @@ auto iuse::modify_plumbing_connections( player *p, item *it, bool, const tripoin
                                          rhs_locations.size() );
         }
 
-        if( !requirement_add_plumbing_grid_connection->can_make_with_inventory( crafting_inv,
-                is_crafting_component ) ) {
+        if( !reqs.can_make_with_inventory( crafting_inv, is_crafting_component ) ) {
             popup( string_format( _( "%s\n%s\n%s" ),
                                   grid_connection_string,
                                   reqs.list_missing(),
