@@ -72,7 +72,8 @@ auto plumbing_storage_store() -> storage_store & // *NOPAD*
     return store;
 }
 
-auto empty_storage() -> const std::map<tripoint_om_omt, plumbing_grid::water_storage_state> & // *NOPAD*
+auto empty_storage() -> const std::map<tripoint_om_omt, plumbing_grid::water_storage_state>
+& // *NOPAD*
 {
     static const auto empty = std::map<tripoint_om_omt, plumbing_grid::water_storage_state> {};
     return empty;
@@ -350,7 +351,8 @@ auto split_storage_state( const plumbing_grid::water_storage_state &state,
     return { .lhs = lhs_state, .rhs = rhs_state };
 }
 
-auto connection_bitset_at( const tripoint_abs_omt &p ) -> const plumbing_grid::connection_bitset & // *NOPAD*
+auto connection_bitset_at( const tripoint_abs_omt &p ) -> const plumbing_grid::connection_bitset
+& // *NOPAD*
 {
     const auto omc = overmap_buffer.get_om_global( p );
     const auto &connections = plumbing_grid::connections_for( *omc.om );
@@ -535,8 +537,7 @@ class plumbing_grid_tracker
         std::map<tripoint_abs_sm, shared_ptr_fast<plumbing_storage_grid>> parent_storage_grids;
         mapbuffer &mb;
 
-        auto make_storage_grid_at( const tripoint_abs_sm &sm_pos ) -> plumbing_storage_grid& // *NOPAD*
-        {
+        auto make_storage_grid_at( const tripoint_abs_sm &sm_pos ) -> plumbing_storage_grid& { // *NOPAD*
             const auto overmap_positions = plumbing_grid::grid_at( project_to<coords::omt>( sm_pos ) );
             auto submap_positions = std::vector<tripoint_abs_sm> {};
             submap_positions.reserve( overmap_positions.size() * 4 );
@@ -582,8 +583,7 @@ class plumbing_grid_tracker
 
         explicit plumbing_grid_tracker( mapbuffer &buffer ) : mb( buffer ) {}
 
-        auto storage_at( const tripoint_abs_omt &p ) -> plumbing_storage_grid& // *NOPAD*
-        {
+        auto storage_at( const tripoint_abs_omt &p ) -> plumbing_storage_grid& { // *NOPAD*
             const auto sm_pos = project_to<coords::sm>( p );
             const auto iter = parent_storage_grids.find( sm_pos );
             if( iter != parent_storage_grids.end() ) {
@@ -685,7 +685,8 @@ auto storage_for( overmap &om ) -> std::map<tripoint_om_omt, water_storage_state
     return plumbing_storage_store()[om.pos()];
 }
 
-auto storage_for( const overmap &om ) -> const std::map<tripoint_om_omt, water_storage_state> & // *NOPAD*
+auto storage_for( const overmap &om ) -> const std::map<tripoint_om_omt, water_storage_state>
+& // *NOPAD*
 {
     const auto &store = plumbing_storage_store();
     const auto iter = store.find( om.pos() );
