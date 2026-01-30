@@ -3471,6 +3471,16 @@ static auto confirm_plumbing_contamination( const tripoint_abs_omt &pos_abs_omt,
     if( !plumbing_grid::would_contaminate( pos_abs_omt, liquid_type ) ) {
         return true;
     }
+    const auto clean_available =
+        plumbing_grid::liquid_charges_at( pos_abs_omt, itype_water_clean ) > 0;
+    const auto dirty_available =
+        plumbing_grid::liquid_charges_at( pos_abs_omt, itype_water ) > 0;
+    if( liquid_type == itype_water_clean && dirty_available ) {
+        return query_yn( _( "Adding clean water to this grid containing tainted water will contaminate your clean water.  Continue?" ) );
+    }
+    if( liquid_type == itype_water && clean_available ) {
+        return query_yn( _( "Adding tainted water to this grid containing clean water will contaminate your clean water.  Continue?" ) );
+    }
     return query_yn( string_format(
                          _( "Adding %s will contaminate the plumbing grid's water supply.  Continue?" ),
                          item::nname( liquid_type ) ) );

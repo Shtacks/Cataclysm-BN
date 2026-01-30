@@ -8908,6 +8908,14 @@ auto iuse::report_plumbing_connections( player *p, item *, bool, const tripoint 
                                          format_volume( water_stats.stored ),
                                          format_volume( water_stats.capacity ),
                                          volume_units_abbr() ) );
+    const auto clean_available =
+        plumbing_grid::liquid_charges_at( pos_abs, itype_id( "water_clean" ) ) > 0;
+    const auto dirty_available =
+        plumbing_grid::liquid_charges_at( pos_abs, itype_id( "water" ) ) > 0;
+    const auto quality = clean_available ? _( "clean" )
+                         : dirty_available ? _( "tainted" )
+                         : _( "empty" );
+    p->add_msg_if_player( string_format( _( "Water quality: %s." ), quality ) );
 
     return 0;
 }
