@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-02-01 07:35+0000\n"
+"POT-Creation-Date: 2026-02-08 20:34+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -2729,6 +2729,55 @@ msgstr "[技能] 上蜡，脱蜡"
 msgid "To be your own weapon."
 msgstr "成为你自己的武器。"
 
+#: data/json/artifact_analyzer.lua src/bionics_ui.cpp src/mutation_ui.cpp
+#: src/options.cpp
+msgid "None"
+msgstr "无"
+
+#: data/json/artifact_analyzer.lua
+msgid "Unable to read artifact data."
+msgstr "无法读取神器数据。"
+
+#: data/json/artifact_analyzer.lua
+msgid "This item has no artifact effects."
+msgstr "该物品没有神器效果。"
+
+#: data/json/artifact_analyzer.lua
+msgid "SUBJECT"
+msgstr "对象"
+
+#: data/json/artifact_analyzer.lua
+msgid "Charge"
+msgstr "充能"
+
+#: data/json/artifact_analyzer.lua
+msgid "Charge Requirement"
+msgstr "充能条件"
+
+#: data/json/artifact_analyzer.lua
+msgid "Activated"
+msgstr "激活"
+
+#: data/json/artifact_analyzer.lua
+msgid "Wielded"
+msgstr "手持"
+
+#: data/json/artifact_analyzer.lua
+msgid "Worn"
+msgstr "穿戴"
+
+#: data/json/artifact_analyzer.lua
+msgid "Carried"
+msgstr "携带"
+
+#: data/json/artifact_analyzer.lua
+msgid "You have no artifacts to analyze."
+msgstr "你没有可分析的神器。"
+
+#: data/json/artifact_analyzer.lua
+msgid "Artifact Analyzer"
+msgstr "神器分析仪"
+
 #: data/json/bionics.json
 msgid "Adrenaline Pump"
 msgstr "肾上腺素泵"
@@ -3003,11 +3052,11 @@ msgstr "生化合金爪"
 #. ~ Description for {'str': 'Bionic Claws'}
 #: data/json/bionics.json
 msgid ""
-"Vicious claws have been surgically installed inside your fingers, allowing "
-"you to extend and retract them at the cost of a small amount of power.  "
-"These do considerable cutting damage, but prevent you from holding anything "
-"else while extended."
-msgstr "你的手指经过手术安装上了伸缩式利爪，消耗少量生化能量可将其伸出或收回。爪子可造成斩击伤害，但是伸出爪子时无法手持任何物品。"
+"Vicious claws have been surgically installed inside your hands, allowing you"
+" to extend and retract them at the cost of a small amount of power.  These "
+"do considerable cutting damage, but prevent you from holding anything else "
+"while extended."
+msgstr "你的双手经过手术安装上了伸缩式利爪，消耗少量生化能量可将其伸出或收回。爪子可造成斩击伤害，但是伸出爪子时无法手持任何物品。"
 
 #: data/json/bionics.json
 msgid "Internal Climate Control"
@@ -3079,11 +3128,10 @@ msgstr "多重消化系统"
 #. ~ Description for {'str': 'Expanded Digestive System'}
 #: data/json/bionics.json
 msgid ""
-"You have been outfitted with three synthetic stomachs and industrial-grade "
+"You have been outfitted with a synthetic stomach and industrial-grade "
 "intestines.  Not only can you extract much more nutrition from food, but you"
 " are immune to foodborne illness, parasites, and can even eat rotten food."
-msgstr ""
-"你已配备了具有三个人造胃和一个人造肠道的消化系统。现在你不仅可以从食物中吸收更多营养，还对食物相关的传染疾病有了很高的抗性，甚至能吃下腐坏的食物。"
+msgstr "你体内安装了合成胃囊和工业级肠道。现在你不仅可以从食物中吸收更多营养，还对食物相关的传染疾病有了很高的抗性，甚至能吃下腐坏的食物。"
 
 #: data/json/bionics.json data/json/items/bionics.json
 msgid "Acidic Discharge"
@@ -4161,11 +4209,10 @@ msgstr "微型反应堆"
 #: data/json/bionics.json
 msgid ""
 "This stripped down mini-reactor generates impressive amounts of bionic power"
-" but slowly irradiates the user.  1 plutonium fuel cell provides 1000 "
-"charges producing 10kJ of power a turn, while not active & fueled provides a"
-" constant 50J of power."
+" but slowly irradiates the user when in use.  1 plutonium fuel cell provides"
+" 1000 charges producing 10kW of power a turn."
 msgstr ""
-"这款简化的微型反应堆能够产生大量的仿生能量，但会逐渐给使用者造成辐射。每个钚燃料电池可以提供1000次充能，每次充能产生10千焦的能量，而在非激活和燃料充足的情况下，提供恒定的50焦的能量。"
+"这种简化型微型反应堆能产生惊人的生化能量，但在运作时会缓慢地对使用者产生辐射。1个钚燃料电池可提供1000点充能，每回合产生10千瓦的功率。"
 
 #: data/json/bionics.json
 msgid "Advanced Micro Reactor"
@@ -4176,23 +4223,32 @@ msgstr "高级微型反应堆"
 msgid ""
 "This stripped down mini-reactor has been heavily modified and is more "
 "efficient and safer than the base model.  1 plutonium fuel cell provides "
-"1500 charges producing 10kJ of power a turn, while not active & fueled "
-"provides a constant 75J of power."
-msgstr ""
-"这款经过大幅改进的简化微型反应堆比基础型号更高效、更安全。每个钚燃料电池可以提供1500次充能，每次充能产生10千焦的能量，而在非激活和燃料充足的情况下，提供恒定的75焦的能量。"
+"1500 charges producing 10kW of power."
+msgstr "这种简化型微型反应堆经过了深度改装，比基础型号更加高效且安全。1个钚燃料电池可提供1500点充能，产生10千瓦的功率。"
 
 #: data/json/bionics.json
 msgid "Micro Reactor Safety Override"
 msgstr "微型反应堆安全覆写"
 
 #. ~ Description for {'str': 'Micro Reactor Safety Override'}
-#. ~ Description for {'str': 'Micro Reactor Safety Override CBM'}
-#: data/json/bionics.json data/json/items/bionics.json
+#: data/json/bionics.json
 msgid ""
 "Disables the radiation safety protocols allowing for much higher energy "
-"production.  While active produces 40kJ of power a turn and 1 irradiated "
-"stack every 20 turns."
-msgstr "禁用辐射安全协议，从而实现更高的能量产生。激活时每回合产生40千焦的能量，并在每20回合产生1层辐射叠加效果。"
+"production.  While active produces 40kW of power and 1 irradiated stack "
+"every 20 turns."
+msgstr "禁用辐射安全协议以大幅提高能量输出。激活时将产生40千瓦的功率，但每20回合会产生1点辐射积累。"
+
+#: data/json/bionics.json
+msgid "Atomic Battery"
+msgstr "原子电池"
+
+#. ~ Description for {'str': 'Atomic Battery'}
+#: data/json/bionics.json
+msgid ""
+"A compact alphavoltaic power source, producing a steady source of limitless "
+"bionic power at the cost of minimal radiation while in use.  Produces 50W of"
+" power while active."
+msgstr "一种紧凑的α伏特（alphavoltaic）电源，能提供源源不断的生化能量，但在使用时会产生微量辐射。激活时产生50瓦的功率。"
 
 #: data/json/bionics.json
 msgid "Intravenous Needletip"
@@ -4243,11 +4299,10 @@ msgstr "味觉调节"
 #. ~ Description for {'str': 'Taste Modifier'}
 #: data/json/bionics.json
 msgid ""
-"A set of highly sensitive sensors is installed in your mouth, and a small "
-"yet sophisticated analyzer is installed in the cavity of your skull.  The "
-"active bionic will nullify the taste of all comestibles with negative "
-"enjoyment value at the cost of draining bionic power."
-msgstr "你的嘴里被安装了一套高度敏感的传感器，头骨腔中安装了一个小而精密的分析仪。开启后将消耗生化能量使所有难吃的食物不再具有负面心情效果。"
+"A set of highly sensitive sensors is installed in your mouth.  The active "
+"bionic will nullify the taste of all comestibles with negative enjoyment "
+"value at the cost of draining bionic power."
+msgstr "你的嘴里被安装了一套高度敏感的传感器。开启后将消耗生化能量使所有难吃的食物不再具有负面心情效果。"
 
 #: data/json/bionics.json
 msgid "Soporific Induction"
@@ -4319,9 +4374,9 @@ msgstr "核聚变臂炮"
 #. ~ Description for {'str': 'Fusion Blaster Arm'}
 #: data/json/bionics.json
 msgid ""
-"Heavy-duty fusion blaster was integrated ino your left arm!  You may use "
+"A heavy-duty fusion blaster was integrated into your left arm!  You may use "
 "your energy banks to fire a damaging heat ray."
-msgstr "重型核聚变爆破器被集成在你的左臂中！你可以使用你的能量库发射破坏性的热射线。"
+msgstr "你的左臂植入了一门重型聚变爆能炮！你可以使用你的生化能量来发射破坏性的热射线。 "
 
 #: data/json/bionics.json
 msgid "Electrosense Scanner"
@@ -8014,6 +8069,7 @@ msgid "Your head is swimming from the pollen in the air."
 msgstr "空气中的花粉让你感到头昏眼花。"
 
 #: data/json/effects.json data/mods/Aftershock/effects.json
+#: data/mods/MagicalNights/effects/effects.json
 msgid "Slowed"
 msgstr "迟缓"
 
@@ -10882,6 +10938,11 @@ msgstr "这件物品<info>提供了</info>生化插件的安装说明和其他�
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
+msgid "This item stores <info>genetic data</info> for a genome workstation."
+msgstr "此物品为基因组工作站存储<info>遗传数据</info>。"
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
 msgid ""
 "A <good>follower</good> could <info>make use of this CBM</info> if installed"
 " properly."
@@ -12416,6 +12477,10 @@ msgstr "修改电网连接"
 #: data/json/item_actions.json
 msgid "Measure grid power"
 msgstr "测量电网功率"
+
+#: data/json/item_actions.json
+msgid "Analyze artifact"
+msgstr "分析神器"
 
 #: data/json/item_actions.json
 msgid "Dry/clean yourself"
@@ -17892,8 +17957,8 @@ msgid "smashing"
 msgstr "打砸"
 
 #: data/json/player_activities.json
-msgid "cranking"
-msgstr "转动把手"
+msgid "charging"
+msgstr "充电"
 
 #: data/json/player_activities.json
 msgid "heating"
@@ -19851,7 +19916,7 @@ msgstr "时尚模特"
 #: data/json/professions.json
 msgctxt "prof_desc_male"
 msgid ""
-"Once worshipped for looks, not survival skills. Now that the world has "
+"Once worshiped for looks, not survival skills. Now that the world has "
 "leveled the playing field, glamour won’t save you."
 msgstr "曾经因美貌而非生存技能而备受追捧。如今，世界让大家回到了同一起跑线，光鲜亮丽可救不了你的命。"
 
@@ -19859,7 +19924,7 @@ msgstr "曾经因美貌而非生存技能而备受追捧。如今，世界让大
 #: data/json/professions.json
 msgctxt "prof_desc_female"
 msgid ""
-"Once worshipped for looks, not survival skills. Now that the world has "
+"Once worshiped for looks, not survival skills. Now that the world has "
 "leveled the playing field, glamour won’t save you."
 msgstr "曾经因美貌而非生存技能而备受追捧。如今，世界让大家回到了同一起跑线，光鲜亮丽可救不了你的命。"
 
@@ -23646,18 +23711,18 @@ msgstr "房车露营者"
 msgctxt "prof_desc_male"
 msgid ""
 "You always enjoyed life on the road, driving across the country to see the "
-"wonders of nature.  Now nature seems a lot less hostile, and it's a lot "
+"wonders of nature.  Now nature seems a lot more hostile, and it's a lot "
 "harder to get your RV hooked up to shore power."
-msgstr "你一直很享受在路上的生活，驾车穿越整个国家，欣赏大自然的奇观。现在，大自然似乎没那么不友善了，但想让你的房车接上岸电却困难得多。"
+msgstr "你向来享受在路上的生活，驱车横跨全国，饱览大自然的鬼斧神工。但如今，大自然显得愈发凶险，想要给你的房车接上外接电源也变得困难重重。"
 
 #. ~ Profession (female RV Camper) description
 #: data/json/professions.json
 msgctxt "prof_desc_female"
 msgid ""
 "You always enjoyed life on the road, driving across the country to see the "
-"wonders of nature.  Now nature seems a lot less hostile, and it's a lot "
+"wonders of nature.  Now nature seems a lot more hostile, and it's a lot "
 "harder to get your RV hooked up to shore power."
-msgstr "你一直很享受在路上的生活，驾车穿越整个国家，欣赏大自然的奇观。现在，大自然似乎没那么不友善了，但想让你的房车接上岸电却困难得多。"
+msgstr "你向来享受在路上的生活，驱车横跨全国，饱览大自然的鬼斧神工。但如今，大自然显得愈发凶险，想要给你的房车接上外接电源也变得困难重重。"
 
 #: data/json/professions.json
 msgctxt "profession_male"
@@ -23673,17 +23738,19 @@ msgstr "女矿工"
 #: data/json/professions.json
 msgctxt "prof_desc_male"
 msgid ""
-"You're a miner, not a minor!  Your canteen is dry, your jackhammer is out of"
-" gas, and you're on your last pair of batteries for your mining helmet…"
-msgstr "虽然你只是一个矿工，但你不是无名之辈！（英语双关）现在你的水壶已然喝光，冲击钻也耗光了燃料，头顶上的矿工帽只剩下最后一对电池了……"
+"You're a miner, not a minor!  Your jackhammer may be gassed up, but your "
+"canteen is dry, and you're on your last pair of batteries for your mining "
+"helmet…"
+msgstr "你是个矿工，可不是什么未成年人！你手中的气钻或许燃料充足，但你的水壶已经干得底朝天，矿工帽里的电池也只剩下这最后的一对……"
 
 #. ~ Profession (female Miner) description
 #: data/json/professions.json
 msgctxt "prof_desc_female"
 msgid ""
-"You're a miner, not a minor!  Your canteen is dry, your jackhammer is out of"
-" gas, and you're on your last pair of batteries for your mining helmet…"
-msgstr "虽然你只是一个矿工，但你不是无名之辈！（英语双关）现在你的水壶已然喝光，冲击钻也耗光了燃料，头顶上的矿工帽只剩下最后一对电池了……"
+"You're a miner, not a minor!  Your jackhammer may be gassed up, but your "
+"canteen is dry, and you're on your last pair of batteries for your mining "
+"helmet…"
+msgstr "你是个矿工，可不是什么未成年人！你手中的气钻或许燃料充足，但你的水壶已经干得底朝天，矿工帽里的电池也只剩下这最后的一对……"
 
 #: data/json/professions.json
 msgctxt "profession_male"
@@ -23930,16 +23997,18 @@ msgstr "高尔夫女球手"
 msgctxt "prof_desc_male"
 msgid ""
 "You decided to get away from the family for the day to do a little golfing "
-"by yourself."
-msgstr "你决定独自离家休息一天，去打一场高尔夫球。"
+"by yourself.  You were almost done playing the back nine when you called to "
+"check on them and realized you couldn't get a signal."
+msgstr "你决定暂时抛开家务琐事，独自享受一天的挥杆之乐。就在你快要打完后九洞，想打电话回家报个平安时，却发现手机完全没有信号。"
 
 #. ~ Profession (female Golfer) description
 #: data/json/professions.json
 msgctxt "prof_desc_female"
 msgid ""
 "You decided to get away from the family for the day to do a little golfing "
-"by yourself."
-msgstr "你决定独自离家休息一天，去打一场高尔夫球。"
+"by yourself.  You were almost done playing the back nine when you called to "
+"check on them and realized you couldn't get a signal."
+msgstr "你决定暂时抛开家务琐事，独自享受一天的挥杆之乐。就在你快要打完后九洞，想打电话回家报个平安时，却发现手机完全没有信号。"
 
 #: data/json/professions.json
 msgctxt "profession_male"
@@ -25089,45 +25158,59 @@ msgstr "骑士精神！英勇无畏！还有荣誉感！这些特质在大灾变
 
 #: data/json/professions.json
 msgctxt "profession_male"
-msgid "Airship Pilot"
-msgstr "飞艇驾驶员"
+msgid "Airship Captain"
+msgstr "飞艇船长"
 
 #: data/json/professions.json
 msgctxt "profession_female"
-msgid "Airship Pilot"
-msgstr "飞艇驾驶员"
+msgid "Airship Captain"
+msgstr "飞艇船长"
 
-#. ~ Profession (male Airship Pilot) description
-#. ~ Profession (male Airboat Pilot) description
-#. ~ Profession (male Aircanoe Pilot) description
+#. ~ Profession (male Airship Captain) description
 #: data/json/professions.json
 msgctxt "prof_desc_male"
 msgid ""
 "You once led a crew of skyfarers, traveling the skies for fame, bricks and "
-"sand. Now you are on your own, and the ground is swarming with zombies.  At "
-"least this world has ground..."
+"sand.  Now you are on your own, and the ground is swarming with zombies.  At"
+" least this world has ground…"
 msgstr "你曾率领一众空行者遨游天际，追寻名望、砖块与沙子。如今你孤身一人，地面上更是遍布丧尸。不过，至少这个世界还有地面……"
 
-#. ~ Profession (female Airship Pilot) description
-#. ~ Profession (female Airboat Pilot) description
-#. ~ Profession (female Aircanoe Pilot) description
+#. ~ Profession (female Airship Captain) description
 #: data/json/professions.json
 msgctxt "prof_desc_female"
 msgid ""
 "You once led a crew of skyfarers, traveling the skies for fame, bricks and "
-"sand. Now you are on your own, and the ground is swarming with zombies.  At "
-"least this world has ground..."
+"sand.  Now you are on your own, and the ground is swarming with zombies.  At"
+" least this world has ground…"
 msgstr "你曾率领一众空行者遨游天际，追寻名望、砖块与沙子。如今你孤身一人，地面上更是遍布丧尸。不过，至少这个世界还有地面……"
 
 #: data/json/professions.json
 msgctxt "profession_male"
-msgid "Airboat Pilot"
-msgstr "飞船驾驶员"
+msgid "Airboat Commander"
+msgstr "飞船指挥官"
 
 #: data/json/professions.json
 msgctxt "profession_female"
-msgid "Airboat Pilot"
-msgstr "飞船驾驶员"
+msgid "Airboat Commander"
+msgstr "飞船指挥官"
+
+#. ~ Profession (male Airboat Commander) description
+#: data/json/professions.json
+msgctxt "prof_desc_male"
+msgid ""
+"You were part of a squadron of skyfarers, plying the vastness to protect "
+"trade routes from nefarious air pirates.  Now you're adrift and alone, one "
+"vessel against an alien world swarming with the undead…"
+msgstr "你曾隶属于一支空行者中队，穿梭于浩瀚天际，誓死保卫贸易航线免受恶毒空贼的侵扰。如今你孤身漂泊，仅凭一艘孤艇对抗着这遍布亡灵的异星世界……"
+
+#. ~ Profession (female Airboat Commander) description
+#: data/json/professions.json
+msgctxt "prof_desc_female"
+msgid ""
+"You were part of a squadron of skyfarers, plying the vastness to protect "
+"trade routes from nefarious air pirates.  Now you're adrift and alone, one "
+"vessel against an alien world swarming with the undead…"
+msgstr "你曾隶属于一支空行者中队，穿梭于浩瀚天际，誓死保卫贸易航线免受恶毒空贼的侵扰。如今你孤身漂泊，仅凭一艘孤艇对抗着这遍布亡灵的异星世界……"
 
 #: data/json/professions.json
 msgctxt "profession_male"
@@ -25138,6 +25221,24 @@ msgstr "空中独木舟驾驶员"
 msgctxt "profession_female"
 msgid "Aircanoe Pilot"
 msgstr "空中独木舟驾驶员"
+
+#. ~ Profession (male Aircanoe Pilot) description
+#: data/json/professions.json
+msgctxt "prof_desc_male"
+msgid ""
+"You're a lone skyfarer, scouting the endless blue for new routes across the "
+"sky.  Now you've caught sight of more land than you've seen in a lifetime, "
+"an unfamiliar land of monsters…"
+msgstr "你是一名独行的空行者，在那无垠的蔚蓝中探索着新的天际航路。如今，映入眼帘的陆地比你毕生所见都要辽阔，但这却是一片怪兽横行的陌生大地……"
+
+#. ~ Profession (female Aircanoe Pilot) description
+#: data/json/professions.json
+msgctxt "prof_desc_female"
+msgid ""
+"You're a lone skyfarer, scouting the endless blue for new routes across the "
+"sky.  Now you've caught sight of more land than you've seen in a lifetime, "
+"an unfamiliar land of monsters…"
+msgstr "你是一名独行的空行者，在那无垠的蔚蓝中探索着新的天际航路。如今，映入眼帘的陆地比你毕生所见都要辽阔，但这却是一片怪兽横行的陌生大地……"
 
 #. ~ Name for scenario 'Evacuee' for a male character
 #: data/json/scenarios.json
@@ -26702,6 +26803,7 @@ msgid "Weapon"
 msgstr "武器"
 
 #. ~ Description for {'str': 'Weapon'}
+#. ~ Description for {'str': 'Alphavoltaic Power', 'str_pl': 'none'}
 #. ~ Description for {'str_sp': 'animal'}
 #. ~ Description for {'str_sp': 'nearby fire'}
 #. ~ Description for {'str_sp': 'muscle'}
@@ -26715,8 +26817,9 @@ msgstr "武器"
 #. ~ Description for {'str': 'abstract map'}
 #. ~ Description for {'str_sp': 'seeing this is a bug'}
 #: data/json/skills.json data/json/furniture_and_terrain/furniture-fakes.json
-#: data/json/items/generic.json data/json/items/book/electronics.json
-#: data/json/items/book/maps.json data/json/items/tool/deployable.json
+#: data/json/items/fake.json data/json/items/generic.json
+#: data/json/items/book/electronics.json data/json/items/book/maps.json
+#: data/json/items/tool/deployable.json
 msgid "seeing this is a bug"
 msgid_plural "seeing this is a bug"
 msgstr[0] "看见这个说明出bug了。"
@@ -38049,6 +38152,19 @@ msgid ""
 msgstr "这是一个独立的计算机终端。它可以用来查看内容并执行任何允许的功能。如果你有相关技能，也可以侵入它。"
 
 #: data/json/furniture_and_terrain/furniture-tools.json
+#: data/json/items/fake.json
+msgid "artifact analyzer console"
+msgid_plural "artifact analyzer consoles"
+msgstr[0] "神器分析控制台"
+
+#. ~ Description for artifact analyzer console
+#: data/json/furniture_and_terrain/furniture-tools.json
+msgid ""
+"A research console configured to analyze artifacts.  Use it to scan any "
+"artifacts you are carrying."
+msgstr "一台配置用于分析神器的研究控制台。用它来扫描你携带的任何神器。"
+
+#: data/json/furniture_and_terrain/furniture-tools.json
 msgid "forge"
 msgstr "锻铁炉"
 
@@ -47398,10 +47514,8 @@ msgstr[0] "微型体内核反应堆CBM"
 msgid ""
 "This stripped down mini-reactor will generate impressive amounts of bionic "
 "power, but may not be the safest thing to install.  1 plutonium fuel cell "
-"provides 1000 charges producing 10kJ of power a turn, while not active & "
-"fueled provides a constant 50J of power."
-msgstr ""
-"这个被拆下来的迷你反应堆将产生令人震惊的生化能量，但安装它可能并非十分安全。每个钚燃料电池将提供1000单位电荷，每次充能10kJ，在未激活和满燃料的情况下提供50J的充能功率。"
+"provides 1000 charges producing 10kW of power."
+msgstr "这种简化型微型反应堆能产生惊人的生化能量，但安装它可能不太安全。1个钚燃料电池可提供1000点充能，产生10千瓦的功率。"
 
 #: data/json/items/bionics.json
 msgid "Advanced Microreactor CBM"
@@ -47413,15 +47527,34 @@ msgstr[0] "高级微型体内核反应堆CBM"
 msgid ""
 "This module upgrades a pre-installed microreactor with enhanced maximum "
 "yield and limited automatic radiation scrubbing capabilities.  1 plutonium "
-"fuel cell provides 1500 charges producing 10kJ of power a turn, while not "
-"active & fueled provides a constant 75J of power."
-msgstr ""
-"该模块升级了预装的微型反应堆，具有增强的最大输出和有限的自动辐射清除功能。1个钚燃料电池提供1500次充电，每次充电产生10千焦的能量，而在非活动和有燃料的情况下提供持续的75焦的能量。"
+"fuel cell provides 1500 charges producing 10kW of power."
+msgstr "该模块可升级预装的微型反应堆，提高其最大输出功率并提供有限的自动辐射清除功能。1个钚燃料电池可提供1500点充能，产生10千瓦的功率。"
 
 #: data/json/items/bionics.json
 msgid "Micro Reactor Safety Override CBM"
 msgid_plural "Micro Reactor Safety Override CBMs"
 msgstr[0] "微型反应堆安全覆写CBM"
+
+#. ~ Description for {'str': 'Micro Reactor Safety Override CBM'}
+#: data/json/items/bionics.json
+msgid ""
+"Disables the radiation safety protocols allowing for much higher energy "
+"production.  While active produces 40kJ of power a turn and 1 irradiated "
+"stack every 20 turns."
+msgstr "禁用辐射安全协议，从而实现更高的能量产生。激活时每回合产生40千焦的能量，并在每20回合产生1层辐射叠加效果。"
+
+#: data/json/items/bionics.json
+msgid "Atomic Battery CBM"
+msgid_plural "Atomic Battery CBMs"
+msgstr[0] "原子电池CBM"
+
+#. ~ Description for {'str': 'Atomic Battery CBM'}
+#: data/json/items/bionics.json
+msgid ""
+" Effectively a plutonium fuel cell converted into an alphavoltaic battery, "
+"this bionic will provide a limitless source of power at a steady 50 watts "
+"when active, with only minimal exposure to radiation while in use."
+msgstr "这实际上是将钚燃料电池改装成了α伏特电池。该生化插件激活时可提供稳定的50瓦无限能源，且使用期间的辐射暴露极低。"
 
 #: data/json/items/bionics.json
 msgid "Microreactor Upgrade CBM"
@@ -50171,6 +50304,11 @@ msgid "local gateway"
 msgid_plural "local gateway"
 msgstr[0] "本地传送门"
 
+#: data/json/items/fake.json
+msgid "Alphavoltaic Power"
+msgid_plural "none"
+msgstr[0] "无"
+
 #: data/json/items/faults_bionic.json
 msgid "Non-sterile"
 msgstr "未消毒"
@@ -51068,7 +51206,7 @@ msgstr[0] "U盘"
 msgid "A USB thumb drive.  Useful for holding software."
 msgstr "一个U盘，用于存储电脑软件与数据。"
 
-#: data/json/items/generic.json
+#: data/json/items/generic.json data/mods/DinoMod/items/items.json
 msgid "genome drive"
 msgid_plural "genome drives"
 msgstr[0] "基因组驱动器"
@@ -61500,6 +61638,19 @@ msgid ""
 "A custom-built pair of armored goggles with tinted lenses.  Comfortable and "
 "built to last, they provide excellent protection from environmental dangers."
 msgstr "一个自制的带深色镜片的强化眼镜。舒适且耐用，保护你不会受到环境伤害的影响。"
+
+#: data/json/items/armor/eyewear.json
+msgid "debug hawkeye scouter"
+msgid_plural "debug hawkeye scouters"
+msgstr[0] "调试用鹰眼侦测器"
+
+#. ~ Description for {'str': 'debug hawkeye scouter'}
+#: data/json/items/armor/eyewear.json
+msgid ""
+"DEBUG ITEM: A legendary sniper's scouter with the eyes of a hawk.  Provides "
+"extreme firearm performance enhancements to the wearer.  For testing "
+"purposes only."
+msgstr "调试物品：传奇狙击手的侦测器，拥有如鹰一般的视野。能为佩戴者提供极大幅度的枪械性能提升。仅供测试使用。"
 
 #: data/json/items/armor/gloves.json
 msgid "pair of beekeeping gloves"
@@ -119743,7 +119894,7 @@ msgstr "调试疼痛"
 #. ~ Description for {'str': 'Debug Pain'}
 #. ~ Description for {'str': 'Pain'}
 #: data/json/monster_special_attacks/spells.json
-#: data/mods/MagicalNights/Spells/item_only.json
+#: data/mods/MagicalNights/Spells/item_only.json src/catalua_bindings_item.cpp
 msgid "Increases pain"
 msgstr "提升疼痛"
 
@@ -126859,337 +127010,121 @@ msgid ""
 msgstr "这个丧尸曾经是一个像你一样的幸存者，而且是一个相当优秀的幸存者。但是，他们没有一直幸运下去。现在他们仍穿着生前自制的重型盔甲和装备。"
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, crew-cut"
-msgstr "头发：黑，平头"
+msgid "Hair: black"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, crew-cut'}
+#. ~ Description for {'str': 'Hair: black'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Crewcut black hair style."
-msgstr "黑色平头发型。"
+msgid "black hair"
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, mohawk"
-msgstr "头发：黑，莫西干"
+msgid "Hair: brown"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, mohawk'}
+#. ~ Description for {'str': 'Hair: brown'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Mohawk black hair style."
-msgstr "黑色莫西干发型。"
+msgid "brown hair"
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, 'fro"
-msgstr "头发：黑，非洲发"
+msgid "Hair: blond"
+msgstr ""
 
-#. ~ Description for {'str': "Hair: black, 'fro"}
+#. ~ Description for {'str': 'Hair: blond'}
 #: data/json/mutations/mutation_appearance.json
-msgid "'Fro black hair style."
-msgstr "黑色非洲发型。"
+msgid "blond hair"
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, short"
-msgstr "头发：黑，短发"
+msgid "Hair: red"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, short'}
+#. ~ Description for {'str': 'Hair: red'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Short black hair style"
-msgstr "黑色短发型。"
+msgid "red hair"
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, medium-length"
-msgstr "头发：黑，中长发"
+msgid "Hair: gray"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, medium-length'}
+#. ~ Description for {'str': 'Hair: gray'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Medium-length black hair style."
-msgstr "黑色中长发型。"
+msgid "gray hair"
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, long"
-msgstr "头发：黑，长发"
+msgid "Hair: white"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, long'}
+#. ~ Description for {'str': 'Hair: white'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Long black hair style."
-msgstr "黑色长发型。"
+msgid "white hair"
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, crew-cut"
-msgstr "头发：棕，平头"
+msgid "Hair style: crew-cut"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: brown, crew-cut'}
+#. ~ Description for {'str': 'Hair style: crew-cut'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Crewcut brown hair style."
-msgstr "棕色平头发型。"
+msgid "Crewcut hair"
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, mohawk"
-msgstr "头发：棕，莫西干"
+msgid "Hair style: mohawk"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: brown, mohawk'}
+#. ~ Description for {'str': 'Hair style: mohawk'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Mohawk brown hair style."
-msgstr "棕色莫西干发型。"
+msgid "Mohawk hair"
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, 'fro"
-msgstr "头发：棕，非洲发"
+msgid "Hair style: 'fro"
+msgstr ""
 
-#. ~ Description for {'str': "Hair: brown, 'fro"}
+#. ~ Description for {'str': "Hair style: 'fro"}
 #: data/json/mutations/mutation_appearance.json
-msgid "'Fro brown hair style."
-msgstr "棕色非洲发型。"
+msgid "'Fro hair"
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, short"
-msgstr "头发：棕，短发"
+msgid "Hair style: short"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: brown, short'}
+#. ~ Description for {'str': 'Hair style: short'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Short brown hair style"
-msgstr "棕色短发型。"
+msgid "Short hair"
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, medium-length"
-msgstr "头发：棕，中长发"
+msgid "Hair style: medium-length"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: brown, medium-length'}
+#. ~ Description for {'str': 'Hair style: medium-length'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Medium-length brown hair style."
-msgstr "棕色中长发型。"
+msgid "Medium-length hair"
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, long"
-msgstr "头发：棕，长发"
+msgid "Hair style: long"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: brown, long'}
+#. ~ Description for {'str': 'Hair style: long'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Long brown hair style."
-msgstr "棕色长发型。"
+msgid "Long hair"
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, crew-cut"
-msgstr "头发：金，平头"
+msgid "Hair style: bald"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: blond, crew-cut'}
+#. ~ Description for {'str': 'Hair style: bald'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Crewcut blond hair style."
-msgstr "金色平头发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, mohawk"
-msgstr "头发：金，莫西干"
-
-#. ~ Description for {'str': 'Hair: blond, mohawk'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Mohawk blond hair style."
-msgstr "金色莫西干发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, 'fro"
-msgstr "头发：金，非洲发"
-
-#. ~ Description for {'str': "Hair: blond, 'fro"}
-#: data/json/mutations/mutation_appearance.json
-msgid "'Fro blond hair style."
-msgstr "金色非洲发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, short"
-msgstr "头发：金，短发"
-
-#. ~ Description for {'str': 'Hair: blond, short'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Short blond hair style"
-msgstr "金色短发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, medium-length"
-msgstr "头发：金，中长发"
-
-#. ~ Description for {'str': 'Hair: blond, medium-length'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Medium-length blond hair style."
-msgstr "金色中长发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, long"
-msgstr "头发：金，长发"
-
-#. ~ Description for {'str': 'Hair: blond, long'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Long blond hair style."
-msgstr "金色长发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, crew-cut"
-msgstr "头发：红，平头"
-
-#. ~ Description for {'str': 'Hair: red, crew-cut'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Crewcut red hair style."
-msgstr "红色平头发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, mohawk"
-msgstr "头发：红，莫西干"
-
-#. ~ Description for {'str': 'Hair: red, mohawk'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Mohawk red hair style."
-msgstr "红色莫西干发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, 'fro"
-msgstr "头发：红，非洲发"
-
-#. ~ Description for {'str': "Hair: red, 'fro"}
-#: data/json/mutations/mutation_appearance.json
-msgid "'Fro red hair style."
-msgstr "红色非洲发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, short"
-msgstr "头发：红，短发"
-
-#. ~ Description for {'str': 'Hair: red, short'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Short red hair style"
-msgstr "红色短发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, medium-length"
-msgstr "头发：红，中长发"
-
-#. ~ Description for {'str': 'Hair: red, medium-length'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Medium-length red hair style."
-msgstr "红色中长发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, long"
-msgstr "头发：红，长发"
-
-#. ~ Description for {'str': 'Hair: red, long'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Long red hair style."
-msgstr "红色长发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, crew-cut"
-msgstr "头发：灰，平头"
-
-#. ~ Description for {'str': 'Hair: gray, crew-cut'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Crewcut gray hair style."
-msgstr "灰色平头发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, mohawk"
-msgstr "头发：灰，莫西干"
-
-#. ~ Description for {'str': 'Hair: gray, mohawk'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Mohawk gray hair style."
-msgstr "灰色莫西干发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, 'fro"
-msgstr "头发：灰，非洲发"
-
-#. ~ Description for {'str': "Hair: gray, 'fro"}
-#: data/json/mutations/mutation_appearance.json
-msgid "'Fro gray hair style."
-msgstr "灰色非洲发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, short"
-msgstr "头发：灰，短发"
-
-#. ~ Description for {'str': 'Hair: gray, short'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Short gray hair style"
-msgstr "灰色短发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, medium-length"
-msgstr "头发：灰，中长发"
-
-#. ~ Description for {'str': 'Hair: gray, medium-length'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Medium-length gray hair style."
-msgstr "灰色中长发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, long"
-msgstr "头发：灰，长发"
-
-#. ~ Description for {'str': 'Hair: gray, long'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Long gray hair style."
-msgstr "灰色长发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, crew-cut"
-msgstr "头发：白，平头"
-
-#. ~ Description for {'str': 'Hair: white, crew-cut'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Crewcut white hair style."
-msgstr "白色平头发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, mohawk"
-msgstr "头发：白，莫西干"
-
-#. ~ Description for {'str': 'Hair: white, mohawk'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Mohawk white hair style."
-msgstr "白色莫西干发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, 'fro"
-msgstr "头发：白，非洲发"
-
-#. ~ Description for {'str': "Hair: white, 'fro"}
-#: data/json/mutations/mutation_appearance.json
-msgid "'Fro white hair style."
-msgstr "白色非洲发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, short"
-msgstr "头发：白，短发"
-
-#. ~ Description for {'str': 'Hair: white, short'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Short white hair style"
-msgstr "白色短发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, medium-length"
-msgstr "头发：白，中长发"
-
-#. ~ Description for {'str': 'Hair: white, medium-length'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Medium-length white hair style."
-msgstr "白色中长发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, long"
-msgstr "头发：白，长发"
-
-#. ~ Description for {'str': 'Hair: white, long'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Long white hair style."
-msgstr "白色长发型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: none"
-msgstr "头发：无"
-
-#. ~ Description for {'str': 'Hair: none'}
-#: data/json/mutations/mutation_appearance.json
-msgid "You are bald."
-msgstr "光头。"
+msgid "bald"
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
 msgid "Eye color: blue"
@@ -166280,12 +166215,8 @@ msgid "shipwreck"
 msgstr "沉船"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
-msgid "Cargoship1"
-msgstr "货船1"
-
-#: data/json/overmap/overmap_terrain/overmap_terrain.json
-msgid "Cargoshipunder"
-msgstr "货船下层"
+msgid "cargo ship"
+msgstr "货船"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
 msgid "wasp-infested radio tower"
@@ -173116,6 +173047,81 @@ msgid ""
 "lifeforms, shows only destructive effects on prime plane lifeforms."
 msgstr ""
 "我们的克隆部门没能研究出结果。在含有XE037干细胞治疗的大桶和控制缸里，实验样本直接解体了。这表明，XE037和次位面生命结构相容，而对主位面生命结构有破坏性影响。"
+
+#: data/json/snippets/lab.json
+msgid ""
+"Genome drive policy: no personal samples.  I don't care how cute the lab "
+"tech's puppy is, we're not running the sequencer for it.  The last time "
+"someone slipped a stray through, the drive was mislabeled and ended up in "
+"Biohazard."
+msgstr ""
+"基因驱动器使用规定：禁止存储个人样本。我不管实验员的小狗有多可爱，我们都不会为此启动测序仪。上次有人偷偷把流浪动物的样本混进来，结果驱动器贴错了标签，最后被扔进了生化废弃物处理区。"
+
+#: data/json/snippets/lab.json
+msgid ""
+"The new genome drives are sturdier than they look, but they are not immune "
+"to coffee.  Please keep beverages away from the readers.  I don't want to "
+"fish another corrupted drive out of the sink trap."
+msgstr "新型基因驱动器比看起来要坚固，但它们可不防咖啡。请让饮料远离读取器。我不想再从水槽弯管里把损坏的驱动器捞出来了。"
+
+#: data/json/snippets/lab.json
+msgid ""
+"We have started staging a handful of prefilled genome drives near the vats "
+"to speed training.  If you take one, log it.  If you lose one, you will be "
+"on the next vat cleaning rotation."
+msgstr "我们开始在培养槽附近放置少量预存数据的基因驱动器以加快训练速度。如果你拿了一个，记得登记。如果你弄丢了，下次清洗培养槽就轮到你了。"
+
+#: data/json/snippets/lab.json
+msgid ""
+"A minor panic today when the cloning queue flagged a \"duplicate human "
+"genome\" entry.  It was a mislabeled cat sample.  I am updating the label "
+"format to include specimen name, source, and date in plain text."
+msgstr ""
+"今天引起了一阵小恐慌，因为克隆队列标记了一个\"重复的人类基因组\"条目。其实那是一个标签贴错的猫样本。我正在更新标签格式，将以明文形式包含样本名称、来源和日期。"
+
+#: data/json/snippets/lab.json
+msgid ""
+"The drive auditors keep asking why we store genomes on something that looks "
+"like a consumer USB stick.  Because it is one.  The encasing is cheap, the "
+"encryption isn't, and procurement keeps ordering the wrong form factor."
+msgstr ""
+"驱动器审计员一直问为什么我们要把基因组存在看起来像消费级U盘的东西里。因为那确实就是U盘。外壳很便宜，但加密技术不便宜，而且采购部门总是订错规格。"
+
+#: data/json/snippets/lab.json
+msgid ""
+"We ran a batch of sample copies to test the new drive duplicator.  Copy "
+"fidelity was perfect, but the label printer jammed and now the storage "
+"locker says we have twenty identical \"SPECIMEN_A\" entries.  Great."
+msgstr "我们进行了一批样本复制来测试新的驱动器复制机。复制保真度完美，但标签打印机卡纸了，现在储物柜显示我们有二十个完全一样的\"样本_A\"条目。真棒。"
+
+#: data/json/snippets/lab.json
+msgid ""
+"Reminder: the specimen sampler is not a toy.  It will happily collect a "
+"sample from your thumb if you put it in the wrong place.  DNA is DNA, and "
+"the drive doesn't care whose it is."
+msgstr "提醒：样本采集器不是玩具。如果你把手放错地方，它会很乐意采集你的拇指样本。DNA就是DNA，驱动器才不在乎那是谁的。"
+
+#: data/json/snippets/lab.json
+msgid ""
+"Cloning vats are sensitive to sample age.  If a drive reads as stale, do not"
+" override it.  The last override gave us a vat full of undifferentiated "
+"sludge and a week of filter changes."
+msgstr "克隆培养槽对样本的时间很敏感。如果驱动器显示数据陈旧，不要强制执行。上次强制执行的结果就是一槽未分化的烂泥，害我们换了一周的过滤器。"
+
+#: data/json/snippets/lab.json
+msgid ""
+"We confirmed the drive memory can survive a hard reset, but the sample "
+"progress counter cannot.  If a drive loses its progress, do not bin it.  It "
+"can be revalidated by a full rescan."
+msgstr "我们确认驱动器存储器可以经受硬重置，但样本进度计数器不行。如果驱动器丢失了进度，不要把它扔掉。可以通过全面重新扫描来重新验证。"
+
+#: data/json/snippets/lab.json
+msgid ""
+"We keep finding genome drives in desk drawers, in toolboxes, in lockers.  If"
+" you are going to squirrel them away, at least put them in a Faraday pouch."
+"  Static discharge is a cruel and boring way to lose a specimen."
+msgstr ""
+"我们总是在抽屉、工具箱和储物柜里发现基因驱动器。如果你非要私藏它们，至少把它们放进法拉第袋（防静电袋）里。因为静电放电而丢失样本是一种既残酷又无聊的方式。"
 
 #: data/json/snippets/lab.json
 msgid ""
@@ -182833,14 +182839,14 @@ msgstr "%1$s 试图用针管给 <npcname> 注射什么东西，但是没能穿�
 #: data/mods/Aftershock/scenarios.json
 msgctxt "scenario_male"
 msgid "Challenge - Anomalous Materials"
-msgstr "挑战-异常物质实验室"
+msgstr "挑战 - 异常物质实验室"
 
 #. ~ Name for scenario 'Challenge - Anomalous Materials' for a female
 #. character
 #: data/mods/Aftershock/scenarios.json
 msgctxt "scenario_female"
 msgid "Challenge - Anomalous Materials"
-msgstr "挑战-异常物质实验室"
+msgstr "挑战 - 异常物质实验室"
 
 #. ~ Name for scenario 'Robots' for a male character
 #: data/mods/Aftershock/scenarios.json
@@ -192749,6 +192755,89 @@ msgstr "\"还没死够吗！\""
 #: data/mods/Civilians/speech.json
 msgid "an unrestrained warcry."
 msgstr "一声肆意的战吼。"
+
+#: data/mods/Color_Expansion/modinfo.json
+msgid "Color Expansion"
+msgstr ""
+
+#. ~ Description for Color Expansion
+#: data/mods/Color_Expansion/modinfo.json
+msgid ""
+"Changes how color based mutations are rendered, and adds more of them. Also "
+"lets women have beards."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Eye color: pink"
+msgstr ""
+
+#. ~ Description for {'str': 'Eye color: pink'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have oddly pink eyes."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Eye color: white"
+msgstr ""
+
+#. ~ Description for {'str': 'Eye color: white'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have no visible irises."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Eye color: black"
+msgstr ""
+
+#. ~ Description for {'str': 'Eye color: black'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "Your eyes are disconcertingly pitch black."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair: pink"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair: pink'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "pink hair"
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair: blue"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair: blue'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "blue hair"
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair: green"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair: green'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "green hair"
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair: purple"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair: purple'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "purple hair"
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair: cyan"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair: cyan'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "cyan hair"
+msgstr ""
 
 #: data/mods/CrazyCataclysm/crazy_aperturepotato.json
 msgid "companion potato"
@@ -208621,6 +208710,17 @@ msgid ""
 "time."
 msgstr "这法术在短时间内大幅度增加你的速度。"
 
+#: data/mods/MagicalNights/Spells/magus.json src/options.cpp
+msgid "Slow"
+msgstr "慢"
+
+#. ~ Description for {'str': 'Slow'}
+#: data/mods/MagicalNights/Spells/magus.json
+msgid ""
+"This spell weakens your target, resulting in a decrease of speed lasting a "
+"short period of time."
+msgstr "该法术会削弱你的目标，使其在短时间内速度下降。"
+
 #: data/mods/MagicalNights/Spells/magus.json
 msgid "Mana Beam"
 msgstr "奥术光束"
@@ -208709,6 +208809,30 @@ msgstr "狐之狡黠"
 #: data/mods/MagicalNights/items/spell_scrolls.json
 msgid "You become wily like a fox."
 msgstr "你变得像狐狸一样狡猾。"
+
+#: data/mods/MagicalNights/Spells/magus.json
+msgid "Force Push"
+msgstr "强力推击"
+
+#. ~ Description for {'str': 'Force Push'}
+#. ~ Description for {'str': 'Scroll of Force Push', 'str_pl': 'Scrolls of
+#. Force Push'}
+#: data/mods/MagicalNights/Spells/magus.json
+#: data/mods/MagicalNights/items/spell_scrolls.json
+msgid "Pushes nearby creature away from you."
+msgstr "将附近的生物从你身边推开。"
+
+#: data/mods/MagicalNights/Spells/magus.json
+msgid "Force Pull"
+msgstr "强力拉引"
+
+#. ~ Description for {'str': 'Force Pull'}
+#. ~ Description for {'str': 'Scroll of Force Pull', 'str_pl': 'Scrolls of
+#. Force Pull'}
+#: data/mods/MagicalNights/Spells/magus.json
+#: data/mods/MagicalNights/items/spell_scrolls.json
+msgid "Pulls nearby creature towards you."
+msgstr "将附近的生物拉向你。"
 
 #. ~ Description for {'str': 'Crystallize Mana'}
 #: data/mods/MagicalNights/Spells/manatouched.json
@@ -209382,9 +209506,20 @@ msgid "Your speed is boosted to superhuman levels!"
 msgstr "你的速度被提升到超人的水平！"
 
 #. ~ Remove message for effect(s) 'Hasted'.
+#. ~ Remove message for effect(s) 'Slowed'.
 #: data/mods/MagicalNights/effects/effects.json
 msgid "You return to your normal speed."
 msgstr "你速度的回到正常水平。"
+
+#. ~ Description of effect 'Slowed'.
+#: data/mods/MagicalNights/effects/effects.json
+msgid "Your speed is magically inhibited."
+msgstr "你的速度受到了魔法抑制。"
+
+#. ~ Apply message for effect(s) 'Slowed'.
+#: data/mods/MagicalNights/effects/effects.json
+msgid "Everyone else suddenly seems to speed up!"
+msgstr "其他人的动作突然看起来变快了！"
 
 #. ~ Description of effect 'Synaptic Stimulation'.
 #: data/mods/MagicalNights/effects/effects.json
@@ -212873,6 +213008,28 @@ msgid ""
 "With this spell, you will no-longer be thunderstruck by pesky bolts of "
 "electricity."
 msgstr "有了这个法术，烦人的闪电再也无法击中你了！"
+
+#: data/mods/MagicalNights/items/spell_scrolls.json
+msgid "Scroll of Slow"
+msgid_plural "Scrolls of Slow"
+msgstr[0] "缓行卷轴"
+
+#. ~ Description for {'str': 'Scroll of Slow', 'str_pl': 'Scrolls of Slow'}
+#: data/mods/MagicalNights/items/spell_scrolls.json
+msgid ""
+"This spell slows timeflow around your target, resulting in a decrease of "
+"speed lasting a short period of time."
+msgstr "该法术能减缓目标周围的时间流逝，使其在短时间内速度下降。"
+
+#: data/mods/MagicalNights/items/spell_scrolls.json
+msgid "Scroll of Force Push"
+msgid_plural "Scrolls of Force Push"
+msgstr[0] "强力推击卷轴"
+
+#: data/mods/MagicalNights/items/spell_scrolls.json
+msgid "Scroll of Force Pull"
+msgid_plural "Scrolls of Force Pull"
+msgstr[0] "强力拉引卷轴"
 
 #: data/mods/MagicalNights/items/spellbooks.json
 msgid "A Technomancer's Guide to Debugging C:DDA"
@@ -217904,6 +218061,15 @@ msgid ""
 "Chewing gum with added caffeine.  Sugary and bad for your teeth, but it's a "
 "nice pick-me-up.  It's oddly warm to the touch…"
 msgstr "添加咖啡因的口香糖。含糖，有害牙齿，但是一种很好的提神剂。它摸着有种怪异的温热……"
+
+#: data/mods/NPC_lua_hook_test/modinfo.json
+msgid "NPC lua hook testing"
+msgstr "NPC Lua 钩子测试"
+
+#. ~ Description for NPC lua hook testing
+#: data/mods/NPC_lua_hook_test/modinfo.json
+msgid "Testing npc hooks. It should be obsolete after testing!"
+msgstr "正在测试 NPC 钩子。测试结束后该内容应被废弃！"
 
 #: data/mods/No_Acid_Zombies/modinfo.json
 msgid "No Acid Zombies"
@@ -225137,16 +225303,16 @@ msgid "Try"
 msgstr "尝试"
 
 #: src/action.cpp
+msgid "Look"
+msgstr "查看"
+
+#: src/action.cpp
 msgid "Interact"
 msgstr "互动"
 
 #: src/action.cpp src/advanced_inv.cpp src/game_inventory.cpp
 msgid "Inventory"
 msgstr "物品栏"
-
-#: src/action.cpp
-msgid "Look"
-msgstr "查看"
 
 #: src/action.cpp src/game.cpp
 msgid "Combat"
@@ -225810,14 +225976,6 @@ msgstr "你完成了 %s 的训练并将其提升至 %d 级。"
 #, c-format
 msgid "You get some training in %s."
 msgstr "你完成了 %s 的训练。"
-
-#: src/activity_handlers.cpp
-msgid "You've charged the battery completely."
-msgstr "你已经将电池充满电了。"
-
-#: src/activity_handlers.cpp src/iuse.cpp
-msgid "You're too exhausted to keep cranking."
-msgstr "你太累了，不能继续转动了。"
 
 #: src/activity_handlers.cpp
 msgid "You have trouble breathing, and stop."
@@ -230157,10 +230315,6 @@ msgid ""
 "slices painlessly into you."
 msgstr "你静静等待着，专注地凝视着虚空。全自动医疗仪正把你切开，但你毫无痛感。"
 
-#: src/bionics_ui.cpp src/mutation_ui.cpp src/options.cpp
-msgid "None"
-msgstr "无"
-
 #: src/bionics_ui.cpp
 msgid "Power usage"
 msgstr "能量消耗"
@@ -230691,6 +230845,350 @@ msgstr "星期四"
 #: src/catalua_bindings.cpp src/weather.cpp
 msgid "Saturday"
 msgstr "星期六"
+
+#: src/catalua_bindings_item.cpp
+msgid "No effect"
+msgstr "无效果"
+
+#: src/catalua_bindings_item.cpp
+msgid "Strength +4"
+msgstr "力量 +4"
+
+#: src/catalua_bindings_item.cpp
+msgid "Dexterity +4"
+msgstr "敏捷 +4"
+
+#: src/catalua_bindings_item.cpp
+msgid "Perception +4"
+msgstr "感知 +4"
+
+#: src/catalua_bindings_item.cpp
+msgid "Intelligence +4"
+msgstr "智力 +4"
+
+#: src/catalua_bindings_item.cpp
+msgid "All stats +2"
+msgstr "全属性 +2"
+
+#: src/catalua_bindings_item.cpp
+msgid "Speed +20"
+msgstr "速度 +20"
+
+#: src/catalua_bindings_item.cpp
+msgid "Reduces radiation"
+msgstr "降低辐射"
+
+#: src/catalua_bindings_item.cpp
+msgid "Summons friendly snakes when you're hit"
+msgstr "受击时召唤友方蛇类"
+
+#: src/catalua_bindings_item.cpp
+msgid "Makes you invisible"
+msgstr "使你隐形"
+
+#: src/catalua_bindings_item.cpp
+msgid "See through walls"
+msgstr "透视墙壁"
+
+#: src/catalua_bindings_item.cpp
+msgid "See through walls farther"
+msgstr "更远的透视墙壁"
+
+#: src/catalua_bindings_item.cpp
+msgid "See through walls at great distance"
+msgstr "极远距离透视墙壁"
+
+#: src/catalua_bindings_item.cpp
+msgid "Your steps are quieted"
+msgstr "你的脚步声变轻"
+
+#: src/catalua_bindings_item.cpp
+msgid "May extinguish nearby flames"
+msgstr "可能熄灭附近的火焰"
+
+#: src/catalua_bindings_item.cpp
+msgid "Emits light"
+msgstr "发出光亮"
+
+#: src/catalua_bindings_item.cpp
+msgid "Protects from fear and paralysis"
+msgstr "免疫恐惧和麻痹"
+
+#: src/catalua_bindings_item.cpp
+msgid "Protection from electricity"
+msgstr "免疫电流"
+
+#: src/catalua_bindings_item.cpp
+msgid "Increases carrying capacity"
+msgstr "增加负重能力"
+
+#: src/catalua_bindings_item.cpp
+msgid "Killing non-zombie monsters may heal you"
+msgstr "击杀非丧尸怪物可能治疗你"
+
+#: src/catalua_bindings_item.cpp
+msgid "Passive morale boost"
+msgstr "被动士气提升"
+
+#: src/catalua_bindings_item.cpp
+msgid "Increases hunger"
+msgstr "增加饥饿感"
+
+#: src/catalua_bindings_item.cpp
+msgid "Increases thirst"
+msgstr "增加口渴感"
+
+#: src/catalua_bindings_item.cpp
+msgid "Emits smoke occasionally"
+msgstr "偶尔冒烟"
+
+#: src/catalua_bindings_item.cpp
+msgid "Adds an evil presence"
+msgstr "散发邪恶气息"
+
+#: src/catalua_bindings_item.cpp
+msgid "Mimics schizophrenia"
+msgstr "模拟精神分裂症状"
+
+#: src/catalua_bindings_item.cpp
+msgid "Increases your radiation"
+msgstr "增加你的辐射值"
+
+#: src/catalua_bindings_item.cpp
+msgid "Mutates you slowly"
+msgstr "使你缓慢变异"
+
+#: src/catalua_bindings_item.cpp
+msgid "Draws netherworld attention"
+msgstr "吸引异界注意"
+
+#: src/catalua_bindings_item.cpp
+msgid "Strength -3"
+msgstr "力量 -3"
+
+#: src/catalua_bindings_item.cpp
+msgid "Dexterity -3"
+msgstr "敏捷 -3"
+
+#: src/catalua_bindings_item.cpp
+msgid "Perception -3"
+msgstr "感知 -3"
+
+#: src/catalua_bindings_item.cpp
+msgid "Intelligence -3"
+msgstr "智力 -3"
+
+#: src/catalua_bindings_item.cpp
+msgid "All stats -2"
+msgstr "全属性 -2"
+
+#: src/catalua_bindings_item.cpp
+msgid "Speed -20"
+msgstr "速度 -20"
+
+#: src/catalua_bindings_item.cpp
+msgid "Occasionally forces a teleport"
+msgstr "偶尔强制传送"
+
+#: src/catalua_bindings_item.cpp
+msgid "Makes noise when you move"
+msgstr "移动时产生噪音"
+
+#: src/catalua_bindings_item.cpp
+msgid "More likely to experience bad weather"
+msgstr "更容易遭遇恶劣天气"
+
+#: src/catalua_bindings_item.cpp
+msgid "Decreases health over time"
+msgstr "随时间减少生命值"
+
+#: src/catalua_bindings_item.cpp
+msgid "Unknown effect"
+msgstr "未知效果"
+
+#: src/catalua_bindings_item.cpp
+msgid "Emits shock fields"
+msgstr "释放电击场"
+
+#: src/catalua_bindings_item.cpp
+msgid "Launches fireballs"
+msgstr "发射火球"
+
+#: src/catalua_bindings_item.cpp
+msgid "Adrenaline rush"
+msgstr "肾上腺素激增"
+
+#: src/catalua_bindings_item.cpp
+msgid "Reveals the area around you"
+msgstr "显示周围区域"
+
+#: src/catalua_bindings_item.cpp
+msgid "Shoots blood all over"
+msgstr "向四周喷射血液"
+
+#: src/catalua_bindings_item.cpp
+msgid "Creates interdimensional fatigue"
+msgstr "造成异次元疲劳"
+
+#: src/catalua_bindings_item.cpp
+msgid "Launches acid"
+msgstr "发射酸液"
+
+#: src/catalua_bindings_item.cpp
+msgid "Destroys adjacent terrain"
+msgstr "破坏相邻地形"
+
+#: src/catalua_bindings_item.cpp
+msgid "Heals minor damage"
+msgstr "治疗轻微伤害"
+
+#: src/catalua_bindings_item.cpp
+msgid "Confuses nearby monsters"
+msgstr "迷惑附近的怪物"
+
+#: src/catalua_bindings_item.cpp
+msgid "May make nearby monsters friendly"
+msgstr "可能使附近的怪物变得友好"
+
+#: src/catalua_bindings_item.cpp
+msgid "May summon friendly insects"
+msgstr "可能召唤友方昆虫"
+
+#: src/catalua_bindings_item.cpp
+msgid "Teleports you"
+msgstr "传送你"
+
+#: src/catalua_bindings_item.cpp
+msgid "Temporary light source"
+msgstr "临时光源"
+
+#: src/catalua_bindings_item.cpp
+msgid "Rapid plant growth"
+msgstr "促进植物快速生长"
+
+#: src/catalua_bindings_item.cpp
+msgid "Hurts all monsters"
+msgstr "伤害所有怪物"
+
+#: src/catalua_bindings_item.cpp
+msgid "Temporary morale bonus"
+msgstr "临时士气加成"
+
+#: src/catalua_bindings_item.cpp
+msgid "Spews radioactive gas"
+msgstr "喷出放射性气体"
+
+#: src/catalua_bindings_item.cpp
+msgid "Chance of mutation"
+msgstr "变异几率"
+
+#: src/catalua_bindings_item.cpp
+msgid "Paralyzes you"
+msgstr "使你麻痹"
+
+#: src/catalua_bindings_item.cpp
+msgid "Spreads fire around you"
+msgstr "在你周围散布火焰"
+
+#: src/catalua_bindings_item.cpp
+msgid "Draws attention from sub-prime denizens"
+msgstr "吸引次级位面生物的注意"
+
+#: src/catalua_bindings_item.cpp
+msgid "Causes teleglow"
+msgstr "引起辉光反应（传送病）"
+
+#: src/catalua_bindings_item.cpp
+msgid "Loud noise"
+msgstr "巨大噪音"
+
+#: src/catalua_bindings_item.cpp
+msgid "Noise and morale penalty"
+msgstr "噪音和士气惩罚"
+
+#: src/catalua_bindings_item.cpp
+msgid "Darkens the sky"
+msgstr "遮蔽天空"
+
+#: src/catalua_bindings_item.cpp
+msgid "Flashbang"
+msgstr "闪光震撼效果"
+
+#: src/catalua_bindings_item.cpp
+msgid "User vomits"
+msgstr "使用者呕吐"
+
+#: src/catalua_bindings_item.cpp
+msgid "Summons shadow creatures"
+msgstr "召唤暗影生物"
+
+#: src/catalua_bindings_item.cpp
+msgid "Empties most of your stamina"
+msgstr "耗尽你大部分耐力"
+
+#: src/catalua_bindings_item.cpp
+msgid "No charges"
+msgstr "无充能"
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges over time"
+msgstr "随时间充能"
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges in sunlight"
+msgstr "在阳光下充能"
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges from pain"
+msgstr "通过痛感充能"
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges from health loss"
+msgstr "通过损失生命值充能"
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges from fatigue"
+msgstr "通过疲劳充能"
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges near portals"
+msgstr "在传送门附近充能"
+
+#: src/catalua_bindings_item.cpp
+msgid "Unknown charge type"
+msgstr "未知充能类型"
+
+#: src/catalua_bindings_item.cpp
+msgid "No special requirement"
+msgstr "无特殊要求"
+
+#: src/catalua_bindings_item.cpp
+msgid "Must be equipped"
+msgstr "必须装备"
+
+#: src/catalua_bindings_item.cpp
+msgid "Must be worn against bare skin"
+msgstr "必须贴身穿戴"
+
+#: src/catalua_bindings_item.cpp
+msgid "Charges while sleeping"
+msgstr "睡眠时充能"
+
+#: src/catalua_bindings_item.cpp
+msgid "Charges in radiation"
+msgstr "在辐射中充能"
+
+#: src/catalua_bindings_item.cpp
+msgid "Charges while wet"
+msgstr "身体潮湿时充能"
+
+#: src/catalua_bindings_item.cpp
+msgid "Charges under open sky"
+msgstr "在露天环境下充能"
+
+#: src/catalua_bindings_item.cpp
+msgid "Unknown charge requirement"
+msgstr "未知充能条件"
 
 #: src/catalua_console.cpp
 msgid "Press Ctrl+S to run script, press Esc to cancel"
@@ -243936,11 +244434,20 @@ msgstr "%1$s 含有 %2$d 个 %3$s 。是否取出？"
 msgid "You need some %1$s to reload this %2$s."
 msgstr "你需要一些 %1$s 来重新装填 %2$s。"
 
-#. ~ Loading fuel or other items into a piece of furniture.
 #: src/iexamine.cpp
 #, c-format
-msgid "Put how many of the %1$s into the %2$s?"
-msgstr "将多少 %1$s 放进 %2$s？"
+msgid " (%d in inventory, %d nearby)"
+msgstr "(库存 %d，附近 %d)"
+
+#: src/iexamine.cpp
+#, c-format
+msgid " (%d nearby)"
+msgstr "(附近 %d)"
+
+#: src/iexamine.cpp
+#, c-format
+msgid "Put how much %1$s into the %2$s?%3$s"
+msgstr "要放入多少 %1$s 到 %2$s 中？%3$s"
 
 #. ~ %1$s - furniture, %2$d - number, %3$s items.
 #: src/iexamine.cpp
@@ -244592,6 +245099,10 @@ msgstr "叮！"
 #: src/iexamine.cpp
 msgid "You can't place more food while it's smoking."
 msgstr "你无法在烟熏架熏制时添加更多的食物。"
+
+#: src/iexamine.cpp
+msgid "Remove it before loading the smoking rack again."
+msgstr "再次装填熏肉架前，请先将其取出。"
 
 #: src/iexamine.cpp
 msgid "Load smoking rack with what kind of food?"
@@ -246104,6 +246615,10 @@ msgstr "<bold>远程伤害</bold>："
 #: src/item.cpp
 msgid " = <num>"
 msgstr " = <num>"
+
+#: src/item.cpp
+msgid " (enchanted: <num>)"
+msgstr "(附魔: <num>)"
 
 #: src/item.cpp
 msgid "Maximum range: "
@@ -248994,24 +249509,6 @@ msgid "You play on your %s for a while."
 msgstr "你玩了一会儿 %s。"
 
 #: src/iuse.cpp
-msgid "It's not waterproof enough to work underwater."
-msgstr "它的防水性在水中无效。"
-
-#: src/iuse.cpp
-#, c-format
-msgid "You start cranking the %s to charge its %s."
-msgstr "你开始转动%s给%s充电。"
-
-#: src/iuse.cpp
-#, c-format
-msgid "You could use the %s to charge its %s, but it's already charged."
-msgstr "你可以用 %s 为 %s 充电，但它已经充满电了。"
-
-#: src/iuse.cpp
-msgid "You need a rechargeable battery cell to charge."
-msgstr "你需要一个可充电电池来充能。"
-
-#: src/iuse.cpp
 msgid "You cannot do… that while mounted."
 msgstr "你不能在骑乘时做……那种事。"
 
@@ -251014,6 +251511,10 @@ msgstr "%s 下方空间过于拥挤，无法放置 %s。"
 #, c-format
 msgid "You can't deploy a %s there."
 msgstr "你无法在这里放置 %s。"
+
+#: src/iuse_actor.cpp
+msgid "Can't put that here - items in the way."
+msgstr "无法在此放置 - 有物品阻挡。"
 
 #: src/iuse_actor.cpp src/mission_start.cpp src/mission_util.cpp
 msgid "Please wait…"
@@ -254455,6 +254956,18 @@ msgstr "%1$s 损伤了 %2$s。"
 #: src/map.cpp
 msgid "an alarm go off!"
 msgstr "一个警报拉响了！"
+
+#: src/map.cpp
+msgid "You feel the ground beneath you shake from the impact!"
+msgstr "你感觉到脚下的地面因巨大的冲击而震动！"
+
+#: src/map.cpp
+msgid "You lose your balance!"
+msgstr "你失去了平衡！"
+
+#: src/map.cpp
+msgid "<npcname> loses their balance!"
+msgstr "<npcname> 失去了平衡！"
 
 #: src/map.cpp
 msgid "glass shattering"
@@ -261198,6 +261711,10 @@ msgid "Your profession of %s prevents you from removing this trait."
 msgstr "你的 %s 职业不允许你移除该特性。"
 
 #: src/newcharacter.cpp
+msgid "You must have a trait of this type."
+msgstr ""
+
+#: src/newcharacter.cpp
 msgid "You already picked a conflicting trait!"
 msgstr "你已经选择了一个有冲突的特性！"
 
@@ -264462,10 +264979,6 @@ msgstr "边缘滚动"
 #: src/options.cpp
 msgid "Edge scrolling with the mouse."
 msgstr "鼠标移动至窗口边缘时滚动屏幕。"
-
-#: src/options.cpp
-msgid "Slow"
-msgstr "慢"
 
 #: src/options.cpp
 msgid "Fast"

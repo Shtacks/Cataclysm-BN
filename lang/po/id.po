@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-02-01 07:35+0000\n"
+"POT-Creation-Date: 2026-02-08 20:34+0000\n"
 "Language-Team: Indonesian (https://app.transifex.com/bn-team/teams/113585/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2520,6 +2520,55 @@ msgstr ""
 msgid "To be your own weapon."
 msgstr ""
 
+#: data/json/artifact_analyzer.lua src/bionics_ui.cpp src/mutation_ui.cpp
+#: src/options.cpp
+msgid "None"
+msgstr ""
+
+#: data/json/artifact_analyzer.lua
+msgid "Unable to read artifact data."
+msgstr ""
+
+#: data/json/artifact_analyzer.lua
+msgid "This item has no artifact effects."
+msgstr ""
+
+#: data/json/artifact_analyzer.lua
+msgid "SUBJECT"
+msgstr ""
+
+#: data/json/artifact_analyzer.lua
+msgid "Charge"
+msgstr ""
+
+#: data/json/artifact_analyzer.lua
+msgid "Charge Requirement"
+msgstr ""
+
+#: data/json/artifact_analyzer.lua
+msgid "Activated"
+msgstr ""
+
+#: data/json/artifact_analyzer.lua
+msgid "Wielded"
+msgstr ""
+
+#: data/json/artifact_analyzer.lua
+msgid "Worn"
+msgstr ""
+
+#: data/json/artifact_analyzer.lua
+msgid "Carried"
+msgstr ""
+
+#: data/json/artifact_analyzer.lua
+msgid "You have no artifacts to analyze."
+msgstr ""
+
+#: data/json/artifact_analyzer.lua
+msgid "Artifact Analyzer"
+msgstr ""
+
 #: data/json/bionics.json
 msgid "Adrenaline Pump"
 msgstr ""
@@ -2788,10 +2837,10 @@ msgstr ""
 #. ~ Description for {'str': 'Bionic Claws'}
 #: data/json/bionics.json
 msgid ""
-"Vicious claws have been surgically installed inside your fingers, allowing "
-"you to extend and retract them at the cost of a small amount of power.  "
-"These do considerable cutting damage, but prevent you from holding anything "
-"else while extended."
+"Vicious claws have been surgically installed inside your hands, allowing you"
+" to extend and retract them at the cost of a small amount of power.  These "
+"do considerable cutting damage, but prevent you from holding anything else "
+"while extended."
 msgstr ""
 
 #: data/json/bionics.json
@@ -2862,7 +2911,7 @@ msgstr ""
 #. ~ Description for {'str': 'Expanded Digestive System'}
 #: data/json/bionics.json
 msgid ""
-"You have been outfitted with three synthetic stomachs and industrial-grade "
+"You have been outfitted with a synthetic stomach and industrial-grade "
 "intestines.  Not only can you extract much more nutrition from food, but you"
 " are immune to foodborne illness, parasites, and can even eat rotten food."
 msgstr ""
@@ -3914,9 +3963,8 @@ msgstr ""
 #: data/json/bionics.json
 msgid ""
 "This stripped down mini-reactor generates impressive amounts of bionic power"
-" but slowly irradiates the user.  1 plutonium fuel cell provides 1000 "
-"charges producing 10kJ of power a turn, while not active & fueled provides a"
-" constant 50J of power."
+" but slowly irradiates the user when in use.  1 plutonium fuel cell provides"
+" 1000 charges producing 10kW of power a turn."
 msgstr ""
 
 #: data/json/bionics.json
@@ -3928,8 +3976,7 @@ msgstr ""
 msgid ""
 "This stripped down mini-reactor has been heavily modified and is more "
 "efficient and safer than the base model.  1 plutonium fuel cell provides "
-"1500 charges producing 10kJ of power a turn, while not active & fueled "
-"provides a constant 75J of power."
+"1500 charges producing 10kW of power."
 msgstr ""
 
 #: data/json/bionics.json
@@ -3937,12 +3984,23 @@ msgid "Micro Reactor Safety Override"
 msgstr ""
 
 #. ~ Description for {'str': 'Micro Reactor Safety Override'}
-#. ~ Description for {'str': 'Micro Reactor Safety Override CBM'}
-#: data/json/bionics.json data/json/items/bionics.json
+#: data/json/bionics.json
 msgid ""
 "Disables the radiation safety protocols allowing for much higher energy "
-"production.  While active produces 40kJ of power a turn and 1 irradiated "
-"stack every 20 turns."
+"production.  While active produces 40kW of power and 1 irradiated stack "
+"every 20 turns."
+msgstr ""
+
+#: data/json/bionics.json
+msgid "Atomic Battery"
+msgstr ""
+
+#. ~ Description for {'str': 'Atomic Battery'}
+#: data/json/bionics.json
+msgid ""
+"A compact alphavoltaic power source, producing a steady source of limitless "
+"bionic power at the cost of minimal radiation while in use.  Produces 50W of"
+" power while active."
 msgstr ""
 
 #: data/json/bionics.json
@@ -3992,10 +4050,9 @@ msgstr ""
 #. ~ Description for {'str': 'Taste Modifier'}
 #: data/json/bionics.json
 msgid ""
-"A set of highly sensitive sensors is installed in your mouth, and a small "
-"yet sophisticated analyzer is installed in the cavity of your skull.  The "
-"active bionic will nullify the taste of all comestibles with negative "
-"enjoyment value at the cost of draining bionic power."
+"A set of highly sensitive sensors is installed in your mouth.  The active "
+"bionic will nullify the taste of all comestibles with negative enjoyment "
+"value at the cost of draining bionic power."
 msgstr ""
 
 #: data/json/bionics.json
@@ -4067,7 +4124,7 @@ msgstr ""
 #. ~ Description for {'str': 'Fusion Blaster Arm'}
 #: data/json/bionics.json
 msgid ""
-"Heavy-duty fusion blaster was integrated ino your left arm!  You may use "
+"A heavy-duty fusion blaster was integrated into your left arm!  You may use "
 "your energy banks to fire a damaging heat ray."
 msgstr ""
 
@@ -7760,6 +7817,7 @@ msgid "Your head is swimming from the pollen in the air."
 msgstr ""
 
 #: data/json/effects.json data/mods/Aftershock/effects.json
+#: data/mods/MagicalNights/effects/effects.json
 msgid "Slowed"
 msgstr ""
 
@@ -10613,6 +10671,11 @@ msgstr ""
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
+msgid "This item stores <info>genetic data</info> for a genome workstation."
+msgstr ""
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
 msgid ""
 "A <good>follower</good> could <info>make use of this CBM</info> if installed"
 " properly."
@@ -12142,6 +12205,10 @@ msgstr ""
 
 #: data/json/item_actions.json
 msgid "Measure grid power"
+msgstr ""
+
+#: data/json/item_actions.json
+msgid "Analyze artifact"
 msgstr ""
 
 #: data/json/item_actions.json
@@ -17344,7 +17411,7 @@ msgid "smashing"
 msgstr ""
 
 #: data/json/player_activities.json
-msgid "cranking"
+msgid "charging"
 msgstr ""
 
 #: data/json/player_activities.json
@@ -19259,7 +19326,7 @@ msgstr ""
 #: data/json/professions.json
 msgctxt "prof_desc_male"
 msgid ""
-"Once worshipped for looks, not survival skills. Now that the world has "
+"Once worshiped for looks, not survival skills. Now that the world has "
 "leveled the playing field, glamour won’t save you."
 msgstr ""
 
@@ -19267,7 +19334,7 @@ msgstr ""
 #: data/json/professions.json
 msgctxt "prof_desc_female"
 msgid ""
-"Once worshipped for looks, not survival skills. Now that the world has "
+"Once worshiped for looks, not survival skills. Now that the world has "
 "leveled the playing field, glamour won’t save you."
 msgstr ""
 
@@ -22966,7 +23033,7 @@ msgstr ""
 msgctxt "prof_desc_male"
 msgid ""
 "You always enjoyed life on the road, driving across the country to see the "
-"wonders of nature.  Now nature seems a lot less hostile, and it's a lot "
+"wonders of nature.  Now nature seems a lot more hostile, and it's a lot "
 "harder to get your RV hooked up to shore power."
 msgstr ""
 
@@ -22975,7 +23042,7 @@ msgstr ""
 msgctxt "prof_desc_female"
 msgid ""
 "You always enjoyed life on the road, driving across the country to see the "
-"wonders of nature.  Now nature seems a lot less hostile, and it's a lot "
+"wonders of nature.  Now nature seems a lot more hostile, and it's a lot "
 "harder to get your RV hooked up to shore power."
 msgstr ""
 
@@ -22993,16 +23060,18 @@ msgstr ""
 #: data/json/professions.json
 msgctxt "prof_desc_male"
 msgid ""
-"You're a miner, not a minor!  Your canteen is dry, your jackhammer is out of"
-" gas, and you're on your last pair of batteries for your mining helmet…"
+"You're a miner, not a minor!  Your jackhammer may be gassed up, but your "
+"canteen is dry, and you're on your last pair of batteries for your mining "
+"helmet…"
 msgstr ""
 
 #. ~ Profession (female Miner) description
 #: data/json/professions.json
 msgctxt "prof_desc_female"
 msgid ""
-"You're a miner, not a minor!  Your canteen is dry, your jackhammer is out of"
-" gas, and you're on your last pair of batteries for your mining helmet…"
+"You're a miner, not a minor!  Your jackhammer may be gassed up, but your "
+"canteen is dry, and you're on your last pair of batteries for your mining "
+"helmet…"
 msgstr ""
 
 #: data/json/professions.json
@@ -23244,7 +23313,8 @@ msgstr ""
 msgctxt "prof_desc_male"
 msgid ""
 "You decided to get away from the family for the day to do a little golfing "
-"by yourself."
+"by yourself.  You were almost done playing the back nine when you called to "
+"check on them and realized you couldn't get a signal."
 msgstr ""
 
 #. ~ Profession (female Golfer) description
@@ -23252,7 +23322,8 @@ msgstr ""
 msgctxt "prof_desc_female"
 msgid ""
 "You decided to get away from the family for the day to do a little golfing "
-"by yourself."
+"by yourself.  You were almost done playing the back nine when you called to "
+"check on them and realized you couldn't get a signal."
 msgstr ""
 
 #: data/json/professions.json
@@ -24377,44 +24448,58 @@ msgstr ""
 
 #: data/json/professions.json
 msgctxt "profession_male"
-msgid "Airship Pilot"
+msgid "Airship Captain"
 msgstr ""
 
 #: data/json/professions.json
 msgctxt "profession_female"
-msgid "Airship Pilot"
+msgid "Airship Captain"
 msgstr ""
 
-#. ~ Profession (male Airship Pilot) description
-#. ~ Profession (male Airboat Pilot) description
-#. ~ Profession (male Aircanoe Pilot) description
+#. ~ Profession (male Airship Captain) description
 #: data/json/professions.json
 msgctxt "prof_desc_male"
 msgid ""
 "You once led a crew of skyfarers, traveling the skies for fame, bricks and "
-"sand. Now you are on your own, and the ground is swarming with zombies.  At "
-"least this world has ground..."
+"sand.  Now you are on your own, and the ground is swarming with zombies.  At"
+" least this world has ground…"
 msgstr ""
 
-#. ~ Profession (female Airship Pilot) description
-#. ~ Profession (female Airboat Pilot) description
-#. ~ Profession (female Aircanoe Pilot) description
+#. ~ Profession (female Airship Captain) description
 #: data/json/professions.json
 msgctxt "prof_desc_female"
 msgid ""
 "You once led a crew of skyfarers, traveling the skies for fame, bricks and "
-"sand. Now you are on your own, and the ground is swarming with zombies.  At "
-"least this world has ground..."
+"sand.  Now you are on your own, and the ground is swarming with zombies.  At"
+" least this world has ground…"
 msgstr ""
 
 #: data/json/professions.json
 msgctxt "profession_male"
-msgid "Airboat Pilot"
+msgid "Airboat Commander"
 msgstr ""
 
 #: data/json/professions.json
 msgctxt "profession_female"
-msgid "Airboat Pilot"
+msgid "Airboat Commander"
+msgstr ""
+
+#. ~ Profession (male Airboat Commander) description
+#: data/json/professions.json
+msgctxt "prof_desc_male"
+msgid ""
+"You were part of a squadron of skyfarers, plying the vastness to protect "
+"trade routes from nefarious air pirates.  Now you're adrift and alone, one "
+"vessel against an alien world swarming with the undead…"
+msgstr ""
+
+#. ~ Profession (female Airboat Commander) description
+#: data/json/professions.json
+msgctxt "prof_desc_female"
+msgid ""
+"You were part of a squadron of skyfarers, plying the vastness to protect "
+"trade routes from nefarious air pirates.  Now you're adrift and alone, one "
+"vessel against an alien world swarming with the undead…"
 msgstr ""
 
 #: data/json/professions.json
@@ -24425,6 +24510,24 @@ msgstr ""
 #: data/json/professions.json
 msgctxt "profession_female"
 msgid "Aircanoe Pilot"
+msgstr ""
+
+#. ~ Profession (male Aircanoe Pilot) description
+#: data/json/professions.json
+msgctxt "prof_desc_male"
+msgid ""
+"You're a lone skyfarer, scouting the endless blue for new routes across the "
+"sky.  Now you've caught sight of more land than you've seen in a lifetime, "
+"an unfamiliar land of monsters…"
+msgstr ""
+
+#. ~ Profession (female Aircanoe Pilot) description
+#: data/json/professions.json
+msgctxt "prof_desc_female"
+msgid ""
+"You're a lone skyfarer, scouting the endless blue for new routes across the "
+"sky.  Now you've caught sight of more land than you've seen in a lifetime, "
+"an unfamiliar land of monsters…"
 msgstr ""
 
 #. ~ Name for scenario 'Evacuee' for a male character
@@ -25963,6 +26066,7 @@ msgid "Weapon"
 msgstr ""
 
 #. ~ Description for {'str': 'Weapon'}
+#. ~ Description for {'str': 'Alphavoltaic Power', 'str_pl': 'none'}
 #. ~ Description for {'str_sp': 'animal'}
 #. ~ Description for {'str_sp': 'nearby fire'}
 #. ~ Description for {'str_sp': 'muscle'}
@@ -25976,8 +26080,9 @@ msgstr ""
 #. ~ Description for {'str': 'abstract map'}
 #. ~ Description for {'str_sp': 'seeing this is a bug'}
 #: data/json/skills.json data/json/furniture_and_terrain/furniture-fakes.json
-#: data/json/items/generic.json data/json/items/book/electronics.json
-#: data/json/items/book/maps.json data/json/items/tool/deployable.json
+#: data/json/items/fake.json data/json/items/generic.json
+#: data/json/items/book/electronics.json data/json/items/book/maps.json
+#: data/json/items/tool/deployable.json
 msgid "seeing this is a bug"
 msgid_plural "seeing this is a bug"
 msgstr[0] ""
@@ -37269,6 +37374,19 @@ msgid ""
 msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-tools.json
+#: data/json/items/fake.json
+msgid "artifact analyzer console"
+msgid_plural "artifact analyzer consoles"
+msgstr[0] ""
+
+#. ~ Description for artifact analyzer console
+#: data/json/furniture_and_terrain/furniture-tools.json
+msgid ""
+"A research console configured to analyze artifacts.  Use it to scan any "
+"artifacts you are carrying."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-tools.json
 msgid "forge"
 msgstr ""
 
@@ -46506,8 +46624,7 @@ msgstr[0] ""
 msgid ""
 "This stripped down mini-reactor will generate impressive amounts of bionic "
 "power, but may not be the safest thing to install.  1 plutonium fuel cell "
-"provides 1000 charges producing 10kJ of power a turn, while not active & "
-"fueled provides a constant 50J of power."
+"provides 1000 charges producing 10kW of power."
 msgstr ""
 
 #: data/json/items/bionics.json
@@ -46520,14 +46637,34 @@ msgstr[0] ""
 msgid ""
 "This module upgrades a pre-installed microreactor with enhanced maximum "
 "yield and limited automatic radiation scrubbing capabilities.  1 plutonium "
-"fuel cell provides 1500 charges producing 10kJ of power a turn, while not "
-"active & fueled provides a constant 75J of power."
+"fuel cell provides 1500 charges producing 10kW of power."
 msgstr ""
 
 #: data/json/items/bionics.json
 msgid "Micro Reactor Safety Override CBM"
 msgid_plural "Micro Reactor Safety Override CBMs"
 msgstr[0] ""
+
+#. ~ Description for {'str': 'Micro Reactor Safety Override CBM'}
+#: data/json/items/bionics.json
+msgid ""
+"Disables the radiation safety protocols allowing for much higher energy "
+"production.  While active produces 40kJ of power a turn and 1 irradiated "
+"stack every 20 turns."
+msgstr ""
+
+#: data/json/items/bionics.json
+msgid "Atomic Battery CBM"
+msgid_plural "Atomic Battery CBMs"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'Atomic Battery CBM'}
+#: data/json/items/bionics.json
+msgid ""
+" Effectively a plutonium fuel cell converted into an alphavoltaic battery, "
+"this bionic will provide a limitless source of power at a steady 50 watts "
+"when active, with only minimal exposure to radiation while in use."
+msgstr ""
 
 #: data/json/items/bionics.json
 msgid "Microreactor Upgrade CBM"
@@ -49230,6 +49367,11 @@ msgid "local gateway"
 msgid_plural "local gateway"
 msgstr[0] ""
 
+#: data/json/items/fake.json
+msgid "Alphavoltaic Power"
+msgid_plural "none"
+msgstr[0] ""
+
 #: data/json/items/faults_bionic.json
 msgid "Non-sterile"
 msgstr ""
@@ -50113,7 +50255,7 @@ msgstr[0] ""
 msgid "A USB thumb drive.  Useful for holding software."
 msgstr ""
 
-#: data/json/items/generic.json
+#: data/json/items/generic.json data/mods/DinoMod/items/items.json
 msgid "genome drive"
 msgid_plural "genome drives"
 msgstr[0] ""
@@ -60336,6 +60478,19 @@ msgstr[0] ""
 msgid ""
 "A custom-built pair of armored goggles with tinted lenses.  Comfortable and "
 "built to last, they provide excellent protection from environmental dangers."
+msgstr ""
+
+#: data/json/items/armor/eyewear.json
+msgid "debug hawkeye scouter"
+msgid_plural "debug hawkeye scouters"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'debug hawkeye scouter'}
+#: data/json/items/armor/eyewear.json
+msgid ""
+"DEBUG ITEM: A legendary sniper's scouter with the eyes of a hawk.  Provides "
+"extreme firearm performance enhancements to the wearer.  For testing "
+"purposes only."
 msgstr ""
 
 #: data/json/items/armor/gloves.json
@@ -117537,7 +117692,7 @@ msgstr ""
 #. ~ Description for {'str': 'Debug Pain'}
 #. ~ Description for {'str': 'Pain'}
 #: data/json/monster_special_attacks/spells.json
-#: data/mods/MagicalNights/Spells/item_only.json
+#: data/mods/MagicalNights/Spells/item_only.json src/catalua_bindings_item.cpp
 msgid "Increases pain"
 msgstr ""
 
@@ -124513,336 +124668,120 @@ msgid ""
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, crew-cut"
+msgid "Hair: black"
 msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, crew-cut'}
+#. ~ Description for {'str': 'Hair: black'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Crewcut black hair style."
+msgid "black hair"
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, mohawk"
+msgid "Hair: brown"
 msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, mohawk'}
+#. ~ Description for {'str': 'Hair: brown'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Mohawk black hair style."
+msgid "brown hair"
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, 'fro"
+msgid "Hair: blond"
 msgstr ""
 
-#. ~ Description for {'str': "Hair: black, 'fro"}
+#. ~ Description for {'str': 'Hair: blond'}
 #: data/json/mutations/mutation_appearance.json
-msgid "'Fro black hair style."
+msgid "blond hair"
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, short"
+msgid "Hair: red"
 msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, short'}
+#. ~ Description for {'str': 'Hair: red'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Short black hair style"
+msgid "red hair"
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, medium-length"
+msgid "Hair: gray"
 msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, medium-length'}
+#. ~ Description for {'str': 'Hair: gray'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Medium-length black hair style."
+msgid "gray hair"
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, long"
+msgid "Hair: white"
 msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, long'}
+#. ~ Description for {'str': 'Hair: white'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Long black hair style."
+msgid "white hair"
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, crew-cut"
+msgid "Hair style: crew-cut"
 msgstr ""
 
-#. ~ Description for {'str': 'Hair: brown, crew-cut'}
+#. ~ Description for {'str': 'Hair style: crew-cut'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Crewcut brown hair style."
+msgid "Crewcut hair"
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, mohawk"
+msgid "Hair style: mohawk"
 msgstr ""
 
-#. ~ Description for {'str': 'Hair: brown, mohawk'}
+#. ~ Description for {'str': 'Hair style: mohawk'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Mohawk brown hair style."
+msgid "Mohawk hair"
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, 'fro"
+msgid "Hair style: 'fro"
 msgstr ""
 
-#. ~ Description for {'str': "Hair: brown, 'fro"}
+#. ~ Description for {'str': "Hair style: 'fro"}
 #: data/json/mutations/mutation_appearance.json
-msgid "'Fro brown hair style."
+msgid "'Fro hair"
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, short"
+msgid "Hair style: short"
 msgstr ""
 
-#. ~ Description for {'str': 'Hair: brown, short'}
+#. ~ Description for {'str': 'Hair style: short'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Short brown hair style"
+msgid "Short hair"
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, medium-length"
+msgid "Hair style: medium-length"
 msgstr ""
 
-#. ~ Description for {'str': 'Hair: brown, medium-length'}
+#. ~ Description for {'str': 'Hair style: medium-length'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Medium-length brown hair style."
+msgid "Medium-length hair"
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, long"
+msgid "Hair style: long"
 msgstr ""
 
-#. ~ Description for {'str': 'Hair: brown, long'}
+#. ~ Description for {'str': 'Hair style: long'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Long brown hair style."
+msgid "Long hair"
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, crew-cut"
+msgid "Hair style: bald"
 msgstr ""
 
-#. ~ Description for {'str': 'Hair: blond, crew-cut'}
+#. ~ Description for {'str': 'Hair style: bald'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Crewcut blond hair style."
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, mohawk"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: blond, mohawk'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Mohawk blond hair style."
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, 'fro"
-msgstr ""
-
-#. ~ Description for {'str': "Hair: blond, 'fro"}
-#: data/json/mutations/mutation_appearance.json
-msgid "'Fro blond hair style."
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, short"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: blond, short'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Short blond hair style"
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, medium-length"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: blond, medium-length'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Medium-length blond hair style."
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, long"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: blond, long'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Long blond hair style."
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, crew-cut"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: red, crew-cut'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Crewcut red hair style."
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, mohawk"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: red, mohawk'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Mohawk red hair style."
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, 'fro"
-msgstr ""
-
-#. ~ Description for {'str': "Hair: red, 'fro"}
-#: data/json/mutations/mutation_appearance.json
-msgid "'Fro red hair style."
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, short"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: red, short'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Short red hair style"
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, medium-length"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: red, medium-length'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Medium-length red hair style."
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, long"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: red, long'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Long red hair style."
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, crew-cut"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: gray, crew-cut'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Crewcut gray hair style."
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, mohawk"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: gray, mohawk'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Mohawk gray hair style."
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, 'fro"
-msgstr ""
-
-#. ~ Description for {'str': "Hair: gray, 'fro"}
-#: data/json/mutations/mutation_appearance.json
-msgid "'Fro gray hair style."
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, short"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: gray, short'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Short gray hair style"
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, medium-length"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: gray, medium-length'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Medium-length gray hair style."
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, long"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: gray, long'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Long gray hair style."
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, crew-cut"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: white, crew-cut'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Crewcut white hair style."
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, mohawk"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: white, mohawk'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Mohawk white hair style."
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, 'fro"
-msgstr ""
-
-#. ~ Description for {'str': "Hair: white, 'fro"}
-#: data/json/mutations/mutation_appearance.json
-msgid "'Fro white hair style."
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, short"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: white, short'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Short white hair style"
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, medium-length"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: white, medium-length'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Medium-length white hair style."
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, long"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: white, long'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Long white hair style."
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: none"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: none'}
-#: data/json/mutations/mutation_appearance.json
-msgid "You are bald."
+msgid "bald"
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
@@ -163126,11 +163065,7 @@ msgid "shipwreck"
 msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
-msgid "Cargoship1"
-msgstr ""
-
-#: data/json/overmap/overmap_terrain/overmap_terrain.json
-msgid "Cargoshipunder"
+msgid "cargo ship"
 msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
@@ -169563,6 +169498,77 @@ msgid ""
 "stem cell treatments, XE037, and control vats, the subjects simply "
 "disintegrated.  This suggests that XE037, while compatible with subprime "
 "lifeforms, shows only destructive effects on prime plane lifeforms."
+msgstr ""
+
+#: data/json/snippets/lab.json
+msgid ""
+"Genome drive policy: no personal samples.  I don't care how cute the lab "
+"tech's puppy is, we're not running the sequencer for it.  The last time "
+"someone slipped a stray through, the drive was mislabeled and ended up in "
+"Biohazard."
+msgstr ""
+
+#: data/json/snippets/lab.json
+msgid ""
+"The new genome drives are sturdier than they look, but they are not immune "
+"to coffee.  Please keep beverages away from the readers.  I don't want to "
+"fish another corrupted drive out of the sink trap."
+msgstr ""
+
+#: data/json/snippets/lab.json
+msgid ""
+"We have started staging a handful of prefilled genome drives near the vats "
+"to speed training.  If you take one, log it.  If you lose one, you will be "
+"on the next vat cleaning rotation."
+msgstr ""
+
+#: data/json/snippets/lab.json
+msgid ""
+"A minor panic today when the cloning queue flagged a \"duplicate human "
+"genome\" entry.  It was a mislabeled cat sample.  I am updating the label "
+"format to include specimen name, source, and date in plain text."
+msgstr ""
+
+#: data/json/snippets/lab.json
+msgid ""
+"The drive auditors keep asking why we store genomes on something that looks "
+"like a consumer USB stick.  Because it is one.  The encasing is cheap, the "
+"encryption isn't, and procurement keeps ordering the wrong form factor."
+msgstr ""
+
+#: data/json/snippets/lab.json
+msgid ""
+"We ran a batch of sample copies to test the new drive duplicator.  Copy "
+"fidelity was perfect, but the label printer jammed and now the storage "
+"locker says we have twenty identical \"SPECIMEN_A\" entries.  Great."
+msgstr ""
+
+#: data/json/snippets/lab.json
+msgid ""
+"Reminder: the specimen sampler is not a toy.  It will happily collect a "
+"sample from your thumb if you put it in the wrong place.  DNA is DNA, and "
+"the drive doesn't care whose it is."
+msgstr ""
+
+#: data/json/snippets/lab.json
+msgid ""
+"Cloning vats are sensitive to sample age.  If a drive reads as stale, do not"
+" override it.  The last override gave us a vat full of undifferentiated "
+"sludge and a week of filter changes."
+msgstr ""
+
+#: data/json/snippets/lab.json
+msgid ""
+"We confirmed the drive memory can survive a hard reset, but the sample "
+"progress counter cannot.  If a drive loses its progress, do not bin it.  It "
+"can be revalidated by a full rescan."
+msgstr ""
+
+#: data/json/snippets/lab.json
+msgid ""
+"We keep finding genome drives in desk drawers, in toolboxes, in lockers.  If"
+" you are going to squirrel them away, at least put them in a Faraday pouch."
+"  Static discharge is a cruel and boring way to lose a specimen."
 msgstr ""
 
 #: data/json/snippets/lab.json
@@ -188704,6 +188710,89 @@ msgstr ""
 msgid "an unrestrained warcry."
 msgstr ""
 
+#: data/mods/Color_Expansion/modinfo.json
+msgid "Color Expansion"
+msgstr ""
+
+#. ~ Description for Color Expansion
+#: data/mods/Color_Expansion/modinfo.json
+msgid ""
+"Changes how color based mutations are rendered, and adds more of them. Also "
+"lets women have beards."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Eye color: pink"
+msgstr ""
+
+#. ~ Description for {'str': 'Eye color: pink'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have oddly pink eyes."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Eye color: white"
+msgstr ""
+
+#. ~ Description for {'str': 'Eye color: white'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have no visible irises."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Eye color: black"
+msgstr ""
+
+#. ~ Description for {'str': 'Eye color: black'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "Your eyes are disconcertingly pitch black."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair: pink"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair: pink'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "pink hair"
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair: blue"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair: blue'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "blue hair"
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair: green"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair: green'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "green hair"
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair: purple"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair: purple'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "purple hair"
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair: cyan"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair: cyan'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "cyan hair"
+msgstr ""
+
 #: data/mods/CrazyCataclysm/crazy_aperturepotato.json
 msgid "companion potato"
 msgid_plural "companion potatoes"
@@ -204276,6 +204365,17 @@ msgid ""
 "time."
 msgstr ""
 
+#: data/mods/MagicalNights/Spells/magus.json src/options.cpp
+msgid "Slow"
+msgstr ""
+
+#. ~ Description for {'str': 'Slow'}
+#: data/mods/MagicalNights/Spells/magus.json
+msgid ""
+"This spell weakens your target, resulting in a decrease of speed lasting a "
+"short period of time."
+msgstr ""
+
 #: data/mods/MagicalNights/Spells/magus.json
 msgid "Mana Beam"
 msgstr ""
@@ -204363,6 +204463,30 @@ msgstr ""
 #: data/mods/MagicalNights/Spells/magus.json
 #: data/mods/MagicalNights/items/spell_scrolls.json
 msgid "You become wily like a fox."
+msgstr ""
+
+#: data/mods/MagicalNights/Spells/magus.json
+msgid "Force Push"
+msgstr ""
+
+#. ~ Description for {'str': 'Force Push'}
+#. ~ Description for {'str': 'Scroll of Force Push', 'str_pl': 'Scrolls of
+#. Force Push'}
+#: data/mods/MagicalNights/Spells/magus.json
+#: data/mods/MagicalNights/items/spell_scrolls.json
+msgid "Pushes nearby creature away from you."
+msgstr ""
+
+#: data/mods/MagicalNights/Spells/magus.json
+msgid "Force Pull"
+msgstr ""
+
+#. ~ Description for {'str': 'Force Pull'}
+#. ~ Description for {'str': 'Scroll of Force Pull', 'str_pl': 'Scrolls of
+#. Force Pull'}
+#: data/mods/MagicalNights/Spells/magus.json
+#: data/mods/MagicalNights/items/spell_scrolls.json
+msgid "Pulls nearby creature towards you."
 msgstr ""
 
 #. ~ Description for {'str': 'Crystallize Mana'}
@@ -205034,8 +205158,19 @@ msgid "Your speed is boosted to superhuman levels!"
 msgstr ""
 
 #. ~ Remove message for effect(s) 'Hasted'.
+#. ~ Remove message for effect(s) 'Slowed'.
 #: data/mods/MagicalNights/effects/effects.json
 msgid "You return to your normal speed."
+msgstr ""
+
+#. ~ Description of effect 'Slowed'.
+#: data/mods/MagicalNights/effects/effects.json
+msgid "Your speed is magically inhibited."
+msgstr ""
+
+#. ~ Apply message for effect(s) 'Slowed'.
+#: data/mods/MagicalNights/effects/effects.json
+msgid "Everyone else suddenly seems to speed up!"
 msgstr ""
 
 #. ~ Description of effect 'Synaptic Stimulation'.
@@ -208501,6 +208636,28 @@ msgid ""
 "With this spell, you will no-longer be thunderstruck by pesky bolts of "
 "electricity."
 msgstr ""
+
+#: data/mods/MagicalNights/items/spell_scrolls.json
+msgid "Scroll of Slow"
+msgid_plural "Scrolls of Slow"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'Scroll of Slow', 'str_pl': 'Scrolls of Slow'}
+#: data/mods/MagicalNights/items/spell_scrolls.json
+msgid ""
+"This spell slows timeflow around your target, resulting in a decrease of "
+"speed lasting a short period of time."
+msgstr ""
+
+#: data/mods/MagicalNights/items/spell_scrolls.json
+msgid "Scroll of Force Push"
+msgid_plural "Scrolls of Force Push"
+msgstr[0] ""
+
+#: data/mods/MagicalNights/items/spell_scrolls.json
+msgid "Scroll of Force Pull"
+msgid_plural "Scrolls of Force Pull"
+msgstr[0] ""
 
 #: data/mods/MagicalNights/items/spellbooks.json
 msgid "A Technomancer's Guide to Debugging C:DDA"
@@ -213479,6 +213636,15 @@ msgstr ""
 msgid ""
 "Chewing gum with added caffeine.  Sugary and bad for your teeth, but it's a "
 "nice pick-me-up.  It's oddly warm to the touch…"
+msgstr ""
+
+#: data/mods/NPC_lua_hook_test/modinfo.json
+msgid "NPC lua hook testing"
+msgstr ""
+
+#. ~ Description for NPC lua hook testing
+#: data/mods/NPC_lua_hook_test/modinfo.json
+msgid "Testing npc hooks. It should be obsolete after testing!"
 msgstr ""
 
 #: data/mods/No_Acid_Zombies/modinfo.json
@@ -220506,15 +220672,15 @@ msgid "Try"
 msgstr ""
 
 #: src/action.cpp
+msgid "Look"
+msgstr ""
+
+#: src/action.cpp
 msgid "Interact"
 msgstr ""
 
 #: src/action.cpp src/advanced_inv.cpp src/game_inventory.cpp
 msgid "Inventory"
-msgstr ""
-
-#: src/action.cpp
-msgid "Look"
 msgstr ""
 
 #: src/action.cpp src/game.cpp
@@ -221178,14 +221344,6 @@ msgstr ""
 #: src/activity_handlers.cpp
 #, c-format
 msgid "You get some training in %s."
-msgstr ""
-
-#: src/activity_handlers.cpp
-msgid "You've charged the battery completely."
-msgstr ""
-
-#: src/activity_handlers.cpp src/iuse.cpp
-msgid "You're too exhausted to keep cranking."
 msgstr ""
 
 #: src/activity_handlers.cpp
@@ -225475,10 +225633,6 @@ msgid ""
 "slices painlessly into you."
 msgstr ""
 
-#: src/bionics_ui.cpp src/mutation_ui.cpp src/options.cpp
-msgid "None"
-msgstr ""
-
 #: src/bionics_ui.cpp
 msgid "Power usage"
 msgstr ""
@@ -226004,6 +226158,350 @@ msgstr ""
 
 #: src/catalua_bindings.cpp src/weather.cpp
 msgid "Saturday"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "No effect"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Strength +4"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Dexterity +4"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Perception +4"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Intelligence +4"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "All stats +2"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Speed +20"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Reduces radiation"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Summons friendly snakes when you're hit"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Makes you invisible"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "See through walls"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "See through walls farther"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "See through walls at great distance"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Your steps are quieted"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "May extinguish nearby flames"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Emits light"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Protects from fear and paralysis"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Protection from electricity"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Increases carrying capacity"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Killing non-zombie monsters may heal you"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Passive morale boost"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Increases hunger"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Increases thirst"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Emits smoke occasionally"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Adds an evil presence"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Mimics schizophrenia"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Increases your radiation"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Mutates you slowly"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Draws netherworld attention"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Strength -3"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Dexterity -3"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Perception -3"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Intelligence -3"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "All stats -2"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Speed -20"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Occasionally forces a teleport"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Makes noise when you move"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "More likely to experience bad weather"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Decreases health over time"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Unknown effect"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Emits shock fields"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Launches fireballs"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Adrenaline rush"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Reveals the area around you"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Shoots blood all over"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Creates interdimensional fatigue"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Launches acid"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Destroys adjacent terrain"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Heals minor damage"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Confuses nearby monsters"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "May make nearby monsters friendly"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "May summon friendly insects"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Teleports you"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Temporary light source"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Rapid plant growth"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Hurts all monsters"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Temporary morale bonus"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Spews radioactive gas"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Chance of mutation"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Paralyzes you"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Spreads fire around you"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Draws attention from sub-prime denizens"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Causes teleglow"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Loud noise"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Noise and morale penalty"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Darkens the sky"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Flashbang"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "User vomits"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Summons shadow creatures"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Empties most of your stamina"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "No charges"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges over time"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges in sunlight"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges from pain"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges from health loss"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges from fatigue"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges near portals"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Unknown charge type"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "No special requirement"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Must be equipped"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Must be worn against bare skin"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Charges while sleeping"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Charges in radiation"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Charges while wet"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Charges under open sky"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Unknown charge requirement"
 msgstr ""
 
 #: src/catalua_console.cpp
@@ -238994,10 +239492,19 @@ msgstr ""
 msgid "You need some %1$s to reload this %2$s."
 msgstr ""
 
-#. ~ Loading fuel or other items into a piece of furniture.
 #: src/iexamine.cpp
 #, c-format
-msgid "Put how many of the %1$s into the %2$s?"
+msgid " (%d in inventory, %d nearby)"
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid " (%d nearby)"
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "Put how much %1$s into the %2$s?%3$s"
 msgstr ""
 
 #. ~ %1$s - furniture, %2$d - number, %3$s items.
@@ -239635,6 +240142,10 @@ msgstr ""
 
 #: src/iexamine.cpp
 msgid "You can't place more food while it's smoking."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "Remove it before loading the smoking rack again."
 msgstr ""
 
 #: src/iexamine.cpp
@@ -241140,6 +241651,10 @@ msgstr ""
 
 #: src/item.cpp
 msgid " = <num>"
+msgstr ""
+
+#: src/item.cpp
+msgid " (enchanted: <num>)"
 msgstr ""
 
 #: src/item.cpp
@@ -244023,24 +244538,6 @@ msgid "You play on your %s for a while."
 msgstr ""
 
 #: src/iuse.cpp
-msgid "It's not waterproof enough to work underwater."
-msgstr ""
-
-#: src/iuse.cpp
-#, c-format
-msgid "You start cranking the %s to charge its %s."
-msgstr ""
-
-#: src/iuse.cpp
-#, c-format
-msgid "You could use the %s to charge its %s, but it's already charged."
-msgstr ""
-
-#: src/iuse.cpp
-msgid "You need a rechargeable battery cell to charge."
-msgstr ""
-
-#: src/iuse.cpp
 msgid "You cannot do… that while mounted."
 msgstr ""
 
@@ -246028,6 +246525,10 @@ msgstr ""
 #: src/iuse_actor.cpp
 #, c-format
 msgid "You can't deploy a %s there."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "Can't put that here - items in the way."
 msgstr ""
 
 #: src/iuse_actor.cpp src/mission_start.cpp src/mission_util.cpp
@@ -249443,6 +249944,18 @@ msgstr ""
 
 #: src/map.cpp
 msgid "an alarm go off!"
+msgstr ""
+
+#: src/map.cpp
+msgid "You feel the ground beneath you shake from the impact!"
+msgstr ""
+
+#: src/map.cpp
+msgid "You lose your balance!"
+msgstr ""
+
+#: src/map.cpp
+msgid "<npcname> loses their balance!"
 msgstr ""
 
 #: src/map.cpp
@@ -256141,6 +256654,10 @@ msgid "Your profession of %s prevents you from removing this trait."
 msgstr ""
 
 #: src/newcharacter.cpp
+msgid "You must have a trait of this type."
+msgstr ""
+
+#: src/newcharacter.cpp
 msgid "You already picked a conflicting trait!"
 msgstr ""
 
@@ -259358,10 +259875,6 @@ msgstr ""
 
 #: src/options.cpp
 msgid "Edge scrolling with the mouse."
-msgstr ""
-
-#: src/options.cpp
-msgid "Slow"
 msgstr ""
 
 #: src/options.cpp
