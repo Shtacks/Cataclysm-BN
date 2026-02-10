@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-02-05 20:39+0000\n"
+"POT-Creation-Date: 2026-02-09 20:10+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Hungarian (https://app.transifex.com/bn-team/teams/113585/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -2593,6 +2593,55 @@ msgstr ""
 #. ~ Description for {'str': '[Skill] Wax On, Wax Off'}
 #: data/json/achievements.json
 msgid "To be your own weapon."
+msgstr ""
+
+#: data/json/artifact_analyzer.lua src/bionics_ui.cpp src/mutation_ui.cpp
+#: src/options.cpp
+msgid "None"
+msgstr "Nincs"
+
+#: data/json/artifact_analyzer.lua
+msgid "Unable to read artifact data."
+msgstr ""
+
+#: data/json/artifact_analyzer.lua
+msgid "This item has no artifact effects."
+msgstr ""
+
+#: data/json/artifact_analyzer.lua
+msgid "SUBJECT"
+msgstr ""
+
+#: data/json/artifact_analyzer.lua
+msgid "Charge"
+msgstr ""
+
+#: data/json/artifact_analyzer.lua
+msgid "Charge Requirement"
+msgstr ""
+
+#: data/json/artifact_analyzer.lua
+msgid "Activated"
+msgstr ""
+
+#: data/json/artifact_analyzer.lua
+msgid "Wielded"
+msgstr ""
+
+#: data/json/artifact_analyzer.lua
+msgid "Worn"
+msgstr ""
+
+#: data/json/artifact_analyzer.lua
+msgid "Carried"
+msgstr ""
+
+#: data/json/artifact_analyzer.lua
+msgid "You have no artifacts to analyze."
+msgstr ""
+
+#: data/json/artifact_analyzer.lua
+msgid "Artifact Analyzer"
 msgstr ""
 
 #: data/json/bionics.json
@@ -12736,6 +12785,10 @@ msgstr ""
 
 #: data/json/item_actions.json
 msgid "Measure grid power"
+msgstr ""
+
+#: data/json/item_actions.json
+msgid "Analyze artifact"
 msgstr ""
 
 #: data/json/item_actions.json
@@ -39023,6 +39076,20 @@ msgid ""
 "This is a standalone computer terminal.  It can be used to view contents and"
 " perform any allowed functions.  It might even be possible to hack it, given"
 " the skills."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-tools.json
+#: data/json/items/fake.json
+msgid "artifact analyzer console"
+msgid_plural "artifact analyzer consoles"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for artifact analyzer console
+#: data/json/furniture_and_terrain/furniture-tools.json
+msgid ""
+"A research console configured to analyze artifacts.  Use it to scan any "
+"artifacts you are carrying."
 msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-tools.json
@@ -106679,6 +106746,20 @@ msgid ""
 msgstr ""
 
 #: data/json/items/gunmod/accessories.json
+msgid "crossbow draw motor"
+msgid_plural "crossbow draw motors"
+msgstr[0] ""
+msgstr[1] ""
+
+#: data/json/items/gunmod/accessories.json
+msgid ""
+"An electric motor and transmission that can be attached to a crossbow's "
+"string to make it easier to draw back. It makes reloading faster, but "
+"requires UPS power and makes the crossbow bulkier and heavier. Who said "
+"crossbows needed to be medieval?"
+msgstr ""
+
+#: data/json/items/gunmod/accessories.json
 msgid "belt clip"
 msgid_plural "belt clips"
 msgstr[0] ""
@@ -130101,7 +130182,7 @@ msgstr ""
 #. ~ Description for {'str': 'Debug Pain'}
 #. ~ Description for {'str': 'Pain'}
 #: data/json/monster_special_attacks/spells.json
-#: data/mods/MagicalNights/Spells/item_only.json
+#: data/mods/MagicalNights/Spells/item_only.json src/catalua_bindings_item.cpp
 msgid "Increases pain"
 msgstr ""
 
@@ -138182,337 +138263,121 @@ msgid ""
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, crew-cut"
-msgstr "Haj: fekete, géppel nyírt"
+msgid "Hair color: black"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, crew-cut'}
+#. ~ Description for {'str': 'Hair color: black'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Crewcut black hair style."
-msgstr "Géppel nagyon rövidre vágott fekete haj."
+msgid "You have black hair."
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, mohawk"
-msgstr "Haj: fekete, mohawk"
+msgid "Hair color: brown"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, mohawk'}
+#. ~ Description for {'str': 'Hair color: brown'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Mohawk black hair style."
-msgstr "Mohawk taréjos, fekete haj."
+msgid "You have brown hair."
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, 'fro"
-msgstr "Haj: fekete, afró"
+msgid "Hair color: blond"
+msgstr ""
 
-#. ~ Description for {'str': "Hair: black, 'fro"}
+#. ~ Description for {'str': 'Hair color: blond'}
 #: data/json/mutations/mutation_appearance.json
-msgid "'Fro black hair style."
-msgstr "Fekete afró stílusú haj."
+msgid "You have blond hair."
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, short"
-msgstr "Haj: fekete, rövid"
+msgid "Hair color: red"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, short'}
+#. ~ Description for {'str': 'Hair color: red'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Short black hair style"
-msgstr "Rövidre vágott fekete frizura."
+msgid "You have red hair."
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, medium-length"
-msgstr "Haj: fekete, középhosszú"
+msgid "Hair color: gray"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, medium-length'}
+#. ~ Description for {'str': 'Hair color: gray'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Medium-length black hair style."
-msgstr "Közepesen hosszúra vágott fekete haj."
+msgid "You have gray hair."
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, long"
-msgstr "Haj: fekete, hosszú"
+msgid "Hair color: white"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, long'}
+#. ~ Description for {'str': 'Hair color: white'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Long black hair style."
-msgstr "Hosszú fekete haj."
+msgid "You have white hair."
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, crew-cut"
-msgstr "Haj: barna, géppel nyírt"
+msgid "Hair style: crew-cut"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: brown, crew-cut'}
+#. ~ Description for {'str': 'Hair style: crew-cut'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Crewcut brown hair style."
-msgstr "Géppel nagyon rövidre vágott barna haj."
+msgid "Crewcut hair"
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, mohawk"
-msgstr "Haj: barna, mohawk"
+msgid "Hair style: mohawk"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: brown, mohawk'}
+#. ~ Description for {'str': 'Hair style: mohawk'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Mohawk brown hair style."
-msgstr "Mohawk taréjos, barna haj."
+msgid "Mohawk hair"
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, 'fro"
-msgstr "Haj: barna, afró"
+msgid "Hair style: 'fro"
+msgstr ""
 
-#. ~ Description for {'str': "Hair: brown, 'fro"}
+#. ~ Description for {'str': "Hair style: 'fro"}
 #: data/json/mutations/mutation_appearance.json
-msgid "'Fro brown hair style."
-msgstr "Barna afró stílusú haj."
+msgid "'Fro hair"
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, short"
-msgstr "Haj: barna, rövid"
+msgid "Hair style: short"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: brown, short'}
+#. ~ Description for {'str': 'Hair style: short'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Short brown hair style"
-msgstr "Rövidre vágott barna frizura."
+msgid "Short hair"
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, medium-length"
-msgstr "Haj: barna, középhosszú"
+msgid "Hair style: medium-length"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: brown, medium-length'}
+#. ~ Description for {'str': 'Hair style: medium-length'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Medium-length brown hair style."
-msgstr "Közepesen hosszúra vágott barna haj."
+msgid "Medium-length hair"
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, long"
-msgstr "Haj: barna, hosszú"
+msgid "Hair style: long"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: brown, long'}
+#. ~ Description for {'str': 'Hair style: long'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Long brown hair style."
-msgstr "Hosszú barna haj."
+msgid "Long hair"
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, crew-cut"
-msgstr "Haj: szőke, géppel nyírt"
+msgid "Hair style: bald"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: blond, crew-cut'}
+#. ~ Description for {'str': 'Hair style: bald'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Crewcut blond hair style."
-msgstr "Géppel nagyon rövidre vágott szőke haj."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, mohawk"
-msgstr "Haj: szőke, mohawk"
-
-#. ~ Description for {'str': 'Hair: blond, mohawk'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Mohawk blond hair style."
-msgstr "Mohawk taréjos, szőke haj."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, 'fro"
-msgstr "Haj: szőke, afró"
-
-#. ~ Description for {'str': "Hair: blond, 'fro"}
-#: data/json/mutations/mutation_appearance.json
-msgid "'Fro blond hair style."
-msgstr "Szőke afró stílusú haj."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, short"
-msgstr "Haj: szőke, rövid"
-
-#. ~ Description for {'str': 'Hair: blond, short'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Short blond hair style"
-msgstr "Rövidre vágott szőke frizura."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, medium-length"
-msgstr "Haj: szőke, középhosszú"
-
-#. ~ Description for {'str': 'Hair: blond, medium-length'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Medium-length blond hair style."
-msgstr "Közepesen hosszúra vágott szőke haj."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, long"
-msgstr "Haj: szőke, hosszú"
-
-#. ~ Description for {'str': 'Hair: blond, long'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Long blond hair style."
-msgstr "Hosszú szőke haj."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, crew-cut"
-msgstr "Haj: vörös, géppel nyírt"
-
-#. ~ Description for {'str': 'Hair: red, crew-cut'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Crewcut red hair style."
-msgstr "Géppel nagyon rövidre vágott vörös haj."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, mohawk"
-msgstr "Haj: vörös, mohawk"
-
-#. ~ Description for {'str': 'Hair: red, mohawk'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Mohawk red hair style."
-msgstr "Mohawk taréjos, vörös haj."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, 'fro"
-msgstr "Haj: vörös, afró"
-
-#. ~ Description for {'str': "Hair: red, 'fro"}
-#: data/json/mutations/mutation_appearance.json
-msgid "'Fro red hair style."
-msgstr "Vörös afró stílusú haj."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, short"
-msgstr "Haj: vörös, rövid"
-
-#. ~ Description for {'str': 'Hair: red, short'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Short red hair style"
-msgstr "Rövidre vágott vörös frizura."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, medium-length"
-msgstr "Haj: vörös, középhosszú"
-
-#. ~ Description for {'str': 'Hair: red, medium-length'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Medium-length red hair style."
-msgstr "Közepesen hosszúra vágott vörös haj."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, long"
-msgstr "Haj: vörös, hosszú"
-
-#. ~ Description for {'str': 'Hair: red, long'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Long red hair style."
-msgstr "Hosszú vörös haj."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, crew-cut"
-msgstr "Haj: ősz, géppel nyírt"
-
-#. ~ Description for {'str': 'Hair: gray, crew-cut'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Crewcut gray hair style."
-msgstr "Géppel nagyon rövidre vágott ősz haj."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, mohawk"
-msgstr "Haj: ősz, mohawk"
-
-#. ~ Description for {'str': 'Hair: gray, mohawk'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Mohawk gray hair style."
-msgstr "Mohawk taréjos, ősz haj."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, 'fro"
-msgstr "Haj: ősz, afró"
-
-#. ~ Description for {'str': "Hair: gray, 'fro"}
-#: data/json/mutations/mutation_appearance.json
-msgid "'Fro gray hair style."
-msgstr "Ősz afró stílusú haj."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, short"
-msgstr "Haj: ősz, rövid"
-
-#. ~ Description for {'str': 'Hair: gray, short'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Short gray hair style"
-msgstr "Rövidre vágott ősz frizura."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, medium-length"
-msgstr "Haj: ősz, középhosszú"
-
-#. ~ Description for {'str': 'Hair: gray, medium-length'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Medium-length gray hair style."
-msgstr "Közepesen hosszúra vágott ősz haj."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, long"
-msgstr "Haj: ősz, hosszú"
-
-#. ~ Description for {'str': 'Hair: gray, long'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Long gray hair style."
-msgstr "Hosszú ősz haj."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, crew-cut"
-msgstr "Haj: fehér, géppel nyírt"
-
-#. ~ Description for {'str': 'Hair: white, crew-cut'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Crewcut white hair style."
-msgstr "Géppel nagyon rövidre vágott fehér haj."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, mohawk"
-msgstr "Haj: fehér, mohawk"
-
-#. ~ Description for {'str': 'Hair: white, mohawk'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Mohawk white hair style."
-msgstr "Mohawk taréjos, fehér haj."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, 'fro"
-msgstr "Haj: fehér, afró"
-
-#. ~ Description for {'str': "Hair: white, 'fro"}
-#: data/json/mutations/mutation_appearance.json
-msgid "'Fro white hair style."
-msgstr "Fehér afró stílusú haj."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, short"
-msgstr "Haj: fehér, rövid"
-
-#. ~ Description for {'str': 'Hair: white, short'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Short white hair style"
-msgstr "Rövidre vágott fehér frizura."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, medium-length"
-msgstr "Haj: fehér, középhosszú"
-
-#. ~ Description for {'str': 'Hair: white, medium-length'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Medium-length white hair style."
-msgstr "Közepesen hosszúra vágott fehér haj."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, long"
-msgstr "Haj: fehér, hosszú"
-
-#. ~ Description for {'str': 'Hair: white, long'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Long white hair style."
-msgstr "Hosszú fehér haj."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: none"
-msgstr "Haj: nincs"
-
-#. ~ Description for {'str': 'Hair: none'}
-#: data/json/mutations/mutation_appearance.json
-msgid "You are bald."
-msgstr "Kopasz vagy."
+msgid "bald"
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
 msgid "Eye color: blue"
@@ -204826,6 +204691,89 @@ msgstr ""
 msgid "an unrestrained warcry."
 msgstr ""
 
+#: data/mods/Color_Expansion/modinfo.json
+msgid "Color Expansion"
+msgstr ""
+
+#. ~ Description for Color Expansion
+#: data/mods/Color_Expansion/modinfo.json
+msgid ""
+"Changes how color based mutations are rendered, and adds more of them. Also "
+"lets women have beards."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Eye color: pink"
+msgstr ""
+
+#. ~ Description for {'str': 'Eye color: pink'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have oddly pink eyes."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Eye color: white"
+msgstr ""
+
+#. ~ Description for {'str': 'Eye color: white'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have no visible irises."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Eye color: black"
+msgstr ""
+
+#. ~ Description for {'str': 'Eye color: black'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "Your eyes are disconcertingly pitch black."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair color: pink"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair color: pink'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have pink hair."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair color: blue"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair color: blue'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have blue hair."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair color: green"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair color: green'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have green hair."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair color: purple"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair color: purple'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have purple hair."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair color: cyan"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair color: cyan'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have cyan hair."
+msgstr ""
+
 #: data/mods/CrazyCataclysm/crazy_aperturepotato.json
 msgid "companion potato"
 msgid_plural "companion potatoes"
@@ -231504,6 +231452,15 @@ msgstr ""
 msgid "Core content for Cataclysm-BN"
 msgstr ""
 
+#: data/mods/callback_lua_test/modinfo.json
+msgid "Callback Lua Test"
+msgstr ""
+
+#. ~ Description for Callback Lua Test
+#: data/mods/callback_lua_test/modinfo.json
+msgid "Mod for testing callbacks for items, bionics, and mutations."
+msgstr ""
+
 #: data/mods/cbm_slots/modinfo.json
 msgid "Bionic Slots"
 msgstr ""
@@ -238645,16 +238602,16 @@ msgid "Try"
 msgstr "Próbáld"
 
 #: src/action.cpp
+msgid "Look"
+msgstr "Nézd"
+
+#: src/action.cpp
 msgid "Interact"
 msgstr "Kezel"
 
 #: src/action.cpp src/advanced_inv.cpp src/game_inventory.cpp
 msgid "Inventory"
 msgstr "Leltár"
-
-#: src/action.cpp
-msgid "Look"
-msgstr "Nézd"
 
 #: src/action.cpp src/game.cpp
 msgid "Combat"
@@ -243769,10 +243726,6 @@ msgid ""
 "slices painlessly into you."
 msgstr ""
 
-#: src/bionics_ui.cpp src/mutation_ui.cpp src/options.cpp
-msgid "None"
-msgstr "Nincs"
-
 #: src/bionics_ui.cpp
 msgid "Power usage"
 msgstr ""
@@ -244322,6 +244275,350 @@ msgstr "csütörtök"
 #: src/catalua_bindings.cpp src/weather.cpp
 msgid "Saturday"
 msgstr "szombat"
+
+#: src/catalua_bindings_item.cpp
+msgid "No effect"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Strength +4"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Dexterity +4"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Perception +4"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Intelligence +4"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "All stats +2"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Speed +20"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Reduces radiation"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Summons friendly snakes when you're hit"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Makes you invisible"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "See through walls"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "See through walls farther"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "See through walls at great distance"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Your steps are quieted"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "May extinguish nearby flames"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Emits light"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Protects from fear and paralysis"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Protection from electricity"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Increases carrying capacity"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Killing non-zombie monsters may heal you"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Passive morale boost"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Increases hunger"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Increases thirst"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Emits smoke occasionally"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Adds an evil presence"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Mimics schizophrenia"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Increases your radiation"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Mutates you slowly"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Draws netherworld attention"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Strength -3"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Dexterity -3"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Perception -3"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Intelligence -3"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "All stats -2"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Speed -20"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Occasionally forces a teleport"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Makes noise when you move"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "More likely to experience bad weather"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Decreases health over time"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Unknown effect"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Emits shock fields"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Launches fireballs"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Adrenaline rush"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Reveals the area around you"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Shoots blood all over"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Creates interdimensional fatigue"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Launches acid"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Destroys adjacent terrain"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Heals minor damage"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Confuses nearby monsters"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "May make nearby monsters friendly"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "May summon friendly insects"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Teleports you"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Temporary light source"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Rapid plant growth"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Hurts all monsters"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Temporary morale bonus"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Spews radioactive gas"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Chance of mutation"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Paralyzes you"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Spreads fire around you"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Draws attention from sub-prime denizens"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Causes teleglow"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Loud noise"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Noise and morale penalty"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Darkens the sky"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Flashbang"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "User vomits"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Summons shadow creatures"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Empties most of your stamina"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "No charges"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges over time"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges in sunlight"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges from pain"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges from health loss"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges from fatigue"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges near portals"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Unknown charge type"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "No special requirement"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Must be equipped"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Must be worn against bare skin"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Charges while sleeping"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Charges in radiation"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Charges while wet"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Charges under open sky"
+msgstr ""
+
+#: src/catalua_bindings_item.cpp
+msgid "Unknown charge requirement"
+msgstr ""
 
 #: src/catalua_console.cpp
 msgid "Press Ctrl+S to run script, press Esc to cancel"
@@ -274954,6 +275251,10 @@ msgstr "A(z) %s eset megakadályozza ennek a vonásnak az eltávolítását."
 #, c-format
 msgid "Your profession of %s prevents you from removing this trait."
 msgstr "A(z) %s szakma megakadályozza ennek a vonásnak az eltávolítását."
+
+#: src/newcharacter.cpp
+msgid "You must have a trait of this type."
+msgstr ""
 
 #: src/newcharacter.cpp
 msgid "You already picked a conflicting trait!"

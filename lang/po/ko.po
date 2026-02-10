@@ -29,15 +29,15 @@
 # DelFe, 2025
 # 47a81cb9738d39622e1b1fde74c42b2a_791bd4f <20fb875a401cb03ba4fd8103e46da6b9_1176784>, 2026
 # Coolthulhu <Coolthulhu@gmail.com>, 2026
-# CatCoffee, 2026
-# Choi Dong-uk, 2026
 # Tae Heon Lim, 2026
+# Choi Dong-uk, 2026
+# CatCoffee, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-02-05 20:39+0000\n"
-"Last-Translator: Tae Heon Lim, 2026\n"
+"POT-Creation-Date: 2026-02-09 20:10+0000\n"
+"Last-Translator: CatCoffee, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3018,6 +3018,55 @@ msgstr "[기술] 베스트 키드"
 #: data/json/achievements.json
 msgid "To be your own weapon."
 msgstr "언제나 당신과 함께하는 무기입니다."
+
+#: data/json/artifact_analyzer.lua src/bionics_ui.cpp src/mutation_ui.cpp
+#: src/options.cpp
+msgid "None"
+msgstr "없음"
+
+#: data/json/artifact_analyzer.lua
+msgid "Unable to read artifact data."
+msgstr "아티팩트 데이터를 읽을 수 없습니다."
+
+#: data/json/artifact_analyzer.lua
+msgid "This item has no artifact effects."
+msgstr "이 물품에는 아티팩트 효과가 없습니다."
+
+#: data/json/artifact_analyzer.lua
+msgid "SUBJECT"
+msgstr "대상"
+
+#: data/json/artifact_analyzer.lua
+msgid "Charge"
+msgstr "충전"
+
+#: data/json/artifact_analyzer.lua
+msgid "Charge Requirement"
+msgstr "충전 요구사항"
+
+#: data/json/artifact_analyzer.lua
+msgid "Activated"
+msgstr "활성화됨"
+
+#: data/json/artifact_analyzer.lua
+msgid "Wielded"
+msgstr "손에 들고 있음"
+
+#: data/json/artifact_analyzer.lua
+msgid "Worn"
+msgstr "착용"
+
+#: data/json/artifact_analyzer.lua
+msgid "Carried"
+msgstr "소지"
+
+#: data/json/artifact_analyzer.lua
+msgid "You have no artifacts to analyze."
+msgstr "분석할 아티팩트가 없습니다."
+
+#: data/json/artifact_analyzer.lua
+msgid "Artifact Analyzer"
+msgstr "아티팩트 분석기"
 
 #: data/json/bionics.json
 msgid "Adrenaline Pump"
@@ -12906,6 +12955,10 @@ msgid "Measure grid power"
 msgstr "전력망 측정"
 
 #: data/json/item_actions.json
+msgid "Analyze artifact"
+msgstr "아티팩트 분석"
+
+#: data/json/item_actions.json
 msgid "Dry/clean yourself"
 msgstr "몸 닦기"
 
@@ -17165,7 +17218,7 @@ msgstr "잘려진"
 
 #: data/json/materials.json src/locations.cpp
 msgid "worn"
-msgstr "닳은"
+msgstr "착용"
 
 #: data/json/materials.json
 msgid "ruined"
@@ -39737,6 +39790,19 @@ msgid ""
 " the skills."
 msgstr ""
 "독립형 컴퓨터 터미널입니다. 저장된 정보를 확인하고 허가된 기능을 수행할 수 있습니다. 적절한 기술이 있다면 해킹할 수도 있습니다."
+
+#: data/json/furniture_and_terrain/furniture-tools.json
+#: data/json/items/fake.json
+msgid "artifact analyzer console"
+msgid_plural "artifact analyzer consoles"
+msgstr[0] "아티팩트 분석기 콘솔"
+
+#. ~ Description for artifact analyzer console
+#: data/json/furniture_and_terrain/furniture-tools.json
+msgid ""
+"A research console configured to analyze artifacts.  Use it to scan any "
+"artifacts you are carrying."
+msgstr "아티팩트를 분석하도록 설정된 연구용 콘솔입니다. 사용하여 소지 중인 아티팩트를 스캔할 수 있습니다."
 
 #: data/json/furniture_and_terrain/furniture-tools.json
 msgid "forge"
@@ -102393,6 +102459,21 @@ msgstr ""
 "준비할 때 조금 더 오래 걸립니다."
 
 #: data/json/items/gunmod/accessories.json
+msgid "crossbow draw motor"
+msgid_plural "crossbow draw motors"
+msgstr[0] "석궁 장전보조 모터"
+
+#: data/json/items/gunmod/accessories.json
+msgid ""
+"An electric motor and transmission that can be attached to a crossbow's "
+"string to make it easier to draw back. It makes reloading faster, but "
+"requires UPS power and makes the crossbow bulkier and heavier. Who said "
+"crossbows needed to be medieval?"
+msgstr ""
+"석궁 활줄에 장착해 보다 쉽게 당길 수 있도록 돕는 전동 모터 및 변속기입니다. 재장전 속도를 높이지만, UPS 전력을 소모하며 석궁의 "
+"부피와 무게를 증가시킵니다. 누가 석궁이 꼭 중세 무기여야 한다고 했죠?"
+
+#: data/json/items/gunmod/accessories.json
 msgid "belt clip"
 msgid_plural "belt clips"
 msgstr[0] "벨트 클립"
@@ -123883,7 +123964,7 @@ msgstr "디버그 고통"
 #. ~ Description for {'str': 'Debug Pain'}
 #. ~ Description for {'str': 'Pain'}
 #: data/json/monster_special_attacks/spells.json
-#: data/mods/MagicalNights/Spells/item_only.json
+#: data/mods/MagicalNights/Spells/item_only.json src/catalua_bindings_item.cpp
 msgid "Increases pain"
 msgstr "고통 증가"
 
@@ -131471,337 +131552,121 @@ msgstr ""
 "장비에도 불구하고 안일사 당한 것 같습니다."
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, crew-cut"
-msgstr "머리: 검은 크루컷"
+msgid "Hair color: black"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, crew-cut'}
+#. ~ Description for {'str': 'Hair color: black'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Crewcut black hair style."
-msgstr "짧게 자른 검은 스포츠형 머리입니다."
+msgid "You have black hair."
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, mohawk"
-msgstr "머리: 검은 모히칸"
+msgid "Hair color: brown"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, mohawk'}
+#. ~ Description for {'str': 'Hair color: brown'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Mohawk black hair style."
-msgstr "검은 모히칸형 헤어 스타일입니다."
+msgid "You have brown hair."
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, 'fro"
-msgstr "머리: 검은 아프로"
+msgid "Hair color: blond"
+msgstr ""
 
-#. ~ Description for {'str': "Hair: black, 'fro"}
+#. ~ Description for {'str': 'Hair color: blond'}
 #: data/json/mutations/mutation_appearance.json
-msgid "'Fro black hair style."
-msgstr "검은 아프로형 헤어 스타일입니다."
+msgid "You have blond hair."
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, short"
-msgstr "머리: 검은 단발머리"
+msgid "Hair color: red"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, short'}
+#. ~ Description for {'str': 'Hair color: red'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Short black hair style"
-msgstr "검은 단발형 헤어 스타일입니다."
+msgid "You have red hair."
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, medium-length"
-msgstr "머리: 검은 중간머리"
+msgid "Hair color: gray"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, medium-length'}
+#. ~ Description for {'str': 'Hair color: gray'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Medium-length black hair style."
-msgstr "검은 중간머리 헤어 스타일입니다."
+msgid "You have gray hair."
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, long"
-msgstr "머리: 검은 긴 머리"
+msgid "Hair color: white"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, long'}
+#. ~ Description for {'str': 'Hair color: white'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Long black hair style."
-msgstr "검은 긴 머리 헤어 스타일입니다."
+msgid "You have white hair."
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, crew-cut"
-msgstr "머리: 갈색 크루컷"
+msgid "Hair style: crew-cut"
+msgstr "머리 모양: 크루컷"
 
-#. ~ Description for {'str': 'Hair: brown, crew-cut'}
+#. ~ Description for {'str': 'Hair style: crew-cut'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Crewcut brown hair style."
-msgstr "짧게 자른 갈색 스포츠형 머리입니다."
+msgid "Crewcut hair"
+msgstr "크루컷 머리 모양"
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, mohawk"
-msgstr "머리: 갈색 모히칸"
+msgid "Hair style: mohawk"
+msgstr "머리 모양: 모히칸"
 
-#. ~ Description for {'str': 'Hair: brown, mohawk'}
+#. ~ Description for {'str': 'Hair style: mohawk'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Mohawk brown hair style."
-msgstr "갈색 모히칸형 헤어 스타일입니다."
+msgid "Mohawk hair"
+msgstr "모히칸 머리 모양"
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, 'fro"
-msgstr "머리: 갈색 아프로"
+msgid "Hair style: 'fro"
+msgstr "머리 모양: 아프로"
 
-#. ~ Description for {'str': "Hair: brown, 'fro"}
+#. ~ Description for {'str': "Hair style: 'fro"}
 #: data/json/mutations/mutation_appearance.json
-msgid "'Fro brown hair style."
-msgstr "갈색 아프로형 헤어 스타일입니다."
+msgid "'Fro hair"
+msgstr "아프로 머리 모양"
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, short"
-msgstr "머리: 갈색 단발머리"
+msgid "Hair style: short"
+msgstr "머리 모양: 단발"
 
-#. ~ Description for {'str': 'Hair: brown, short'}
+#. ~ Description for {'str': 'Hair style: short'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Short brown hair style"
-msgstr "갈색 단발형 헤어 스타일입니다."
+msgid "Short hair"
+msgstr "단발 머리 모양"
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, medium-length"
-msgstr "머리: 갈색 중간머리"
+msgid "Hair style: medium-length"
+msgstr "머리 모양: 중간머리"
 
-#. ~ Description for {'str': 'Hair: brown, medium-length'}
+#. ~ Description for {'str': 'Hair style: medium-length'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Medium-length brown hair style."
-msgstr "갈색 중간머리 헤어 스타일입니다."
+msgid "Medium-length hair"
+msgstr "중간 머리 모양"
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, long"
-msgstr "머리: 갈색 긴 머리"
+msgid "Hair style: long"
+msgstr "머리 모양: 장발"
 
-#. ~ Description for {'str': 'Hair: brown, long'}
+#. ~ Description for {'str': 'Hair style: long'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Long brown hair style."
-msgstr "갈색 긴 머리 헤어 스타일입니다."
+msgid "Long hair"
+msgstr "장발 머리 모양"
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, crew-cut"
-msgstr "머리: 금발 크루컷"
+msgid "Hair style: bald"
+msgstr "머리 모양: 대머리"
 
-#. ~ Description for {'str': 'Hair: blond, crew-cut'}
+#. ~ Description for {'str': 'Hair style: bald'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Crewcut blond hair style."
-msgstr "짧게 자른 금발 스포츠형 머리입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, mohawk"
-msgstr "머리: 금발 모히칸"
-
-#. ~ Description for {'str': 'Hair: blond, mohawk'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Mohawk blond hair style."
-msgstr "금발 모히칸형 헤어 스타일입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, 'fro"
-msgstr "머리: 금발 아프로"
-
-#. ~ Description for {'str': "Hair: blond, 'fro"}
-#: data/json/mutations/mutation_appearance.json
-msgid "'Fro blond hair style."
-msgstr "금발 아프로형 헤어 스타일입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, short"
-msgstr "머리: 금발 단발머리"
-
-#. ~ Description for {'str': 'Hair: blond, short'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Short blond hair style"
-msgstr "금발 단발형 헤어 스타일입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, medium-length"
-msgstr "머리: 금발 중간머리"
-
-#. ~ Description for {'str': 'Hair: blond, medium-length'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Medium-length blond hair style."
-msgstr "금발 중간머리 헤어 스타일입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, long"
-msgstr "머리: 금발 긴 머리"
-
-#. ~ Description for {'str': 'Hair: blond, long'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Long blond hair style."
-msgstr "금발 긴 머리 헤어 스타일입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, crew-cut"
-msgstr "머리: 빨간 크루컷"
-
-#. ~ Description for {'str': 'Hair: red, crew-cut'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Crewcut red hair style."
-msgstr "짧게 자른 적발 스포츠형 머리입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, mohawk"
-msgstr "머리: 빨간 모히칸"
-
-#. ~ Description for {'str': 'Hair: red, mohawk'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Mohawk red hair style."
-msgstr "적발 모히칸형 헤어 스타일입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, 'fro"
-msgstr "머리: 빨간 아프로"
-
-#. ~ Description for {'str': "Hair: red, 'fro"}
-#: data/json/mutations/mutation_appearance.json
-msgid "'Fro red hair style."
-msgstr "적발 아프로형 헤어 스타일입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, short"
-msgstr "머리: 빨간 단발머리"
-
-#. ~ Description for {'str': 'Hair: red, short'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Short red hair style"
-msgstr "적발 단발형 헤어 스타일입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, medium-length"
-msgstr "머리: 빨간 중간머리"
-
-#. ~ Description for {'str': 'Hair: red, medium-length'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Medium-length red hair style."
-msgstr "적발 중간머리 헤어 스타일입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, long"
-msgstr "머리: 빨간 긴 머리"
-
-#. ~ Description for {'str': 'Hair: red, long'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Long red hair style."
-msgstr "적발 긴 머리 헤어 스타일입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, crew-cut"
-msgstr "머리: 회색 크루컷"
-
-#. ~ Description for {'str': 'Hair: gray, crew-cut'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Crewcut gray hair style."
-msgstr "짧게 자른 회색 스포츠형 머리입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, mohawk"
-msgstr "머리: 회색 모히칸"
-
-#. ~ Description for {'str': 'Hair: gray, mohawk'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Mohawk gray hair style."
-msgstr "회색 모히칸형 헤어 스타일입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, 'fro"
-msgstr "머리: 회색 아프로"
-
-#. ~ Description for {'str': "Hair: gray, 'fro"}
-#: data/json/mutations/mutation_appearance.json
-msgid "'Fro gray hair style."
-msgstr "회색 아프로형 헤어 스타일입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, short"
-msgstr "머리: 회색 단발머리"
-
-#. ~ Description for {'str': 'Hair: gray, short'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Short gray hair style"
-msgstr "회색 단발형 헤어 스타일입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, medium-length"
-msgstr "머리: 회색 중간머리"
-
-#. ~ Description for {'str': 'Hair: gray, medium-length'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Medium-length gray hair style."
-msgstr "회색 중간머리 헤어 스타일입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, long"
-msgstr "머리: 회색 긴 머리"
-
-#. ~ Description for {'str': 'Hair: gray, long'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Long gray hair style."
-msgstr "회색 긴 머리 헤어 스타일입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, crew-cut"
-msgstr "머리: 흰색 크루컷"
-
-#. ~ Description for {'str': 'Hair: white, crew-cut'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Crewcut white hair style."
-msgstr "짧게 자른 새하얀 스포츠형 머리입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, mohawk"
-msgstr "머리: 흰색 모히칸"
-
-#. ~ Description for {'str': 'Hair: white, mohawk'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Mohawk white hair style."
-msgstr "새하얀 모히칸형 헤어 스타일입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, 'fro"
-msgstr "머리: 흰색 아프로"
-
-#. ~ Description for {'str': "Hair: white, 'fro"}
-#: data/json/mutations/mutation_appearance.json
-msgid "'Fro white hair style."
-msgstr "새하얀 아프로형 헤어 스타일입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, short"
-msgstr "머리: 흰색 단발머리"
-
-#. ~ Description for {'str': 'Hair: white, short'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Short white hair style"
-msgstr "새하얀 단발형 헤어 스타일입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, medium-length"
-msgstr "머리: 흰색 중간머리"
-
-#. ~ Description for {'str': 'Hair: white, medium-length'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Medium-length white hair style."
-msgstr "새하얀 중간머리 헤어 스타일입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, long"
-msgstr "머리: 흰색 긴 머리"
-
-#. ~ Description for {'str': 'Hair: white, long'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Long white hair style."
-msgstr "새하얀 긴 머리 헤어 스타일입니다."
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: none"
-msgstr "머리: 대머리"
-
-#. ~ Description for {'str': 'Hair: none'}
-#: data/json/mutations/mutation_appearance.json
-msgid "You are bald."
-msgstr "당신은 머리카락이 없습니다. 쉽게 말해 대머리입니다."
+msgid "bald"
+msgstr "대머리"
 
 #: data/json/mutations/mutation_appearance.json
 msgid "Eye color: blue"
@@ -172869,7 +172734,7 @@ msgstr "난파선"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
 msgid "cargo ship"
-msgstr ""
+msgstr "화물선"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
 msgid "wasp-infested radio tower"
@@ -200952,6 +200817,89 @@ msgstr "\"좀 뒤져라!!\""
 msgid "an unrestrained warcry."
 msgstr "억누를 수 없는 전투함성"
 
+#: data/mods/Color_Expansion/modinfo.json
+msgid "Color Expansion"
+msgstr "색상 확장"
+
+#. ~ Description for Color Expansion
+#: data/mods/Color_Expansion/modinfo.json
+msgid ""
+"Changes how color based mutations are rendered, and adds more of them. Also "
+"lets women have beards."
+msgstr "색상 기반 돌연변이가 렌더링되는 방식을 변경하고, 색상을 추가합니다. 덤으로 여성이 턱수염을 기를 수 있도록 설정합니다."
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Eye color: pink"
+msgstr "눈 색: 분홍색"
+
+#. ~ Description for {'str': 'Eye color: pink'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have oddly pink eyes."
+msgstr "당신의 눈은 기이한 분홍색입니다."
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Eye color: white"
+msgstr "눈 색: 흰색"
+
+#. ~ Description for {'str': 'Eye color: white'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have no visible irises."
+msgstr "당신의 눈에는 뚜렷한 홍채가 없습니다."
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Eye color: black"
+msgstr "눈 색: 검은색"
+
+#. ~ Description for {'str': 'Eye color: black'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "Your eyes are disconcertingly pitch black."
+msgstr "당신의 눈은 기묘할 정도로 짙은 검은색입니다."
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair color: pink"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair color: pink'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have pink hair."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair color: blue"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair color: blue'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have blue hair."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair color: green"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair color: green'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have green hair."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair color: purple"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair color: purple'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have purple hair."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair color: cyan"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair color: cyan'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have cyan hair."
+msgstr ""
+
 #: data/mods/CrazyCataclysm/crazy_aperturepotato.json
 msgid "companion potato"
 msgid_plural "companion potatoes"
@@ -227439,6 +227387,15 @@ msgstr "밝은 밤"
 msgid "Core content for Cataclysm-BN"
 msgstr "카타클리즘 BN의 중심 컨텐츠"
 
+#: data/mods/callback_lua_test/modinfo.json
+msgid "Callback Lua Test"
+msgstr ""
+
+#. ~ Description for Callback Lua Test
+#: data/mods/callback_lua_test/modinfo.json
+msgid "Mod for testing callbacks for items, bionics, and mutations."
+msgstr ""
+
 #: data/mods/cbm_slots/modinfo.json
 msgid "Bionic Slots"
 msgstr "바이오닉 슬롯"
@@ -234544,16 +234501,16 @@ msgid "Try"
 msgstr "시도"
 
 #: src/action.cpp
+msgid "Look"
+msgstr "보기"
+
+#: src/action.cpp
 msgid "Interact"
 msgstr "상호작용"
 
 #: src/action.cpp src/advanced_inv.cpp src/game_inventory.cpp
 msgid "Inventory"
 msgstr "소지품"
-
-#: src/action.cpp
-msgid "Look"
-msgstr "보기"
 
 #: src/action.cpp src/game.cpp
 msgid "Combat"
@@ -239571,10 +239528,6 @@ msgid ""
 "slices painlessly into you."
 msgstr "오토닥이 별다른 고통 없이 당신을 절개하는 동안, 허공을 멍하니 바라봅니다."
 
-#: src/bionics_ui.cpp src/mutation_ui.cpp src/options.cpp
-msgid "None"
-msgstr "없음"
-
 #: src/bionics_ui.cpp
 msgid "Power usage"
 msgstr "전력 사용량"
@@ -240113,6 +240066,350 @@ msgstr "목요일"
 #: src/catalua_bindings.cpp src/weather.cpp
 msgid "Saturday"
 msgstr "토요일"
+
+#: src/catalua_bindings_item.cpp
+msgid "No effect"
+msgstr "효과 없음"
+
+#: src/catalua_bindings_item.cpp
+msgid "Strength +4"
+msgstr "체력 +4"
+
+#: src/catalua_bindings_item.cpp
+msgid "Dexterity +4"
+msgstr "민첩성 +4"
+
+#: src/catalua_bindings_item.cpp
+msgid "Perception +4"
+msgstr "지각력 +4"
+
+#: src/catalua_bindings_item.cpp
+msgid "Intelligence +4"
+msgstr "지능 +4"
+
+#: src/catalua_bindings_item.cpp
+msgid "All stats +2"
+msgstr "모든 능력치 +2"
+
+#: src/catalua_bindings_item.cpp
+msgid "Speed +20"
+msgstr "속도 +20"
+
+#: src/catalua_bindings_item.cpp
+msgid "Reduces radiation"
+msgstr "방사능 감소"
+
+#: src/catalua_bindings_item.cpp
+msgid "Summons friendly snakes when you're hit"
+msgstr "피격당하면 우호적인 뱀 소환"
+
+#: src/catalua_bindings_item.cpp
+msgid "Makes you invisible"
+msgstr "투명화"
+
+#: src/catalua_bindings_item.cpp
+msgid "See through walls"
+msgstr "엑스레이 시야"
+
+#: src/catalua_bindings_item.cpp
+msgid "See through walls farther"
+msgstr "향상된 엑스레이 시야"
+
+#: src/catalua_bindings_item.cpp
+msgid "See through walls at great distance"
+msgstr "상위 엑스레이 시야"
+
+#: src/catalua_bindings_item.cpp
+msgid "Your steps are quieted"
+msgstr "발걸음 소음 감소"
+
+#: src/catalua_bindings_item.cpp
+msgid "May extinguish nearby flames"
+msgstr "인근 불 소화"
+
+#: src/catalua_bindings_item.cpp
+msgid "Emits light"
+msgstr "발광"
+
+#: src/catalua_bindings_item.cpp
+msgid "Protects from fear and paralysis"
+msgstr "공포 및 마비로부터 보호"
+
+#: src/catalua_bindings_item.cpp
+msgid "Protection from electricity"
+msgstr "전격으로부터 보호"
+
+#: src/catalua_bindings_item.cpp
+msgid "Increases carrying capacity"
+msgstr "운반용량 증가"
+
+#: src/catalua_bindings_item.cpp
+msgid "Killing non-zombie monsters may heal you"
+msgstr "좀비가 아닌 괴물 처치시 치유"
+
+#: src/catalua_bindings_item.cpp
+msgid "Passive morale boost"
+msgstr "상시 기분 상승"
+
+#: src/catalua_bindings_item.cpp
+msgid "Increases hunger"
+msgstr "허기 증가"
+
+#: src/catalua_bindings_item.cpp
+msgid "Increases thirst"
+msgstr "갈증 증가"
+
+#: src/catalua_bindings_item.cpp
+msgid "Emits smoke occasionally"
+msgstr "주기적 연기 배출"
+
+#: src/catalua_bindings_item.cpp
+msgid "Adds an evil presence"
+msgstr "사악한 존재감 부여"
+
+#: src/catalua_bindings_item.cpp
+msgid "Mimics schizophrenia"
+msgstr "조현병 효과"
+
+#: src/catalua_bindings_item.cpp
+msgid "Increases your radiation"
+msgstr "방사능 증가"
+
+#: src/catalua_bindings_item.cpp
+msgid "Mutates you slowly"
+msgstr "느린 변이 발생"
+
+#: src/catalua_bindings_item.cpp
+msgid "Draws netherworld attention"
+msgstr "이계의 관심 유발"
+
+#: src/catalua_bindings_item.cpp
+msgid "Strength -3"
+msgstr "체력 -3"
+
+#: src/catalua_bindings_item.cpp
+msgid "Dexterity -3"
+msgstr "민첩성 -3"
+
+#: src/catalua_bindings_item.cpp
+msgid "Perception -3"
+msgstr "지각력 -3"
+
+#: src/catalua_bindings_item.cpp
+msgid "Intelligence -3"
+msgstr "지능 -3"
+
+#: src/catalua_bindings_item.cpp
+msgid "All stats -2"
+msgstr "모든 능력치 -2"
+
+#: src/catalua_bindings_item.cpp
+msgid "Speed -20"
+msgstr "속도 -20"
+
+#: src/catalua_bindings_item.cpp
+msgid "Occasionally forces a teleport"
+msgstr "주기적 강제 공간이동"
+
+#: src/catalua_bindings_item.cpp
+msgid "Makes noise when you move"
+msgstr "이동시 소음 유발"
+
+#: src/catalua_bindings_item.cpp
+msgid "More likely to experience bad weather"
+msgstr "악천후 가능성 상승"
+
+#: src/catalua_bindings_item.cpp
+msgid "Decreases health over time"
+msgstr "지속적 건강 악화"
+
+#: src/catalua_bindings_item.cpp
+msgid "Unknown effect"
+msgstr "알 수 없는 효과"
+
+#: src/catalua_bindings_item.cpp
+msgid "Emits shock fields"
+msgstr "전기장 유발"
+
+#: src/catalua_bindings_item.cpp
+msgid "Launches fireballs"
+msgstr "화염구 발사"
+
+#: src/catalua_bindings_item.cpp
+msgid "Adrenaline rush"
+msgstr "아드레날린 분비"
+
+#: src/catalua_bindings_item.cpp
+msgid "Reveals the area around you"
+msgstr "인근 지역 드러냄"
+
+#: src/catalua_bindings_item.cpp
+msgid "Shoots blood all over"
+msgstr "사방에 피를 흩뿌림"
+
+#: src/catalua_bindings_item.cpp
+msgid "Creates interdimensional fatigue"
+msgstr "초차원적 피로 유발"
+
+#: src/catalua_bindings_item.cpp
+msgid "Launches acid"
+msgstr "강산 분출"
+
+#: src/catalua_bindings_item.cpp
+msgid "Destroys adjacent terrain"
+msgstr "인근 지형 파괴"
+
+#: src/catalua_bindings_item.cpp
+msgid "Heals minor damage"
+msgstr "가벼운 상처 치료"
+
+#: src/catalua_bindings_item.cpp
+msgid "Confuses nearby monsters"
+msgstr "근처 괴물을 혼란에 빠뜨림"
+
+#: src/catalua_bindings_item.cpp
+msgid "May make nearby monsters friendly"
+msgstr "근처 괴물을 우호적으로 만듬"
+
+#: src/catalua_bindings_item.cpp
+msgid "May summon friendly insects"
+msgstr "우호적 곤충 소환"
+
+#: src/catalua_bindings_item.cpp
+msgid "Teleports you"
+msgstr "자신을 공간이동시킴"
+
+#: src/catalua_bindings_item.cpp
+msgid "Temporary light source"
+msgstr "일시적 광원"
+
+#: src/catalua_bindings_item.cpp
+msgid "Rapid plant growth"
+msgstr "신속한 식물 성장"
+
+#: src/catalua_bindings_item.cpp
+msgid "Hurts all monsters"
+msgstr "모든 괴물에게 피해입힘"
+
+#: src/catalua_bindings_item.cpp
+msgid "Temporary morale bonus"
+msgstr "일시적 기분 상승"
+
+#: src/catalua_bindings_item.cpp
+msgid "Spews radioactive gas"
+msgstr "방사성 가스 분출"
+
+#: src/catalua_bindings_item.cpp
+msgid "Chance of mutation"
+msgstr "돌연변이 가능성 발생"
+
+#: src/catalua_bindings_item.cpp
+msgid "Paralyzes you"
+msgstr "자신을 마비시킴"
+
+#: src/catalua_bindings_item.cpp
+msgid "Spreads fire around you"
+msgstr "주변에 불을 피움"
+
+#: src/catalua_bindings_item.cpp
+msgid "Draws attention from sub-prime denizens"
+msgstr "하위 거주민의 관심을 유발함"
+
+#: src/catalua_bindings_item.cpp
+msgid "Causes teleglow"
+msgstr "텔레포트 후유증을 유발함"
+
+#: src/catalua_bindings_item.cpp
+msgid "Loud noise"
+msgstr "커다란 소음"
+
+#: src/catalua_bindings_item.cpp
+msgid "Noise and morale penalty"
+msgstr "소음 및 기분 악화"
+
+#: src/catalua_bindings_item.cpp
+msgid "Darkens the sky"
+msgstr "하늘을 어둡게 만듬"
+
+#: src/catalua_bindings_item.cpp
+msgid "Flashbang"
+msgstr "섬광탄"
+
+#: src/catalua_bindings_item.cpp
+msgid "User vomits"
+msgstr "사용자가 구토함"
+
+#: src/catalua_bindings_item.cpp
+msgid "Summons shadow creatures"
+msgstr "그림자 개체를 소환함"
+
+#: src/catalua_bindings_item.cpp
+msgid "Empties most of your stamina"
+msgstr "지구력 대부분을 비워버림"
+
+#: src/catalua_bindings_item.cpp
+msgid "No charges"
+msgstr "충전량 없음"
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges over time"
+msgstr "시간 경과에 따라 재충전됨"
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges in sunlight"
+msgstr "햇빛을 받아 재충전됨"
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges from pain"
+msgstr "고통에 의해 재충전됨"
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges from health loss"
+msgstr "건강을 악화시키고 재충전됨"
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges from fatigue"
+msgstr "피로를 유발하고 재충전됨"
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges near portals"
+msgstr "포탈 인근에서 재충전됨"
+
+#: src/catalua_bindings_item.cpp
+msgid "Unknown charge type"
+msgstr "알 수 없는 충전 유형"
+
+#: src/catalua_bindings_item.cpp
+msgid "No special requirement"
+msgstr "필요한 요구사항 없음"
+
+#: src/catalua_bindings_item.cpp
+msgid "Must be equipped"
+msgstr "반드시 장비되어야 함"
+
+#: src/catalua_bindings_item.cpp
+msgid "Must be worn against bare skin"
+msgstr "반드시 맨몸에 착용되어야 함"
+
+#: src/catalua_bindings_item.cpp
+msgid "Charges while sleeping"
+msgstr "수면 중에 재충전됨"
+
+#: src/catalua_bindings_item.cpp
+msgid "Charges in radiation"
+msgstr "방사능을 통해 재충전됨"
+
+#: src/catalua_bindings_item.cpp
+msgid "Charges while wet"
+msgstr "젖어있을 때 재충전됨"
+
+#: src/catalua_bindings_item.cpp
+msgid "Charges under open sky"
+msgstr "맑은 하늘 아래에서 재충전됨"
+
+#: src/catalua_bindings_item.cpp
+msgid "Unknown charge requirement"
+msgstr "알 수 없는 충전 요구사항"
 
 #: src/catalua_console.cpp
 msgid "Press Ctrl+S to run script, press Esc to cancel"
@@ -253405,17 +253702,17 @@ msgstr "%2$s에는 %1$s(이)가 필요합니다."
 #: src/iexamine.cpp
 #, c-format
 msgid " (%d in inventory, %d nearby)"
-msgstr ""
+msgstr "(소지 %d, 주변 %d)"
 
 #: src/iexamine.cpp
 #, c-format
 msgid " (%d nearby)"
-msgstr ""
+msgstr "(주변 %d) "
 
 #: src/iexamine.cpp
 #, c-format
 msgid "Put how much %1$s into the %2$s?%3$s"
-msgstr ""
+msgstr "%1$s(을)를 %2$s에 얼마나 넣습니까? %3$s"
 
 #. ~ %1$s - furniture, %2$d - number, %3$s items.
 #: src/iexamine.cpp
@@ -254071,7 +254368,7 @@ msgstr "이미 훈제가 진행 중일 때는 음식을 더 넣을 수 없습니
 
 #: src/iexamine.cpp
 msgid "Remove it before loading the smoking rack again."
-msgstr ""
+msgstr "다시 채우기 전에 훈제 선반을 비워주세요."
 
 #: src/iexamine.cpp
 msgid "Load smoking rack with what kind of food?"
@@ -260520,7 +260817,7 @@ msgstr "그곳에는 %s(을)를 설치할 수 없습니다."
 
 #: src/iuse_actor.cpp
 msgid "Can't put that here - items in the way."
-msgstr ""
+msgstr "여기에 놓을 수 없습니다 - 경로에 물품이 존재합니다."
 
 #: src/iuse_actor.cpp src/mission_start.cpp src/mission_util.cpp
 msgid "Please wait…"
@@ -261192,7 +261489,7 @@ msgstr "기본 붕대 품질: "
 
 #: src/iuse_actor.cpp
 msgid "Actual bandaging quality: "
-msgstr "실제 붕대 품질:"
+msgstr "실제 붕대 품질: "
 
 #: src/iuse_actor.cpp
 msgid "Base disinfecting quality: "
@@ -270737,6 +271034,10 @@ msgstr "%s 시나리오로 인해 이 특성을 제거할 수 없습니다."
 #, c-format
 msgid "Your profession of %s prevents you from removing this trait."
 msgstr "%s 직업으로 인해 이 특성을 제거할 수 없습니다."
+
+#: src/newcharacter.cpp
+msgid "You must have a trait of this type."
+msgstr "이 종류의 특성을 반드시 갖고 있어야 합니다."
 
 #: src/newcharacter.cpp
 msgid "You already picked a conflicting trait!"

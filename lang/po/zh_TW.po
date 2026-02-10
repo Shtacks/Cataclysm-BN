@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-02-05 20:39+0000\n"
+"POT-Creation-Date: 2026-02-09 20:10+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -2729,6 +2729,55 @@ msgstr "[技能] 上蜡，脱蜡"
 #: data/json/achievements.json
 msgid "To be your own weapon."
 msgstr "成为你自己的武器。"
+
+#: data/json/artifact_analyzer.lua src/bionics_ui.cpp src/mutation_ui.cpp
+#: src/options.cpp
+msgid "None"
+msgstr "無"
+
+#: data/json/artifact_analyzer.lua
+msgid "Unable to read artifact data."
+msgstr "无法读取神器数据。"
+
+#: data/json/artifact_analyzer.lua
+msgid "This item has no artifact effects."
+msgstr "该物品没有神器效果。"
+
+#: data/json/artifact_analyzer.lua
+msgid "SUBJECT"
+msgstr "对象"
+
+#: data/json/artifact_analyzer.lua
+msgid "Charge"
+msgstr "充能"
+
+#: data/json/artifact_analyzer.lua
+msgid "Charge Requirement"
+msgstr "充能条件"
+
+#: data/json/artifact_analyzer.lua
+msgid "Activated"
+msgstr "激活"
+
+#: data/json/artifact_analyzer.lua
+msgid "Wielded"
+msgstr "手持"
+
+#: data/json/artifact_analyzer.lua
+msgid "Worn"
+msgstr "穿戴"
+
+#: data/json/artifact_analyzer.lua
+msgid "Carried"
+msgstr "携带"
+
+#: data/json/artifact_analyzer.lua
+msgid "You have no artifacts to analyze."
+msgstr "你没有可分析的神器。"
+
+#: data/json/artifact_analyzer.lua
+msgid "Artifact Analyzer"
+msgstr "神器分析仪"
 
 #: data/json/bionics.json
 msgid "Adrenaline Pump"
@@ -12425,6 +12474,10 @@ msgstr "修改电网连接"
 #: data/json/item_actions.json
 msgid "Measure grid power"
 msgstr "测量电网功率"
+
+#: data/json/item_actions.json
+msgid "Analyze artifact"
+msgstr "分析神器"
 
 #: data/json/item_actions.json
 msgid "Dry/clean yourself"
@@ -38116,6 +38169,19 @@ msgid ""
 " perform any allowed functions.  It might even be possible to hack it, given"
 " the skills."
 msgstr "这是一个独立的计算机终端。它可以用来查看内容并执行任何允许的功能。如果你有相关技能，也可以侵入它。"
+
+#: data/json/furniture_and_terrain/furniture-tools.json
+#: data/json/items/fake.json
+msgid "artifact analyzer console"
+msgid_plural "artifact analyzer consoles"
+msgstr[0] "神器分析控制台"
+
+#. ~ Description for artifact analyzer console
+#: data/json/furniture_and_terrain/furniture-tools.json
+msgid ""
+"A research console configured to analyze artifacts.  Use it to scan any "
+"artifacts you are carrying."
+msgstr "一台配置用于分析神器的研究控制台。用它来扫描你携带的任何神器。"
 
 #: data/json/furniture_and_terrain/furniture-tools.json
 msgid "forge"
@@ -98752,6 +98818,21 @@ msgid ""
 msgstr "一种中世纪风格的“羊脚”杆，可钩在中型弩上，以帮助拉弦。这样可以更容易地重新装填，但在使用时需要花费更多的时间来设置。"
 
 #: data/json/items/gunmod/accessories.json
+msgid "crossbow draw motor"
+msgid_plural "crossbow draw motors"
+msgstr[0] "弩用上弦电机"
+
+#: data/json/items/gunmod/accessories.json
+msgid ""
+"An electric motor and transmission that can be attached to a crossbow's "
+"string to make it easier to draw back. It makes reloading faster, but "
+"requires UPS power and makes the crossbow bulkier and heavier. Who said "
+"crossbows needed to be medieval?"
+msgstr ""
+"一个连接在弩弦上的电动机和传动装置，可以更轻松地拉开弩弦。它能加快装填速度，但需要消耗 UPS "
+"电力，并且会增加弩的体积和重量。谁说弩只能是中世纪的老古董？"
+
+#: data/json/items/gunmod/accessories.json
 msgid "belt clip"
 msgid_plural "belt clips"
 msgstr[0] "皮带夹"
@@ -119465,7 +119546,7 @@ msgstr "调试疼痛"
 #. ~ Description for {'str': 'Debug Pain'}
 #. ~ Description for {'str': 'Pain'}
 #: data/json/monster_special_attacks/spells.json
-#: data/mods/MagicalNights/Spells/item_only.json
+#: data/mods/MagicalNights/Spells/item_only.json src/catalua_bindings_item.cpp
 msgid "Increases pain"
 msgstr "增加疼痛"
 
@@ -126580,337 +126661,121 @@ msgid ""
 msgstr "这个丧尸曾经是一个像你一样的幸存者，而且是一个相当优秀的幸存者。但是，他们没有一直幸运下去。现在他们仍穿着生前自制的重型盔甲和装备。"
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, crew-cut"
-msgstr "頭髮：黑色，平頭"
+msgid "Hair color: black"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, crew-cut'}
+#. ~ Description for {'str': 'Hair color: black'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Crewcut black hair style."
-msgstr "平頭黑色髮型。"
+msgid "You have black hair."
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, mohawk"
-msgstr "頭髮：黑色，莫霍克髮型"
+msgid "Hair color: brown"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, mohawk'}
+#. ~ Description for {'str': 'Hair color: brown'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Mohawk black hair style."
-msgstr "莫霍克黑色髮型"
+msgid "You have brown hair."
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, 'fro"
-msgstr "頭髮：黑色，爆炸頭"
+msgid "Hair color: blond"
+msgstr ""
 
-#. ~ Description for {'str': "Hair: black, 'fro"}
+#. ~ Description for {'str': 'Hair color: blond'}
 #: data/json/mutations/mutation_appearance.json
-msgid "'Fro black hair style."
-msgstr "爆炸頭黑色髮型"
+msgid "You have blond hair."
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, short"
-msgstr "頭髮：黑色，短髮"
+msgid "Hair color: red"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, short'}
+#. ~ Description for {'str': 'Hair color: red'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Short black hair style"
-msgstr "短的黑色髮型"
+msgid "You have red hair."
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, medium-length"
-msgstr "頭髮：黑色，中長髮"
+msgid "Hair color: gray"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, medium-length'}
+#. ~ Description for {'str': 'Hair color: gray'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Medium-length black hair style."
-msgstr "中長髮黑色髮型"
+msgid "You have gray hair."
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black, long"
-msgstr "頭髮：黑色，長髮"
+msgid "Hair color: white"
+msgstr ""
 
-#. ~ Description for {'str': 'Hair: black, long'}
+#. ~ Description for {'str': 'Hair color: white'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Long black hair style."
-msgstr "長的黑色髮型"
+msgid "You have white hair."
+msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, crew-cut"
-msgstr "頭髮：棕色，平頭"
+msgid "Hair style: crew-cut"
+msgstr "发型：平头"
 
-#. ~ Description for {'str': 'Hair: brown, crew-cut'}
+#. ~ Description for {'str': 'Hair style: crew-cut'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Crewcut brown hair style."
-msgstr "平頭棕色髮型。"
+msgid "Crewcut hair"
+msgstr "平头"
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, mohawk"
-msgstr "頭髮：棕色，莫霍克髮型"
+msgid "Hair style: mohawk"
+msgstr "发型：莫霍克头"
 
-#. ~ Description for {'str': 'Hair: brown, mohawk'}
+#. ~ Description for {'str': 'Hair style: mohawk'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Mohawk brown hair style."
-msgstr "莫霍克棕色髮型"
+msgid "Mohawk hair"
+msgstr "莫霍克发型"
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, 'fro"
-msgstr "頭髮：棕色，爆炸頭"
+msgid "Hair style: 'fro"
+msgstr "发型：爆炸头"
 
-#. ~ Description for {'str': "Hair: brown, 'fro"}
+#. ~ Description for {'str': "Hair style: 'fro"}
 #: data/json/mutations/mutation_appearance.json
-msgid "'Fro brown hair style."
-msgstr "爆炸頭棕色髮型"
+msgid "'Fro hair"
+msgstr "爆炸头"
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, short"
-msgstr "頭髮：棕色，短髮"
+msgid "Hair style: short"
+msgstr "发型：短发"
 
-#. ~ Description for {'str': 'Hair: brown, short'}
+#. ~ Description for {'str': 'Hair style: short'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Short brown hair style"
-msgstr "短的棕色髮型"
+msgid "Short hair"
+msgstr "短发"
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, medium-length"
-msgstr "頭髮：棕色，中長髮"
+msgid "Hair style: medium-length"
+msgstr "发型：中长发"
 
-#. ~ Description for {'str': 'Hair: brown, medium-length'}
+#. ~ Description for {'str': 'Hair style: medium-length'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Medium-length brown hair style."
-msgstr "中長髮棕色髮型"
+msgid "Medium-length hair"
+msgstr "中长发"
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown, long"
-msgstr "頭髮：棕色，長髮"
+msgid "Hair style: long"
+msgstr "发型：长发"
 
-#. ~ Description for {'str': 'Hair: brown, long'}
+#. ~ Description for {'str': 'Hair style: long'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Long brown hair style."
-msgstr "長的棕色髮型"
+msgid "Long hair"
+msgstr "长发"
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, crew-cut"
-msgstr "頭髮：金髮，平頭"
+msgid "Hair style: bald"
+msgstr "发型：光头"
 
-#. ~ Description for {'str': 'Hair: blond, crew-cut'}
+#. ~ Description for {'str': 'Hair style: bald'}
 #: data/json/mutations/mutation_appearance.json
-msgid "Crewcut blond hair style."
-msgstr "平頭金髮髮型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, mohawk"
-msgstr "頭髮：金髮，莫霍克髮型"
-
-#. ~ Description for {'str': 'Hair: blond, mohawk'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Mohawk blond hair style."
-msgstr "莫霍克金髮髮型"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, 'fro"
-msgstr "頭髮：金髮，爆炸頭"
-
-#. ~ Description for {'str': "Hair: blond, 'fro"}
-#: data/json/mutations/mutation_appearance.json
-msgid "'Fro blond hair style."
-msgstr "爆炸頭金髮髮型"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, short"
-msgstr "頭髮：金髮，短髮"
-
-#. ~ Description for {'str': 'Hair: blond, short'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Short blond hair style"
-msgstr "短的金髮髮型"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, medium-length"
-msgstr "頭髮：金髮，中長髮"
-
-#. ~ Description for {'str': 'Hair: blond, medium-length'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Medium-length blond hair style."
-msgstr "中長髮金髮髮型"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond, long"
-msgstr "頭髮：金髮，長髮"
-
-#. ~ Description for {'str': 'Hair: blond, long'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Long blond hair style."
-msgstr "長的金髮髮型"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, crew-cut"
-msgstr "頭髮：紅色，平頭"
-
-#. ~ Description for {'str': 'Hair: red, crew-cut'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Crewcut red hair style."
-msgstr "平頭紅色髮型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, mohawk"
-msgstr "頭髮：紅色，莫霍克髮型"
-
-#. ~ Description for {'str': 'Hair: red, mohawk'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Mohawk red hair style."
-msgstr "莫霍克紅色髮型"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, 'fro"
-msgstr "頭髮：紅色，爆炸頭"
-
-#. ~ Description for {'str': "Hair: red, 'fro"}
-#: data/json/mutations/mutation_appearance.json
-msgid "'Fro red hair style."
-msgstr "爆炸頭紅色髮型"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, short"
-msgstr "頭髮：紅色，短髮"
-
-#. ~ Description for {'str': 'Hair: red, short'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Short red hair style"
-msgstr "短的紅色髮型"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, medium-length"
-msgstr "頭髮：紅色，中長髮"
-
-#. ~ Description for {'str': 'Hair: red, medium-length'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Medium-length red hair style."
-msgstr "中長髮紅色髮型"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red, long"
-msgstr "頭髮：紅色，長髮"
-
-#. ~ Description for {'str': 'Hair: red, long'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Long red hair style."
-msgstr "長的紅色髮型"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, crew-cut"
-msgstr "頭髮：灰色，平頭"
-
-#. ~ Description for {'str': 'Hair: gray, crew-cut'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Crewcut gray hair style."
-msgstr "平頭灰色髮型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, mohawk"
-msgstr "頭髮：灰色，莫霍克髮型"
-
-#. ~ Description for {'str': 'Hair: gray, mohawk'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Mohawk gray hair style."
-msgstr "莫霍克灰色髮型"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, 'fro"
-msgstr "頭髮：灰色，爆炸頭"
-
-#. ~ Description for {'str': "Hair: gray, 'fro"}
-#: data/json/mutations/mutation_appearance.json
-msgid "'Fro gray hair style."
-msgstr "爆炸頭灰色髮型"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, short"
-msgstr "頭髮：灰色，短髮"
-
-#. ~ Description for {'str': 'Hair: gray, short'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Short gray hair style"
-msgstr "短的灰色髮型"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, medium-length"
-msgstr "頭髮：灰色，中長髮"
-
-#. ~ Description for {'str': 'Hair: gray, medium-length'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Medium-length gray hair style."
-msgstr "中長髮灰色髮型"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray, long"
-msgstr "頭髮：灰色，長髮"
-
-#. ~ Description for {'str': 'Hair: gray, long'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Long gray hair style."
-msgstr "長的灰色髮型"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, crew-cut"
-msgstr "頭髮：白色，平頭"
-
-#. ~ Description for {'str': 'Hair: white, crew-cut'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Crewcut white hair style."
-msgstr "平頭白色髮型。"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, mohawk"
-msgstr "頭髮：白色，莫霍克髮型"
-
-#. ~ Description for {'str': 'Hair: white, mohawk'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Mohawk white hair style."
-msgstr "莫霍克白色髮型"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, 'fro"
-msgstr "頭髮：白色，爆炸頭"
-
-#. ~ Description for {'str': "Hair: white, 'fro"}
-#: data/json/mutations/mutation_appearance.json
-msgid "'Fro white hair style."
-msgstr "爆炸頭白色髮型"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, short"
-msgstr "頭髮：白色，短髮"
-
-#. ~ Description for {'str': 'Hair: white, short'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Short white hair style"
-msgstr "短的白色髮型"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, medium-length"
-msgstr "頭髮：白色，中長髮"
-
-#. ~ Description for {'str': 'Hair: white, medium-length'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Medium-length white hair style."
-msgstr "中長髮白色髮型"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: white, long"
-msgstr "頭髮：白色，長髮"
-
-#. ~ Description for {'str': 'Hair: white, long'}
-#: data/json/mutations/mutation_appearance.json
-msgid "Long white hair style."
-msgstr "長的白色髮型"
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: none"
-msgstr "頭髮：無"
-
-#. ~ Description for {'str': 'Hair: none'}
-#: data/json/mutations/mutation_appearance.json
-msgid "You are bald."
-msgstr "你是光頭。"
+msgid "bald"
+msgstr "光头"
 
 #: data/json/mutations/mutation_appearance.json
 msgid "Eye color: blue"
@@ -166021,7 +165886,7 @@ msgstr "沉船"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
 msgid "cargo ship"
-msgstr ""
+msgstr "货船"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
 msgid "wasp-infested radio tower"
@@ -192610,6 +192475,89 @@ msgstr "\"还没死够吗！\""
 msgid "an unrestrained warcry."
 msgstr "一声肆意的战吼。"
 
+#: data/mods/Color_Expansion/modinfo.json
+msgid "Color Expansion"
+msgstr "颜色扩展"
+
+#. ~ Description for Color Expansion
+#: data/mods/Color_Expansion/modinfo.json
+msgid ""
+"Changes how color based mutations are rendered, and adds more of them. Also "
+"lets women have beards."
+msgstr "改变基于颜色的变异渲染方式，并添加更多此类变异。同时允许女性角色留胡须。"
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Eye color: pink"
+msgstr "瞳色：粉色"
+
+#. ~ Description for {'str': 'Eye color: pink'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have oddly pink eyes."
+msgstr "你的眼睛呈怪异的粉红色。"
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Eye color: white"
+msgstr "瞳色：白色"
+
+#. ~ Description for {'str': 'Eye color: white'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have no visible irises."
+msgstr "你没有可见的虹膜。"
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Eye color: black"
+msgstr "瞳色：黑色"
+
+#. ~ Description for {'str': 'Eye color: black'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "Your eyes are disconcertingly pitch black."
+msgstr "你的眼睛是令人不安的漆黑色。"
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair color: pink"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair color: pink'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have pink hair."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair color: blue"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair color: blue'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have blue hair."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair color: green"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair color: green'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have green hair."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair color: purple"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair color: purple'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have purple hair."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair color: cyan"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair color: cyan'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have cyan hair."
+msgstr ""
+
 #: data/mods/CrazyCataclysm/crazy_aperturepotato.json
 msgid "companion potato"
 msgid_plural "companion potatoes"
@@ -218124,6 +218072,15 @@ msgstr "明亮之夜"
 msgid "Core content for Cataclysm-BN"
 msgstr "CBN核心内容"
 
+#: data/mods/callback_lua_test/modinfo.json
+msgid "Callback Lua Test"
+msgstr ""
+
+#. ~ Description for Callback Lua Test
+#: data/mods/callback_lua_test/modinfo.json
+msgid "Mod for testing callbacks for items, bionics, and mutations."
+msgstr ""
+
 #: data/mods/cbm_slots/modinfo.json
 msgid "Bionic Slots"
 msgstr "生化插件插槽"
@@ -225074,16 +225031,16 @@ msgid "Try"
 msgstr "未設定"
 
 #: src/action.cpp
+msgid "Look"
+msgstr "查看"
+
+#: src/action.cpp
 msgid "Interact"
 msgstr "互動"
 
 #: src/action.cpp src/advanced_inv.cpp src/game_inventory.cpp
 msgid "Inventory"
 msgstr "物品欄"
-
-#: src/action.cpp
-msgid "Look"
-msgstr "查看"
 
 #: src/action.cpp src/game.cpp
 msgid "Combat"
@@ -230099,10 +230056,6 @@ msgid ""
 "slices painlessly into you."
 msgstr "你静静等待着，专注地凝视着虚空。全自动医疗仪正把你切开，但你毫无痛感。"
 
-#: src/bionics_ui.cpp src/mutation_ui.cpp src/options.cpp
-msgid "None"
-msgstr "無"
-
 #: src/bionics_ui.cpp
 msgid "Power usage"
 msgstr "能量消耗"
@@ -230633,6 +230586,350 @@ msgstr "星期四"
 #: src/catalua_bindings.cpp src/weather.cpp
 msgid "Saturday"
 msgstr "星期六"
+
+#: src/catalua_bindings_item.cpp
+msgid "No effect"
+msgstr "无效果"
+
+#: src/catalua_bindings_item.cpp
+msgid "Strength +4"
+msgstr "力量 +4"
+
+#: src/catalua_bindings_item.cpp
+msgid "Dexterity +4"
+msgstr "敏捷 +4"
+
+#: src/catalua_bindings_item.cpp
+msgid "Perception +4"
+msgstr "感知 +4"
+
+#: src/catalua_bindings_item.cpp
+msgid "Intelligence +4"
+msgstr "智力 +4"
+
+#: src/catalua_bindings_item.cpp
+msgid "All stats +2"
+msgstr "全属性 +2"
+
+#: src/catalua_bindings_item.cpp
+msgid "Speed +20"
+msgstr "速度 +20"
+
+#: src/catalua_bindings_item.cpp
+msgid "Reduces radiation"
+msgstr "降低辐射"
+
+#: src/catalua_bindings_item.cpp
+msgid "Summons friendly snakes when you're hit"
+msgstr "受击时召唤友方蛇类"
+
+#: src/catalua_bindings_item.cpp
+msgid "Makes you invisible"
+msgstr "使你隐形"
+
+#: src/catalua_bindings_item.cpp
+msgid "See through walls"
+msgstr "透视墙壁"
+
+#: src/catalua_bindings_item.cpp
+msgid "See through walls farther"
+msgstr "更远的透视墙壁"
+
+#: src/catalua_bindings_item.cpp
+msgid "See through walls at great distance"
+msgstr "极远距离透视墙壁"
+
+#: src/catalua_bindings_item.cpp
+msgid "Your steps are quieted"
+msgstr "你的脚步声变轻"
+
+#: src/catalua_bindings_item.cpp
+msgid "May extinguish nearby flames"
+msgstr "可能熄灭附近的火焰"
+
+#: src/catalua_bindings_item.cpp
+msgid "Emits light"
+msgstr "发出光亮"
+
+#: src/catalua_bindings_item.cpp
+msgid "Protects from fear and paralysis"
+msgstr "免疫恐惧和麻痹"
+
+#: src/catalua_bindings_item.cpp
+msgid "Protection from electricity"
+msgstr "免疫电流"
+
+#: src/catalua_bindings_item.cpp
+msgid "Increases carrying capacity"
+msgstr "增加负重能力"
+
+#: src/catalua_bindings_item.cpp
+msgid "Killing non-zombie monsters may heal you"
+msgstr "击杀非丧尸怪物可能治疗你"
+
+#: src/catalua_bindings_item.cpp
+msgid "Passive morale boost"
+msgstr "被动士气提升"
+
+#: src/catalua_bindings_item.cpp
+msgid "Increases hunger"
+msgstr "增加饥饿感"
+
+#: src/catalua_bindings_item.cpp
+msgid "Increases thirst"
+msgstr "增加口渴感"
+
+#: src/catalua_bindings_item.cpp
+msgid "Emits smoke occasionally"
+msgstr "偶尔冒烟"
+
+#: src/catalua_bindings_item.cpp
+msgid "Adds an evil presence"
+msgstr "散发邪恶气息"
+
+#: src/catalua_bindings_item.cpp
+msgid "Mimics schizophrenia"
+msgstr "模拟精神分裂症状"
+
+#: src/catalua_bindings_item.cpp
+msgid "Increases your radiation"
+msgstr "增加你的辐射值"
+
+#: src/catalua_bindings_item.cpp
+msgid "Mutates you slowly"
+msgstr "使你缓慢变异"
+
+#: src/catalua_bindings_item.cpp
+msgid "Draws netherworld attention"
+msgstr "吸引异界注意"
+
+#: src/catalua_bindings_item.cpp
+msgid "Strength -3"
+msgstr "力量 -3"
+
+#: src/catalua_bindings_item.cpp
+msgid "Dexterity -3"
+msgstr "敏捷 -3"
+
+#: src/catalua_bindings_item.cpp
+msgid "Perception -3"
+msgstr "感知 -3"
+
+#: src/catalua_bindings_item.cpp
+msgid "Intelligence -3"
+msgstr "智力 -3"
+
+#: src/catalua_bindings_item.cpp
+msgid "All stats -2"
+msgstr "全属性 -2"
+
+#: src/catalua_bindings_item.cpp
+msgid "Speed -20"
+msgstr "速度 -20"
+
+#: src/catalua_bindings_item.cpp
+msgid "Occasionally forces a teleport"
+msgstr "偶尔强制传送"
+
+#: src/catalua_bindings_item.cpp
+msgid "Makes noise when you move"
+msgstr "移动时产生噪音"
+
+#: src/catalua_bindings_item.cpp
+msgid "More likely to experience bad weather"
+msgstr "更容易遭遇恶劣天气"
+
+#: src/catalua_bindings_item.cpp
+msgid "Decreases health over time"
+msgstr "随时间减少生命值"
+
+#: src/catalua_bindings_item.cpp
+msgid "Unknown effect"
+msgstr "未知效果"
+
+#: src/catalua_bindings_item.cpp
+msgid "Emits shock fields"
+msgstr "释放电击场"
+
+#: src/catalua_bindings_item.cpp
+msgid "Launches fireballs"
+msgstr "发射火球"
+
+#: src/catalua_bindings_item.cpp
+msgid "Adrenaline rush"
+msgstr "肾上腺素激增"
+
+#: src/catalua_bindings_item.cpp
+msgid "Reveals the area around you"
+msgstr "显示周围区域"
+
+#: src/catalua_bindings_item.cpp
+msgid "Shoots blood all over"
+msgstr "向四周喷射血液"
+
+#: src/catalua_bindings_item.cpp
+msgid "Creates interdimensional fatigue"
+msgstr "造成异次元疲劳"
+
+#: src/catalua_bindings_item.cpp
+msgid "Launches acid"
+msgstr "发射酸液"
+
+#: src/catalua_bindings_item.cpp
+msgid "Destroys adjacent terrain"
+msgstr "破坏相邻地形"
+
+#: src/catalua_bindings_item.cpp
+msgid "Heals minor damage"
+msgstr "治疗轻微伤害"
+
+#: src/catalua_bindings_item.cpp
+msgid "Confuses nearby monsters"
+msgstr "迷惑附近的怪物"
+
+#: src/catalua_bindings_item.cpp
+msgid "May make nearby monsters friendly"
+msgstr "可能使附近的怪物变得友好"
+
+#: src/catalua_bindings_item.cpp
+msgid "May summon friendly insects"
+msgstr "可能召唤友方昆虫"
+
+#: src/catalua_bindings_item.cpp
+msgid "Teleports you"
+msgstr "传送你"
+
+#: src/catalua_bindings_item.cpp
+msgid "Temporary light source"
+msgstr "临时光源"
+
+#: src/catalua_bindings_item.cpp
+msgid "Rapid plant growth"
+msgstr "促进植物快速生长"
+
+#: src/catalua_bindings_item.cpp
+msgid "Hurts all monsters"
+msgstr "伤害所有怪物"
+
+#: src/catalua_bindings_item.cpp
+msgid "Temporary morale bonus"
+msgstr "临时士气加成"
+
+#: src/catalua_bindings_item.cpp
+msgid "Spews radioactive gas"
+msgstr "喷出放射性气体"
+
+#: src/catalua_bindings_item.cpp
+msgid "Chance of mutation"
+msgstr "变异几率"
+
+#: src/catalua_bindings_item.cpp
+msgid "Paralyzes you"
+msgstr "使你麻痹"
+
+#: src/catalua_bindings_item.cpp
+msgid "Spreads fire around you"
+msgstr "在你周围散布火焰"
+
+#: src/catalua_bindings_item.cpp
+msgid "Draws attention from sub-prime denizens"
+msgstr "吸引次级位面生物的注意"
+
+#: src/catalua_bindings_item.cpp
+msgid "Causes teleglow"
+msgstr "引起辉光反应（传送病）"
+
+#: src/catalua_bindings_item.cpp
+msgid "Loud noise"
+msgstr "巨大噪音"
+
+#: src/catalua_bindings_item.cpp
+msgid "Noise and morale penalty"
+msgstr "噪音和士气惩罚"
+
+#: src/catalua_bindings_item.cpp
+msgid "Darkens the sky"
+msgstr "遮蔽天空"
+
+#: src/catalua_bindings_item.cpp
+msgid "Flashbang"
+msgstr "闪光震撼效果"
+
+#: src/catalua_bindings_item.cpp
+msgid "User vomits"
+msgstr "使用者呕吐"
+
+#: src/catalua_bindings_item.cpp
+msgid "Summons shadow creatures"
+msgstr "召唤暗影生物"
+
+#: src/catalua_bindings_item.cpp
+msgid "Empties most of your stamina"
+msgstr "耗尽你大部分耐力"
+
+#: src/catalua_bindings_item.cpp
+msgid "No charges"
+msgstr "无充能"
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges over time"
+msgstr "随时间充能"
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges in sunlight"
+msgstr "在阳光下充能"
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges from pain"
+msgstr "通过痛感充能"
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges from health loss"
+msgstr "通过损失生命值充能"
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges from fatigue"
+msgstr "通过疲劳充能"
+
+#: src/catalua_bindings_item.cpp
+msgid "Recharges near portals"
+msgstr "在传送门附近充能"
+
+#: src/catalua_bindings_item.cpp
+msgid "Unknown charge type"
+msgstr "未知充能类型"
+
+#: src/catalua_bindings_item.cpp
+msgid "No special requirement"
+msgstr "无特殊要求"
+
+#: src/catalua_bindings_item.cpp
+msgid "Must be equipped"
+msgstr "必须装备"
+
+#: src/catalua_bindings_item.cpp
+msgid "Must be worn against bare skin"
+msgstr "必须贴身穿戴"
+
+#: src/catalua_bindings_item.cpp
+msgid "Charges while sleeping"
+msgstr "睡眠时充能"
+
+#: src/catalua_bindings_item.cpp
+msgid "Charges in radiation"
+msgstr "在辐射中充能"
+
+#: src/catalua_bindings_item.cpp
+msgid "Charges while wet"
+msgstr "身体潮湿时充能"
+
+#: src/catalua_bindings_item.cpp
+msgid "Charges under open sky"
+msgstr "在露天环境下充能"
+
+#: src/catalua_bindings_item.cpp
+msgid "Unknown charge requirement"
+msgstr "未知充能条件"
 
 #: src/catalua_console.cpp
 msgid "Press Ctrl+S to run script, press Esc to cancel"
@@ -243884,17 +244181,17 @@ msgstr "你需要一些 %1$s 才能重新裝填 %2$s。"
 #: src/iexamine.cpp
 #, c-format
 msgid " (%d in inventory, %d nearby)"
-msgstr ""
+msgstr "(库存 %d，附近 %d)"
 
 #: src/iexamine.cpp
 #, c-format
 msgid " (%d nearby)"
-msgstr ""
+msgstr "(附近 %d)"
 
 #: src/iexamine.cpp
 #, c-format
 msgid "Put how much %1$s into the %2$s?%3$s"
-msgstr ""
+msgstr "要放入多少 %1$s 到 %2$s 中？%3$s"
 
 #. ~ %1$s - furniture, %2$d - number, %3$s items.
 #: src/iexamine.cpp
@@ -244549,7 +244846,7 @@ msgstr "你不能在煙燻途中放入更多食物。"
 
 #: src/iexamine.cpp
 msgid "Remove it before loading the smoking rack again."
-msgstr ""
+msgstr "再次装填熏肉架前，请先将其取出。"
 
 #: src/iexamine.cpp
 msgid "Load smoking rack with what kind of food?"
@@ -250959,7 +251256,7 @@ msgstr "你無法部署 %s 在那裡。"
 
 #: src/iuse_actor.cpp
 msgid "Can't put that here - items in the way."
-msgstr ""
+msgstr "无法在此放置 - 有物品阻挡。"
 
 #: src/iuse_actor.cpp src/mission_start.cpp src/mission_util.cpp
 msgid "Please wait…"
@@ -261162,6 +261459,10 @@ msgstr "你的 %s 劇情不允許你移除這個特質。"
 #, c-format
 msgid "Your profession of %s prevents you from removing this trait."
 msgstr "你的 %s 職業不允許你移除這個特質。"
+
+#: src/newcharacter.cpp
+msgid "You must have a trait of this type."
+msgstr "你必须拥有此类特质。"
 
 #: src/newcharacter.cpp
 msgid "You already picked a conflicting trait!"
