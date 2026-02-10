@@ -29,15 +29,15 @@
 # DelFe, 2025
 # 47a81cb9738d39622e1b1fde74c42b2a_791bd4f <20fb875a401cb03ba4fd8103e46da6b9_1176784>, 2026
 # Coolthulhu <Coolthulhu@gmail.com>, 2026
-# CatCoffee, 2026
 # Tae Heon Lim, 2026
 # Choi Dong-uk, 2026
+# CatCoffee, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-02-08 20:34+0000\n"
-"Last-Translator: Choi Dong-uk, 2026\n"
+"POT-Creation-Date: 2026-02-09 20:10+0000\n"
+"Last-Translator: CatCoffee, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17218,7 +17218,7 @@ msgstr "잘려진"
 
 #: data/json/materials.json src/locations.cpp
 msgid "worn"
-msgstr "닳은"
+msgstr "착용"
 
 #: data/json/materials.json
 msgid "ruined"
@@ -102459,6 +102459,21 @@ msgstr ""
 "준비할 때 조금 더 오래 걸립니다."
 
 #: data/json/items/gunmod/accessories.json
+msgid "crossbow draw motor"
+msgid_plural "crossbow draw motors"
+msgstr[0] "석궁 장전보조 모터"
+
+#: data/json/items/gunmod/accessories.json
+msgid ""
+"An electric motor and transmission that can be attached to a crossbow's "
+"string to make it easier to draw back. It makes reloading faster, but "
+"requires UPS power and makes the crossbow bulkier and heavier. Who said "
+"crossbows needed to be medieval?"
+msgstr ""
+"석궁 활줄에 장착해 보다 쉽게 당길 수 있도록 돕는 전동 모터 및 변속기입니다. 재장전 속도를 높이지만, UPS 전력을 소모하며 석궁의 "
+"부피와 무게를 증가시킵니다. 누가 석궁이 꼭 중세 무기여야 한다고 했죠?"
+
+#: data/json/items/gunmod/accessories.json
 msgid "belt clip"
 msgid_plural "belt clips"
 msgstr[0] "벨트 클립"
@@ -131537,121 +131552,121 @@ msgstr ""
 "장비에도 불구하고 안일사 당한 것 같습니다."
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: black"
+msgid "Hair color: black"
 msgstr ""
 
-#. ~ Description for {'str': 'Hair: black'}
+#. ~ Description for {'str': 'Hair color: black'}
 #: data/json/mutations/mutation_appearance.json
-msgid "black hair"
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: brown"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: brown'}
-#: data/json/mutations/mutation_appearance.json
-msgid "brown hair"
+msgid "You have black hair."
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: blond"
+msgid "Hair color: brown"
 msgstr ""
 
-#. ~ Description for {'str': 'Hair: blond'}
+#. ~ Description for {'str': 'Hair color: brown'}
 #: data/json/mutations/mutation_appearance.json
-msgid "blond hair"
-msgstr ""
-
-#: data/json/mutations/mutation_appearance.json
-msgid "Hair: red"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: red'}
-#: data/json/mutations/mutation_appearance.json
-msgid "red hair"
+msgid "You have brown hair."
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: gray"
+msgid "Hair color: blond"
 msgstr ""
 
-#. ~ Description for {'str': 'Hair: gray'}
+#. ~ Description for {'str': 'Hair color: blond'}
 #: data/json/mutations/mutation_appearance.json
-msgid "gray hair"
+msgid "You have blond hair."
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
-msgid "Hair: white"
+msgid "Hair color: red"
 msgstr ""
 
-#. ~ Description for {'str': 'Hair: white'}
+#. ~ Description for {'str': 'Hair color: red'}
 #: data/json/mutations/mutation_appearance.json
-msgid "white hair"
+msgid "You have red hair."
+msgstr ""
+
+#: data/json/mutations/mutation_appearance.json
+msgid "Hair color: gray"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair color: gray'}
+#: data/json/mutations/mutation_appearance.json
+msgid "You have gray hair."
+msgstr ""
+
+#: data/json/mutations/mutation_appearance.json
+msgid "Hair color: white"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair color: white'}
+#: data/json/mutations/mutation_appearance.json
+msgid "You have white hair."
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
 msgid "Hair style: crew-cut"
-msgstr ""
+msgstr "머리 모양: 크루컷"
 
 #. ~ Description for {'str': 'Hair style: crew-cut'}
 #: data/json/mutations/mutation_appearance.json
 msgid "Crewcut hair"
-msgstr ""
+msgstr "크루컷 머리 모양"
 
 #: data/json/mutations/mutation_appearance.json
 msgid "Hair style: mohawk"
-msgstr ""
+msgstr "머리 모양: 모히칸"
 
 #. ~ Description for {'str': 'Hair style: mohawk'}
 #: data/json/mutations/mutation_appearance.json
 msgid "Mohawk hair"
-msgstr ""
+msgstr "모히칸 머리 모양"
 
 #: data/json/mutations/mutation_appearance.json
 msgid "Hair style: 'fro"
-msgstr ""
+msgstr "머리 모양: 아프로"
 
 #. ~ Description for {'str': "Hair style: 'fro"}
 #: data/json/mutations/mutation_appearance.json
 msgid "'Fro hair"
-msgstr ""
+msgstr "아프로 머리 모양"
 
 #: data/json/mutations/mutation_appearance.json
 msgid "Hair style: short"
-msgstr ""
+msgstr "머리 모양: 단발"
 
 #. ~ Description for {'str': 'Hair style: short'}
 #: data/json/mutations/mutation_appearance.json
 msgid "Short hair"
-msgstr ""
+msgstr "단발 머리 모양"
 
 #: data/json/mutations/mutation_appearance.json
 msgid "Hair style: medium-length"
-msgstr ""
+msgstr "머리 모양: 중간머리"
 
 #. ~ Description for {'str': 'Hair style: medium-length'}
 #: data/json/mutations/mutation_appearance.json
 msgid "Medium-length hair"
-msgstr ""
+msgstr "중간 머리 모양"
 
 #: data/json/mutations/mutation_appearance.json
 msgid "Hair style: long"
-msgstr ""
+msgstr "머리 모양: 장발"
 
 #. ~ Description for {'str': 'Hair style: long'}
 #: data/json/mutations/mutation_appearance.json
 msgid "Long hair"
-msgstr ""
+msgstr "장발 머리 모양"
 
 #: data/json/mutations/mutation_appearance.json
 msgid "Hair style: bald"
-msgstr ""
+msgstr "머리 모양: 대머리"
 
 #. ~ Description for {'str': 'Hair style: bald'}
 #: data/json/mutations/mutation_appearance.json
 msgid "bald"
-msgstr ""
+msgstr "대머리"
 
 #: data/json/mutations/mutation_appearance.json
 msgid "Eye color: blue"
@@ -200804,85 +200819,85 @@ msgstr "억누를 수 없는 전투함성"
 
 #: data/mods/Color_Expansion/modinfo.json
 msgid "Color Expansion"
-msgstr ""
+msgstr "색상 확장"
 
 #. ~ Description for Color Expansion
 #: data/mods/Color_Expansion/modinfo.json
 msgid ""
 "Changes how color based mutations are rendered, and adds more of them. Also "
 "lets women have beards."
-msgstr ""
+msgstr "색상 기반 돌연변이가 렌더링되는 방식을 변경하고, 색상을 추가합니다. 덤으로 여성이 턱수염을 기를 수 있도록 설정합니다."
 
 #: data/mods/Color_Expansion/mutations.json
 msgid "Eye color: pink"
-msgstr ""
+msgstr "눈 색: 분홍색"
 
 #. ~ Description for {'str': 'Eye color: pink'}
 #: data/mods/Color_Expansion/mutations.json
 msgid "You have oddly pink eyes."
-msgstr ""
+msgstr "당신의 눈은 기이한 분홍색입니다."
 
 #: data/mods/Color_Expansion/mutations.json
 msgid "Eye color: white"
-msgstr ""
+msgstr "눈 색: 흰색"
 
 #. ~ Description for {'str': 'Eye color: white'}
 #: data/mods/Color_Expansion/mutations.json
 msgid "You have no visible irises."
-msgstr ""
+msgstr "당신의 눈에는 뚜렷한 홍채가 없습니다."
 
 #: data/mods/Color_Expansion/mutations.json
 msgid "Eye color: black"
-msgstr ""
+msgstr "눈 색: 검은색"
 
 #. ~ Description for {'str': 'Eye color: black'}
 #: data/mods/Color_Expansion/mutations.json
 msgid "Your eyes are disconcertingly pitch black."
+msgstr "당신의 눈은 기묘할 정도로 짙은 검은색입니다."
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair color: pink"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair color: pink'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have pink hair."
 msgstr ""
 
 #: data/mods/Color_Expansion/mutations.json
-msgid "Hair: pink"
+msgid "Hair color: blue"
 msgstr ""
 
-#. ~ Description for {'str': 'Hair: pink'}
+#. ~ Description for {'str': 'Hair color: blue'}
 #: data/mods/Color_Expansion/mutations.json
-msgid "pink hair"
-msgstr ""
-
-#: data/mods/Color_Expansion/mutations.json
-msgid "Hair: blue"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: blue'}
-#: data/mods/Color_Expansion/mutations.json
-msgid "blue hair"
+msgid "You have blue hair."
 msgstr ""
 
 #: data/mods/Color_Expansion/mutations.json
-msgid "Hair: green"
+msgid "Hair color: green"
 msgstr ""
 
-#. ~ Description for {'str': 'Hair: green'}
+#. ~ Description for {'str': 'Hair color: green'}
 #: data/mods/Color_Expansion/mutations.json
-msgid "green hair"
-msgstr ""
-
-#: data/mods/Color_Expansion/mutations.json
-msgid "Hair: purple"
-msgstr ""
-
-#. ~ Description for {'str': 'Hair: purple'}
-#: data/mods/Color_Expansion/mutations.json
-msgid "purple hair"
+msgid "You have green hair."
 msgstr ""
 
 #: data/mods/Color_Expansion/mutations.json
-msgid "Hair: cyan"
+msgid "Hair color: purple"
 msgstr ""
 
-#. ~ Description for {'str': 'Hair: cyan'}
+#. ~ Description for {'str': 'Hair color: purple'}
 #: data/mods/Color_Expansion/mutations.json
-msgid "cyan hair"
+msgid "You have purple hair."
+msgstr ""
+
+#: data/mods/Color_Expansion/mutations.json
+msgid "Hair color: cyan"
+msgstr ""
+
+#. ~ Description for {'str': 'Hair color: cyan'}
+#: data/mods/Color_Expansion/mutations.json
+msgid "You have cyan hair."
 msgstr ""
 
 #: data/mods/CrazyCataclysm/crazy_aperturepotato.json
@@ -227371,6 +227386,15 @@ msgstr "밝은 밤"
 #: data/mods/bn/modinfo.json
 msgid "Core content for Cataclysm-BN"
 msgstr "카타클리즘 BN의 중심 컨텐츠"
+
+#: data/mods/callback_lua_test/modinfo.json
+msgid "Callback Lua Test"
+msgstr ""
+
+#. ~ Description for Callback Lua Test
+#: data/mods/callback_lua_test/modinfo.json
+msgid "Mod for testing callbacks for items, bionics, and mutations."
+msgstr ""
 
 #: data/mods/cbm_slots/modinfo.json
 msgid "Bionic Slots"
@@ -271013,7 +271037,7 @@ msgstr "%s 직업으로 인해 이 특성을 제거할 수 없습니다."
 
 #: src/newcharacter.cpp
 msgid "You must have a trait of this type."
-msgstr ""
+msgstr "이 종류의 특성을 반드시 갖고 있어야 합니다."
 
 #: src/newcharacter.cpp
 msgid "You already picked a conflicting trait!"
