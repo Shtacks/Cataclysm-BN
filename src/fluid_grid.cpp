@@ -528,6 +528,7 @@ auto collect_storage_for_grid( const tripoint_abs_omt &anchor_abs,
             std::ranges::for_each( entry.second.stored_by_type, [&]( const auto & liquid_entry ) {
                 total.stored_by_type[liquid_entry.first] += liquid_entry.second;
             } );
+            total.capacity = std::max( total.capacity, entry.second.capacity );
             to_erase.push_back( entry.first );
         }
     } );
@@ -847,7 +848,9 @@ class fluid_storage_grid
             anchor_abs( opts.anchor ),
             state( opts.initial_state ),
             mb( *opts.buffer ) {
-            state.capacity = calculate_capacity();
+            if( const auto recalculated = calculate_capacity() ) {
+                state.capacity = *recalculated;
+            }
             if( state.stored_total() > state.capacity ) {
                 reduce_storage( state, state.stored_total() - state.capacity );
             }
@@ -971,7 +974,14 @@ class fluid_storage_grid
         }
 
     private:
-        auto calculate_capacity() const -> units::volume {
+        auto calculate_capacity() const -> std::optional<units::volume> {
+            const auto all_loaded = std::ranges::all_of( submap_coords,
+            [&]( const tripoint_abs_sm & sm_coord ) {
+                return mb.lookup_submap( sm_coord ) != nullptr;
+            } );
+            if( !all_loaded ) {
+                return std::nullopt;
+            }
             auto total = 0_ml;
             std::ranges::for_each( submap_coords, [&]( const tripoint_abs_sm & sm_coord ) {
                 total += submap_tank_cache_at( sm_coord, mb ).capacity;
