@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-02-09 20:10+0000\n"
+"POT-Creation-Date: 2026-02-11 21:36+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -4253,7 +4253,8 @@ msgstr "小型反応炉"
 msgid ""
 "This stripped down mini-reactor generates impressive amounts of bionic power"
 " but slowly irradiates the user when in use.  1 plutonium fuel cell provides"
-" 1000 charges producing 10kW of power a turn."
+" 1000 charges producing 10kW of power.  Produces 50W of power while "
+"inactive."
 msgstr ""
 
 #: data/json/bionics.json
@@ -4265,7 +4266,7 @@ msgstr "強化型小型反応炉"
 msgid ""
 "This stripped down mini-reactor has been heavily modified and is more "
 "efficient and safer than the base model.  1 plutonium fuel cell provides "
-"1500 charges producing 10kW of power."
+"1500 charges producing 10kW of power.  Produces 75W of power while inactive."
 msgstr ""
 
 #: data/json/bionics.json
@@ -4288,8 +4289,7 @@ msgstr ""
 #: data/json/bionics.json
 msgid ""
 "A compact alphavoltaic power source, producing a steady source of limitless "
-"bionic power at the cost of minimal radiation while in use.  Produces 50W of"
-" power while active."
+"bionic power.  Produces 50W of power while active."
 msgstr ""
 
 #: data/json/bionics.json
@@ -6247,6 +6247,118 @@ msgstr "帆布の壁を作る"
 #: data/json/construction_group.json
 msgid "Build canvas door"
 msgstr "帆布のドアを作る"
+
+#: data/json/construction_group.json
+msgid "Replant Peanut Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Dig Up Peanut Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Replant Harvested Peanut Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Dig Up Harvested Peanut Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Replant Blueberry Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Dig Up Blueberry Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Replant Harvested Blueberry Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Dig Up Harvested Blueberry Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Replant Strawberry Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Dig Up Strawberry Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Replant Harvested Strawberry Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Dig Up Harvested Strawberry Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Replant Blackberry Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Dig Up Blackberry Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Replant Harvested Blackberry Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Dig Up Harvested Blackberry Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Replant Huckleberry Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Dig Up Huckleberry Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Replant Harvested Huckleberry Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Dig Up Harvested Huckleberry Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Replant Raspberry Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Dig Up Raspberry Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Replant Harvested Raspberry Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Dig Up Harvested Raspberry Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Replant Grape Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Dig Up Grape Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Replant Harvested Grape Bush"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Dig Up Harvested Grape Bush"
+msgstr ""
 
 #: data/json/construction_group.json
 msgid "Place Exercise Bench"
@@ -11363,6 +11475,13 @@ msgstr "このアイテムからスポーンした生物は、あなたに対し
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
+msgid ""
+"Any creature spawned from this item will <info>always</info> emerge "
+"<bad>against you</good>."
+msgstr ""
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
 msgid "This comestible can be <good>eaten even on full stomach</good>."
 msgstr "この消費アイテムは<good>満腹状態でも食べられる</good>。"
 
@@ -12520,8 +12639,16 @@ msgid "Check grid connections"
 msgstr "電気配線の接続を確認"
 
 #: data/json/item_actions.json
+msgid "Check fluid grid connections"
+msgstr ""
+
+#: data/json/item_actions.json
 msgid "Modify grid connections"
 msgstr "電気配線の接続を変更"
+
+#: data/json/item_actions.json
+msgid "Modify fluid grid connections"
+msgstr ""
 
 #: data/json/item_actions.json
 msgid "Measure grid power"
@@ -25629,40 +25756,6 @@ msgctxt "start_name"
 msgid "Lake Surface"
 msgstr "湖の水面"
 
-#. ~ Name for scenario 'Large Building' for a male character
-#: data/json/scenarios.json
-msgctxt "scenario_male"
-msgid "Large Building"
-msgstr "大きな建物"
-
-#. ~ Name for scenario 'Large Building' for a female character
-#: data/json/scenarios.json
-msgctxt "scenario_female"
-msgid "Large Building"
-msgstr "大きな建物"
-
-#. ~ Description for scenario 'Large Building' for a male character.
-#: data/json/scenarios.json
-msgctxt "scen_desc_male"
-msgid ""
-"Whether due to stubbornness, ignorance, or just plain bad luck, you missed "
-"the evacuation, and are stuck in a large building full of the risen dead."
-msgstr "頑固さ、無知、あるいは単なる不運か。避難に間に合わず、よみがえった死者がうごめく巨大な建物の中で立ち往生している。"
-
-#. ~ Description for scenario 'Large Building' for a female character.
-#: data/json/scenarios.json
-msgctxt "scen_desc_female"
-msgid ""
-"Whether due to stubbornness, ignorance, or just plain bad luck, you missed "
-"the evacuation, and are stuck in a large building full of the risen dead."
-msgstr "頑固さ、無知、あるいは単なる不運か。避難に間に合わず、よみがえった死者がうごめく巨大な建物の中で立ち往生している。"
-
-#. ~ Starting location for scenario 'Large Building'.
-#: data/json/scenarios.json
-msgctxt "start_name"
-msgid "In Large Building"
-msgstr "大きな建物内"
-
 #. ~ Name for scenario 'Surrounded' for a male character
 #: data/json/scenarios.json
 msgctxt "scenario_male"
@@ -25724,6 +25817,40 @@ msgstr "ゾンビのいない、遠方の安全な場所へたどり着いた。
 msgctxt "start_name"
 msgid "Safe Building"
 msgstr "安全な建物"
+
+#. ~ Name for scenario 'Survivor Holdout' for a male character
+#: data/json/scenarios.json
+msgctxt "scenario_male"
+msgid "Survivor Holdout"
+msgstr ""
+
+#. ~ Name for scenario 'Survivor Holdout' for a female character
+#: data/json/scenarios.json
+msgctxt "scenario_female"
+msgid "Survivor Holdout"
+msgstr ""
+
+#. ~ Description for scenario 'Survivor Holdout' for a male character.
+#: data/json/scenarios.json
+msgctxt "scen_desc_male"
+msgid ""
+"A few days after fleeing the chaos of the cities, you've finally found a "
+"place still inhabited by the living."
+msgstr ""
+
+#. ~ Description for scenario 'Survivor Holdout' for a female character.
+#: data/json/scenarios.json
+msgctxt "scen_desc_female"
+msgid ""
+"A few days after fleeing the chaos of the cities, you've finally found a "
+"place still inhabited by the living."
+msgstr ""
+
+#. ~ Starting location for scenario 'Survivor Holdout'.
+#: data/json/scenarios.json
+msgctxt "start_name"
+msgid "Inhabited Refuge"
+msgstr ""
 
 #. ~ Name for scenario 'Infected' for a male character
 #: data/json/scenarios.json
@@ -26569,6 +26696,40 @@ msgstr ""
 msgctxt "start_name"
 msgid "Emergency Landing Site"
 msgstr "緊急着陸地点"
+
+#. ~ Name for scenario 'Basement Dweller' for a male character
+#: data/json/scenarios.json
+msgctxt "scenario_male"
+msgid "Basement Dweller"
+msgstr ""
+
+#. ~ Name for scenario 'Basement Dweller' for a female character
+#: data/json/scenarios.json
+msgctxt "scenario_female"
+msgid "Basement Dweller"
+msgstr ""
+
+#. ~ Description for scenario 'Basement Dweller' for a male character.
+#: data/json/scenarios.json
+msgctxt "scen_desc_male"
+msgid ""
+"You were happiest tucked away below street level, tinkering and hiding in "
+"your basement."
+msgstr ""
+
+#. ~ Description for scenario 'Basement Dweller' for a female character.
+#: data/json/scenarios.json
+msgctxt "scen_desc_female"
+msgid ""
+"You were happiest tucked away below street level, tinkering and hiding in "
+"your basement."
+msgstr ""
+
+#. ~ Starting location for scenario 'Basement Dweller'.
+#: data/json/scenarios.json
+msgctxt "start_name"
+msgid "Basement Hideout"
+msgstr ""
 
 #. ~ Name for scenario 'High Tech, Low Life' for a male character
 #: data/json/scenarios.json
@@ -29804,6 +29965,10 @@ msgstr "書店"
 msgid "Cabin"
 msgstr "小屋"
 
+#: data/json/start_locations.json
+msgid "Warrener's Cabin"
+msgstr ""
+
 #: data/json/start_locations.json src/gamemode_defense.cpp
 msgid "Hospital"
 msgstr "病院"
@@ -29850,6 +30015,10 @@ msgstr "科学研究所(低温)"
 #: data/json/start_locations.json
 msgid "Deep-frozen science lab"
 msgstr "科学研究所(極低温)"
+
+#: data/json/start_locations.json data/json/npcs/factions.json
+msgid "Hub 01"
+msgstr "ハブ01"
 
 #: data/json/start_locations.json
 msgid "Mall (loading area)"
@@ -29912,6 +30081,10 @@ msgid "Farm"
 msgstr "農場"
 
 #: data/json/start_locations.json
+msgid "Isherwood Farms"
+msgstr ""
+
+#: data/json/start_locations.json
 msgid "Church"
 msgstr "教会"
 
@@ -29923,6 +30096,34 @@ msgstr "墓地"
 #: data/json/start_locations.json
 msgid "Shady Basement"
 msgstr "怪しい地下室"
+
+#: data/json/start_locations.json
+msgid "Game Room Basement"
+msgstr ""
+
+#: data/json/start_locations.json
+msgid "Chemistry Basement"
+msgstr ""
+
+#: data/json/start_locations.json
+msgid "Hidden Lab Stairs"
+msgstr ""
+
+#: data/json/start_locations.json
+msgid "Meth Lab Basement"
+msgstr ""
+
+#: data/json/start_locations.json
+msgid "Ruined Basement"
+msgstr ""
+
+#: data/json/start_locations.json
+msgid "Prepper Basement"
+msgstr ""
+
+#: data/json/start_locations.json
+msgid "Grow Operation Basement"
+msgstr ""
 
 #: data/json/start_locations.json
 msgid "Zoo (Giftshop)"
@@ -29951,6 +30152,18 @@ msgstr "アパート(住戸)"
 #: data/json/start_locations.json
 msgid "Horse Ranch"
 msgstr "馬牧場"
+
+#: data/json/start_locations.json
+msgid "Chemist's Cabin"
+msgstr ""
+
+#: data/json/start_locations.json
+msgid "Inhabited Scrap Yard"
+msgstr ""
+
+#: data/json/start_locations.json
+msgid "Inhabited Lumbermill"
+msgstr ""
 
 #: data/json/start_locations.json
 msgid "Lake Cabin"
@@ -37637,6 +37850,15 @@ msgstr "スタンド式タンク"
 #: data/json/furniture_and_terrain/furniture-storage.json
 msgid "A large freestanding metal tank, useful for holding liquids."
 msgstr "大型の自立式金属タンク。液体の保管に便利。"
+
+#: data/json/furniture_and_terrain/furniture-storage.json
+msgid "standing tank (plumbed)"
+msgstr ""
+
+#. ~ Description for standing tank (plumbed)
+#: data/json/furniture_and_terrain/furniture-storage.json
+msgid "A large freestanding metal tank hooked into a fluid grid."
+msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-storage.json
 msgid "clay water pots"
@@ -47888,7 +48110,8 @@ msgstr[0] "CBM:小型反応炉"
 msgid ""
 "This stripped down mini-reactor will generate impressive amounts of bionic "
 "power, but may not be the safest thing to install.  1 plutonium fuel cell "
-"provides 1000 charges producing 10kW of power."
+"provides 1000 charges producing 10kW of power.  Produces 50W of power while "
+"inactive."
 msgstr ""
 
 #: data/json/items/bionics.json
@@ -47901,7 +48124,8 @@ msgstr[0] "CBM:強化型小型反応炉"
 msgid ""
 "This module upgrades a pre-installed microreactor with enhanced maximum "
 "yield and limited automatic radiation scrubbing capabilities.  1 plutonium "
-"fuel cell provides 1500 charges producing 10kW of power."
+"fuel cell provides 1500 charges producing 10kW of power.  Produces 75W of "
+"power while inactive."
 msgstr ""
 
 #: data/json/items/bionics.json
@@ -47929,6 +48153,19 @@ msgid ""
 " Effectively a plutonium fuel cell converted into an alphavoltaic battery, "
 "this bionic will provide a limitless source of power at a steady 50 watts "
 "when active, with only minimal exposure to radiation while in use."
+msgstr ""
+
+#: data/json/items/bionics.json
+msgid "Atomic Battery Upgrade CBM"
+msgid_plural "Atomic Battery Upgrade CBMs"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'Atomic Battery Upgrade CBM'}
+#: data/json/items/bionics.json
+msgid ""
+"A kit for upgrading a pre-installed atomic battery into a Microreactor, "
+"providing options for significantly more power generation potential and fuel"
+" capacity at the cost of increased radiation exposure."
 msgstr ""
 
 #: data/json/items/bionics.json
@@ -54755,6 +54992,116 @@ msgid ""
 "to salvage and reuse these components without them."
 msgstr ""
 "多数の主要メーカーによるIC回路のデータシートを収録した巨大なアーカイブ。適切な知識を持つ者にとっては価値があるだろう。これらのデータがなければ、対応部品の回収や再利用は極めて困難になるため。"
+
+#: data/json/items/terrain.json
+msgid "food bush"
+msgid_plural "food bushs"
+msgstr[0] ""
+
+#. ~ Description for food bush
+#: data/json/items/terrain.json
+msgid "A bush that is made of veggy and food. Seeing this is a bug."
+msgstr ""
+
+#: data/json/items/terrain.json
+msgid "uprooted peanut bush"
+msgid_plural "uprooted peanut bushs"
+msgstr[0] ""
+
+#. ~ Description for uprooted peanut bush
+#: data/json/items/terrain.json
+msgid "A peanut bush that's ready for transplanting."
+msgstr ""
+
+#. ~ Description for uprooted peanut bush
+#: data/json/items/terrain.json
+msgid "A harvested peanut bush that's ready for transplanting."
+msgstr ""
+
+#: data/json/items/terrain.json
+msgid "uprooted blueberry bush"
+msgid_plural "uprooted blueberry bushs"
+msgstr[0] ""
+
+#. ~ Description for uprooted blueberry bush
+#: data/json/items/terrain.json
+msgid "A blueberry bush that's ready for transplanting."
+msgstr ""
+
+#: data/json/items/terrain.json
+msgid "uprooted strawberry bush"
+msgid_plural "uprooted strawberry bushs"
+msgstr[0] ""
+
+#. ~ Description for uprooted strawberry bush
+#: data/json/items/terrain.json
+msgid "A strawberry bush that's ready for transplanting."
+msgstr ""
+
+#. ~ Description for uprooted strawberry bush
+#: data/json/items/terrain.json
+msgid "A harvested strawberry bush that's ready for transplanting."
+msgstr ""
+
+#: data/json/items/terrain.json
+msgid "uprooted blackberry bush"
+msgid_plural "uprooted blackberry bushs"
+msgstr[0] ""
+
+#. ~ Description for uprooted blackberry bush
+#: data/json/items/terrain.json
+msgid "A blackberry bush that's ready for transplanting."
+msgstr ""
+
+#. ~ Description for uprooted blackberry bush
+#: data/json/items/terrain.json
+msgid "A harvested blackberry bush that's ready for transplanting."
+msgstr ""
+
+#: data/json/items/terrain.json
+msgid "uprooted huckleberry bush"
+msgid_plural "uprooted huckleberry bushs"
+msgstr[0] ""
+
+#. ~ Description for uprooted huckleberry bush
+#: data/json/items/terrain.json
+msgid "A huckleberry bush that's ready for transplanting."
+msgstr ""
+
+#. ~ Description for uprooted huckleberry bush
+#: data/json/items/terrain.json
+msgid "A harvested huckleberry bush that's ready for transplanting."
+msgstr ""
+
+#: data/json/items/terrain.json
+msgid "uprooted raspberry bush"
+msgid_plural "uprooted raspberry bushs"
+msgstr[0] ""
+
+#. ~ Description for uprooted raspberry bush
+#: data/json/items/terrain.json
+msgid "A raspberry bush that's ready for transplanting."
+msgstr ""
+
+#. ~ Description for uprooted raspberry bush
+#: data/json/items/terrain.json
+msgid "A harvested raspberry bush that's ready for transplanting."
+msgstr ""
+
+#: data/json/items/terrain.json
+msgid "uprooted grape bush"
+msgid_plural "uprooted grape bushs"
+msgstr[0] ""
+
+#. ~ Description for uprooted grape bush
+#: data/json/items/terrain.json
+msgid "A grape bush that's ready for transplanting."
+msgstr ""
+
+#. ~ Description for uprooted grape bush
+#: data/json/items/terrain.json
+msgid "A harvested grape bush that's ready for transplanting."
+msgstr ""
 
 #: data/json/items/tool_armor.json
 msgid "arm splint"
@@ -115693,6 +116040,18 @@ msgid ""
 msgstr "柔軟なゴムホースだ。製作に使えるほか、車両から燃料を抜き取ることもできる。"
 
 #: data/json/items/tool/workshop.json
+msgid "utility maintenance kit"
+msgid_plural "utility maintenance kits"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'utility maintenance kit'}
+#: data/json/items/tool/workshop.json
+msgid ""
+"A compact kit for probing, joining, and extending fluid grid connections in "
+"buildings."
+msgstr ""
+
+#: data/json/items/tool/workshop.json
 msgid "bottle jack"
 msgid_plural "bottle jacks"
 msgstr[0] "ボトルジャッキ"
@@ -138015,10 +138374,6 @@ msgid ""
 " mutinied because of your abuse and incompetence.  They will kill you if "
 "they can."
 msgstr "以前はお前に身の安全を託していた生存者たちだが、お前の虐待と無能さに反旗を翻した。彼らは機会があれば、お前を殺そうとするだろう。"
-
-#: data/json/npcs/factions.json
-msgid "Hub 01"
-msgstr "ハブ01"
 
 #. ~ Description for Hub 01
 #: data/json/npcs/factions.json
@@ -219281,6 +219636,15 @@ msgid ""
 "Removes all monsters from the game, save for those in the WILDLIFE category."
 msgstr "野生動物以外の全モンスターを削除する。"
 
+#: data/mods/Spawn_Hook_Test/modinfo.json
+msgid "Spawn hook testing"
+msgstr ""
+
+#. ~ Description for Spawn hook testing
+#: data/mods/Spawn_Hook_Test/modinfo.json
+msgid "Testing spawn hooks. It should be obsolete after testing!"
+msgstr ""
+
 #: data/mods/StatsThroughSkills/modinfo.json
 msgid "Stats Through Skills"
 msgstr "スキルと連動した能力成長"
@@ -245157,9 +245521,48 @@ msgid "You squeeze the last drops of %s from the vat."
 msgstr "%sを最後の一滴まで大桶から取り出した。"
 
 #: src/iexamine.cpp
+msgid ""
+"Adding clean water to this grid containing tainted water will contaminate "
+"your clean water.  Continue?"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid ""
+"Adding tainted water to this grid containing clean water will contaminate "
+"your clean water.  Continue?"
+msgstr ""
+
+#: src/iexamine.cpp
 #, c-format
-msgid "You don't have any drinks to fill the %s with."
-msgstr "%sに注ぐ液体がない。"
+msgid "Adding %s will contaminate the fluid grid's water supply.  Continue?"
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "The %s contains non-water liquids and cannot be connected."
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "Dispense or dump %s"
+msgstr "%sを容器に注ぐ/捨てる"
+
+#: src/iexamine.cpp src/vehicle_use.cpp
+msgid "Have a drink"
+msgstr "水を飲む"
+
+#: src/iexamine.cpp
+msgid "Fill"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "Disconnect from fluid grid"
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "You don't have any water to fill the %s with."
+msgstr ""
 
 #: src/iexamine.cpp
 msgid "Store which drink?"
@@ -245172,22 +245575,55 @@ msgstr "%1$sに%2$sを入れる？"
 
 #: src/iexamine.cpp
 #, c-format
-msgid "You completely fill the %1$s with %2$s."
-msgstr "%1$sは%2$sで完全に満たされた。"
+msgid "The %s cannot hold any more water."
+msgstr ""
 
 #: src/iexamine.cpp
 #, c-format
 msgid "You fill the %1$s with %2$s."
 msgstr "%1$sに%2$sを入れた。"
 
+#: src/iexamine.cpp src/iuse.cpp
+#, c-format
+msgid "Fluid stored: %1$s/%2$s %3$s."
+msgstr ""
+
+#: src/iexamine.cpp src/iuse.cpp src/vehicle_display.cpp
+msgid "empty"
+msgstr "空"
+
+#: src/iexamine.cpp src/iuse.cpp
+msgid "mixed fluids"
+msgstr ""
+
+#: src/iexamine.cpp src/iuse.cpp
+#, c-format
+msgid "Fluid type: %s."
+msgstr ""
+
 #: src/iexamine.cpp
 #, c-format
-msgid "Dispense or dump %s"
-msgstr "%sを容器に注ぐ/捨てる"
+msgid "You disconnect the %s from the fluid grid."
+msgstr ""
 
-#: src/iexamine.cpp src/vehicle_use.cpp
-msgid "Have a drink"
-msgstr "水を飲む"
+#: src/iexamine.cpp
+msgid "Add to fluid grid"
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "You connect the %s to the fluid grid."
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "You don't have any drinks to fill the %s with."
+msgstr "%sに注ぐ液体がない。"
+
+#: src/iexamine.cpp
+#, c-format
+msgid "You completely fill the %1$s with %2$s."
+msgstr "%1$sは%2$sで完全に満たされた。"
 
 #: src/iexamine.cpp
 msgid "Refill"
@@ -245212,6 +245648,11 @@ msgstr "%1$sを所持していないため%2$sに補充できない。"
 #, c-format
 msgid "It contains %s (%d), %0.f%% full."
 msgstr "%s(%d)が容器の%0.f%%まで入っている。"
+
+#: src/iexamine.cpp
+#, c-format
+msgid "The %s only accepts water."
+msgstr ""
 
 #: src/iexamine.cpp
 #, c-format
@@ -245398,6 +245839,20 @@ msgstr "%sがある。取り外す？"
 #, c-format
 msgid "There is a %s there.  Disarm?"
 msgstr "%sがある。解除する？"
+
+#: src/iexamine.cpp
+msgid "It is not connected to a fluid grid fixture."
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "The %s has no usable output."
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "The %s is dry."
+msgstr ""
 
 #: src/iexamine.cpp
 msgid "What would you like to change?"
@@ -248668,6 +249123,10 @@ msgstr " (接続)"
 #: src/item.cpp src/wish.cpp
 msgid " (friendly)"
 msgstr " (友好)"
+
+#: src/item.cpp
+msgid " (hostile)"
+msgstr ""
 
 #: src/item.cpp
 msgid " *"
@@ -252249,6 +252708,15 @@ msgid "You will no longer recharge the %s via UPS."
 msgstr "UPSを介した %sの再充電はもうしないだろう。"
 
 #: src/iuse.cpp
+msgid "This fluid grid has no connections."
+msgstr ""
+
+#: src/iuse.cpp
+#, c-format
+msgid "This fluid grid has connections: %s."
+msgstr ""
+
+#: src/iuse.cpp
 #, c-format
 msgid "You are connecting two locations in the same grid, with %lu elements."
 msgstr "同じグリッド内の二つの場所を、%lu 個の要素で接続している。"
@@ -252285,6 +252753,16 @@ msgstr ""
 "%s\n"
 "この行動は一切の資源を消費しない。\n"
 "本当に良いか？"
+
+#: src/iuse.cpp
+#, c-format
+msgid "Remove fluid grid connection in direction: %s"
+msgstr ""
+
+#: src/iuse.cpp
+#, c-format
+msgid "Add fluid grid connection in direction: %s"
+msgstr ""
 
 #: src/iuse.cpp
 msgid "Select body part to amputate:"
@@ -273111,8 +273589,8 @@ msgid "You lose control as the vehicle starts skidding."
 msgstr "車両がスリップし始めたため、制御を失った。"
 
 #: src/vehicle_autodrive.cpp
-msgid "Autodrive is not good enough for planes."
-msgstr "自動操縦機能は、まだ航空機に使用できるほど優れていない。"
+msgid "Autodrive is not good enough for flying planes."
+msgstr ""
 
 #: src/vehicle_autodrive.cpp
 msgid "Can't see a path forward."
@@ -273180,10 +273658,6 @@ msgstr "kJ"
 #: src/vehicle_display.cpp
 msgid "full"
 msgstr "満タン"
-
-#: src/vehicle_display.cpp
-msgid "empty"
-msgstr "空"
 
 #: src/vehicle_display.cpp
 #, c-format

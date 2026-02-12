@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-02-09 20:10+0000\n"
+"POT-Creation-Date: 2026-02-11 21:36+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -4210,9 +4210,9 @@ msgstr "微型反应堆"
 msgid ""
 "This stripped down mini-reactor generates impressive amounts of bionic power"
 " but slowly irradiates the user when in use.  1 plutonium fuel cell provides"
-" 1000 charges producing 10kW of power a turn."
+" 1000 charges producing 10kW of power.  Produces 50W of power while "
+"inactive."
 msgstr ""
-"这种简化型微型反应堆能产生惊人的生化能量，但在运作时会缓慢地对使用者产生辐射。1个钚燃料电池可提供1000点充能，每回合产生10千瓦的功率。"
 
 #: data/json/bionics.json
 msgid "Advanced Micro Reactor"
@@ -4223,8 +4223,8 @@ msgstr "高级微型反应堆"
 msgid ""
 "This stripped down mini-reactor has been heavily modified and is more "
 "efficient and safer than the base model.  1 plutonium fuel cell provides "
-"1500 charges producing 10kW of power."
-msgstr "这种简化型微型反应堆经过了深度改装，比基础型号更加高效且安全。1个钚燃料电池可提供1500点充能，产生10千瓦的功率。"
+"1500 charges producing 10kW of power.  Produces 75W of power while inactive."
+msgstr ""
 
 #: data/json/bionics.json
 msgid "Micro Reactor Safety Override"
@@ -4246,9 +4246,8 @@ msgstr "原子电池"
 #: data/json/bionics.json
 msgid ""
 "A compact alphavoltaic power source, producing a steady source of limitless "
-"bionic power at the cost of minimal radiation while in use.  Produces 50W of"
-" power while active."
-msgstr "一种紧凑的α伏特（alphavoltaic）电源，能提供源源不断的生化能量，但在使用时会产生微量辐射。激活时产生50瓦的功率。"
+"bionic power.  Produces 50W of power while active."
+msgstr ""
 
 #: data/json/bionics.json
 msgid "Intravenous Needletip"
@@ -6199,6 +6198,118 @@ msgstr "建造帆布墙"
 #: data/json/construction_group.json
 msgid "Build canvas door"
 msgstr "建造帆布门"
+
+#: data/json/construction_group.json
+msgid "Replant Peanut Bush"
+msgstr "重新种植花生丛"
+
+#: data/json/construction_group.json
+msgid "Dig Up Peanut Bush"
+msgstr "挖出花生丛"
+
+#: data/json/construction_group.json
+msgid "Replant Harvested Peanut Bush"
+msgstr "重新种植已收获的花生丛"
+
+#: data/json/construction_group.json
+msgid "Dig Up Harvested Peanut Bush"
+msgstr "挖出已收获的花生丛"
+
+#: data/json/construction_group.json
+msgid "Replant Blueberry Bush"
+msgstr "重新种植蓝莓丛"
+
+#: data/json/construction_group.json
+msgid "Dig Up Blueberry Bush"
+msgstr "挖出蓝莓丛"
+
+#: data/json/construction_group.json
+msgid "Replant Harvested Blueberry Bush"
+msgstr "重新种植已收获的蓝莓丛"
+
+#: data/json/construction_group.json
+msgid "Dig Up Harvested Blueberry Bush"
+msgstr "挖出已收获的蓝莓丛"
+
+#: data/json/construction_group.json
+msgid "Replant Strawberry Bush"
+msgstr "重新种植草莓丛"
+
+#: data/json/construction_group.json
+msgid "Dig Up Strawberry Bush"
+msgstr "挖出草莓丛"
+
+#: data/json/construction_group.json
+msgid "Replant Harvested Strawberry Bush"
+msgstr "重新种植已收获的草莓丛"
+
+#: data/json/construction_group.json
+msgid "Dig Up Harvested Strawberry Bush"
+msgstr "挖出已收获的草莓丛"
+
+#: data/json/construction_group.json
+msgid "Replant Blackberry Bush"
+msgstr "重新种植黑莓丛"
+
+#: data/json/construction_group.json
+msgid "Dig Up Blackberry Bush"
+msgstr "挖出黑莓丛"
+
+#: data/json/construction_group.json
+msgid "Replant Harvested Blackberry Bush"
+msgstr "重新种植已收获的黑莓丛"
+
+#: data/json/construction_group.json
+msgid "Dig Up Harvested Blackberry Bush"
+msgstr "挖出已收获的黑莓丛"
+
+#: data/json/construction_group.json
+msgid "Replant Huckleberry Bush"
+msgstr "重新种植越橘丛"
+
+#: data/json/construction_group.json
+msgid "Dig Up Huckleberry Bush"
+msgstr "挖出越橘丛"
+
+#: data/json/construction_group.json
+msgid "Replant Harvested Huckleberry Bush"
+msgstr "重新种植已收获的越橘丛"
+
+#: data/json/construction_group.json
+msgid "Dig Up Harvested Huckleberry Bush"
+msgstr "挖出已收获的越橘丛"
+
+#: data/json/construction_group.json
+msgid "Replant Raspberry Bush"
+msgstr "重新种植树莓丛"
+
+#: data/json/construction_group.json
+msgid "Dig Up Raspberry Bush"
+msgstr "挖出树莓丛"
+
+#: data/json/construction_group.json
+msgid "Replant Harvested Raspberry Bush"
+msgstr "重新种植已收获的树莓丛"
+
+#: data/json/construction_group.json
+msgid "Dig Up Harvested Raspberry Bush"
+msgstr "挖出已收获的树莓丛"
+
+#: data/json/construction_group.json
+msgid "Replant Grape Bush"
+msgstr "重新种植葡萄丛"
+
+#: data/json/construction_group.json
+msgid "Dig Up Grape Bush"
+msgstr "挖出葡萄丛"
+
+#: data/json/construction_group.json
+msgid "Replant Harvested Grape Bush"
+msgstr "重新种植已收获的葡萄丛"
+
+#: data/json/construction_group.json
+msgid "Dig Up Harvested Grape Bush"
+msgstr "挖出已收获的葡萄丛"
 
 #: data/json/construction_group.json
 msgid "Place Exercise Bench"
@@ -11316,6 +11427,13 @@ msgstr "此物品产生的任何生物都会 <info>始终</info> 对你 <good>�
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
+msgid ""
+"Any creature spawned from this item will <info>always</info> emerge "
+"<bad>against you</good>."
+msgstr "此物品产生的任何生物都会 <info>始终</info> 对你 <bad>敌对</bad>。"
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
 msgid "This comestible can be <good>eaten even on full stomach</good>."
 msgstr "这件食物可以<good>在满腹下食用</good>。"
 
@@ -12471,8 +12589,16 @@ msgid "Check grid connections"
 msgstr "检查电网连接"
 
 #: data/json/item_actions.json
+msgid "Check fluid grid connections"
+msgstr "检查流体管网连接"
+
+#: data/json/item_actions.json
 msgid "Modify grid connections"
 msgstr "修改电网连接"
+
+#: data/json/item_actions.json
+msgid "Modify fluid grid connections"
+msgstr "修改流体管网连接"
 
 #: data/json/item_actions.json
 msgid "Measure grid power"
@@ -25349,40 +25475,6 @@ msgctxt "start_name"
 msgid "Lake Surface"
 msgstr "湖面"
 
-#. ~ Name for scenario 'Large Building' for a male character
-#: data/json/scenarios.json
-msgctxt "scenario_male"
-msgid "Large Building"
-msgstr "大型建筑"
-
-#. ~ Name for scenario 'Large Building' for a female character
-#: data/json/scenarios.json
-msgctxt "scenario_female"
-msgid "Large Building"
-msgstr "大型建筑"
-
-#. ~ Description for scenario 'Large Building' for a male character.
-#: data/json/scenarios.json
-msgctxt "scen_desc_male"
-msgid ""
-"Whether due to stubbornness, ignorance, or just plain bad luck, you missed "
-"the evacuation, and are stuck in a large building full of the risen dead."
-msgstr "无论是由于固执，无知，或者仅仅是运气不好，反正你错过了撤离疏散，并被困在一个充满丧尸的大型建筑里。好好享受吧。"
-
-#. ~ Description for scenario 'Large Building' for a female character.
-#: data/json/scenarios.json
-msgctxt "scen_desc_female"
-msgid ""
-"Whether due to stubbornness, ignorance, or just plain bad luck, you missed "
-"the evacuation, and are stuck in a large building full of the risen dead."
-msgstr "无论是由于固执，无知，或者仅仅是运气不好，反正你错过了撤离疏散，并被困在一个充满丧尸的大型建筑里。好好享受吧。"
-
-#. ~ Starting location for scenario 'Large Building'.
-#: data/json/scenarios.json
-msgctxt "start_name"
-msgid "In Large Building"
-msgstr "在大型建筑中"
-
 #. ~ Name for scenario 'Surrounded' for a male character
 #: data/json/scenarios.json
 msgctxt "scenario_male"
@@ -25444,6 +25536,40 @@ msgstr "你现在在一个安全没有丧尸的地方，但是看起来只有你
 msgctxt "start_name"
 msgid "Safe Building"
 msgstr "安全的建筑"
+
+#. ~ Name for scenario 'Survivor Holdout' for a male character
+#: data/json/scenarios.json
+msgctxt "scenario_male"
+msgid "Survivor Holdout"
+msgstr ""
+
+#. ~ Name for scenario 'Survivor Holdout' for a female character
+#: data/json/scenarios.json
+msgctxt "scenario_female"
+msgid "Survivor Holdout"
+msgstr ""
+
+#. ~ Description for scenario 'Survivor Holdout' for a male character.
+#: data/json/scenarios.json
+msgctxt "scen_desc_male"
+msgid ""
+"A few days after fleeing the chaos of the cities, you've finally found a "
+"place still inhabited by the living."
+msgstr ""
+
+#. ~ Description for scenario 'Survivor Holdout' for a female character.
+#: data/json/scenarios.json
+msgctxt "scen_desc_female"
+msgid ""
+"A few days after fleeing the chaos of the cities, you've finally found a "
+"place still inhabited by the living."
+msgstr ""
+
+#. ~ Starting location for scenario 'Survivor Holdout'.
+#: data/json/scenarios.json
+msgctxt "start_name"
+msgid "Inhabited Refuge"
+msgstr ""
 
 #. ~ Name for scenario 'Infected' for a male character
 #: data/json/scenarios.json
@@ -26281,6 +26407,40 @@ msgstr ""
 msgctxt "start_name"
 msgid "Emergency Landing Site"
 msgstr "紧急着陆点"
+
+#. ~ Name for scenario 'Basement Dweller' for a male character
+#: data/json/scenarios.json
+msgctxt "scenario_male"
+msgid "Basement Dweller"
+msgstr ""
+
+#. ~ Name for scenario 'Basement Dweller' for a female character
+#: data/json/scenarios.json
+msgctxt "scenario_female"
+msgid "Basement Dweller"
+msgstr ""
+
+#. ~ Description for scenario 'Basement Dweller' for a male character.
+#: data/json/scenarios.json
+msgctxt "scen_desc_male"
+msgid ""
+"You were happiest tucked away below street level, tinkering and hiding in "
+"your basement."
+msgstr ""
+
+#. ~ Description for scenario 'Basement Dweller' for a female character.
+#: data/json/scenarios.json
+msgctxt "scen_desc_female"
+msgid ""
+"You were happiest tucked away below street level, tinkering and hiding in "
+"your basement."
+msgstr ""
+
+#. ~ Starting location for scenario 'Basement Dweller'.
+#: data/json/scenarios.json
+msgctxt "start_name"
+msgid "Basement Hideout"
+msgstr ""
 
 #. ~ Name for scenario 'High Tech, Low Life' for a male character
 #: data/json/scenarios.json
@@ -29503,6 +29663,10 @@ msgstr "书店"
 msgid "Cabin"
 msgstr "小屋"
 
+#: data/json/start_locations.json
+msgid "Warrener's Cabin"
+msgstr ""
+
 #: data/json/start_locations.json src/gamemode_defense.cpp
 msgid "Hospital"
 msgstr "医院"
@@ -29549,6 +29713,10 @@ msgstr "科学实验室-冷冻"
 #: data/json/start_locations.json
 msgid "Deep-frozen science lab"
 msgstr "科学实验室-深度冷冻"
+
+#: data/json/start_locations.json data/json/npcs/factions.json
+msgid "Hub 01"
+msgstr "HUB 01"
 
 #: data/json/start_locations.json
 msgid "Mall (loading area)"
@@ -29611,6 +29779,10 @@ msgid "Farm"
 msgstr "农场"
 
 #: data/json/start_locations.json
+msgid "Isherwood Farms"
+msgstr ""
+
+#: data/json/start_locations.json
 msgid "Church"
 msgstr "教堂"
 
@@ -29622,6 +29794,34 @@ msgstr "墓地"
 #: data/json/start_locations.json
 msgid "Shady Basement"
 msgstr "阴暗的地下室"
+
+#: data/json/start_locations.json
+msgid "Game Room Basement"
+msgstr ""
+
+#: data/json/start_locations.json
+msgid "Chemistry Basement"
+msgstr ""
+
+#: data/json/start_locations.json
+msgid "Hidden Lab Stairs"
+msgstr ""
+
+#: data/json/start_locations.json
+msgid "Meth Lab Basement"
+msgstr ""
+
+#: data/json/start_locations.json
+msgid "Ruined Basement"
+msgstr ""
+
+#: data/json/start_locations.json
+msgid "Prepper Basement"
+msgstr ""
+
+#: data/json/start_locations.json
+msgid "Grow Operation Basement"
+msgstr ""
 
 #: data/json/start_locations.json
 msgid "Zoo (Giftshop)"
@@ -29650,6 +29850,18 @@ msgstr "公寓（房屋）"
 #: data/json/start_locations.json
 msgid "Horse Ranch"
 msgstr "牧马场"
+
+#: data/json/start_locations.json
+msgid "Chemist's Cabin"
+msgstr ""
+
+#: data/json/start_locations.json
+msgid "Inhabited Scrap Yard"
+msgstr ""
+
+#: data/json/start_locations.json
+msgid "Inhabited Lumbermill"
+msgstr ""
 
 #: data/json/start_locations.json
 msgid "Lake Cabin"
@@ -37314,6 +37526,15 @@ msgstr "储存罐"
 #: data/json/furniture_and_terrain/furniture-storage.json
 msgid "A large freestanding metal tank, useful for holding liquids."
 msgstr "一个用来装液体的大型立式金属罐，能装下很多液体。"
+
+#: data/json/furniture_and_terrain/furniture-storage.json
+msgid "standing tank (plumbed)"
+msgstr "立式水箱（已接管）"
+
+#. ~ Description for standing tank (plumbed)
+#: data/json/furniture_and_terrain/furniture-storage.json
+msgid "A large freestanding metal tank hooked into a fluid grid."
+msgstr "一个接入流体管网的大型独立金属罐。"
 
 #: data/json/furniture_and_terrain/furniture-storage.json
 msgid "clay water pots"
@@ -47514,8 +47735,9 @@ msgstr[0] "微型体内核反应堆CBM"
 msgid ""
 "This stripped down mini-reactor will generate impressive amounts of bionic "
 "power, but may not be the safest thing to install.  1 plutonium fuel cell "
-"provides 1000 charges producing 10kW of power."
-msgstr "这种简化型微型反应堆能产生惊人的生化能量，但安装它可能不太安全。1个钚燃料电池可提供1000点充能，产生10千瓦的功率。"
+"provides 1000 charges producing 10kW of power.  Produces 50W of power while "
+"inactive."
+msgstr ""
 
 #: data/json/items/bionics.json
 msgid "Advanced Microreactor CBM"
@@ -47527,8 +47749,9 @@ msgstr[0] "高级微型体内核反应堆CBM"
 msgid ""
 "This module upgrades a pre-installed microreactor with enhanced maximum "
 "yield and limited automatic radiation scrubbing capabilities.  1 plutonium "
-"fuel cell provides 1500 charges producing 10kW of power."
-msgstr "该模块可升级预装的微型反应堆，提高其最大输出功率并提供有限的自动辐射清除功能。1个钚燃料电池可提供1500点充能，产生10千瓦的功率。"
+"fuel cell provides 1500 charges producing 10kW of power.  Produces 75W of "
+"power while inactive."
+msgstr ""
 
 #: data/json/items/bionics.json
 msgid "Micro Reactor Safety Override CBM"
@@ -47555,6 +47778,19 @@ msgid ""
 "this bionic will provide a limitless source of power at a steady 50 watts "
 "when active, with only minimal exposure to radiation while in use."
 msgstr "这实际上是将钚燃料电池改装成了α伏特电池。该生化插件激活时可提供稳定的50瓦无限能源，且使用期间的辐射暴露极低。"
+
+#: data/json/items/bionics.json
+msgid "Atomic Battery Upgrade CBM"
+msgid_plural "Atomic Battery Upgrade CBMs"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'Atomic Battery Upgrade CBM'}
+#: data/json/items/bionics.json
+msgid ""
+"A kit for upgrading a pre-installed atomic battery into a Microreactor, "
+"providing options for significantly more power generation potential and fuel"
+" capacity at the cost of increased radiation exposure."
+msgstr ""
 
 #: data/json/items/bionics.json
 msgid "Microreactor Upgrade CBM"
@@ -54386,6 +54622,116 @@ msgid ""
 "manufacturers.  Probably valuable to the right person, as it would be hard "
 "to salvage and reuse these components without them."
 msgstr "一套包含了多个大型制造商的集成电路参数表的档案库。缺少这些数据将很难回收使用相应的集成电路元件，因此这套档案对某些人来说可能很有价值。"
+
+#: data/json/items/terrain.json
+msgid "food bush"
+msgid_plural "food bushs"
+msgstr[0] "食物丛"
+
+#. ~ Description for food bush
+#: data/json/items/terrain.json
+msgid "A bush that is made of veggy and food. Seeing this is a bug."
+msgstr "一种由蔬菜和食物构成的灌木。如果你看到这个，说明出Bug了。"
+
+#: data/json/items/terrain.json
+msgid "uprooted peanut bush"
+msgid_plural "uprooted peanut bushs"
+msgstr[0] "连根拔起的花生丛"
+
+#. ~ Description for uprooted peanut bush
+#: data/json/items/terrain.json
+msgid "A peanut bush that's ready for transplanting."
+msgstr "一株准备移栽的花生丛。"
+
+#. ~ Description for uprooted peanut bush
+#: data/json/items/terrain.json
+msgid "A harvested peanut bush that's ready for transplanting."
+msgstr "一株准备移栽的已收获的花生丛。"
+
+#: data/json/items/terrain.json
+msgid "uprooted blueberry bush"
+msgid_plural "uprooted blueberry bushs"
+msgstr[0] "连根拔起的蓝莓丛"
+
+#. ~ Description for uprooted blueberry bush
+#: data/json/items/terrain.json
+msgid "A blueberry bush that's ready for transplanting."
+msgstr "一株准备移栽的蓝莓丛。"
+
+#: data/json/items/terrain.json
+msgid "uprooted strawberry bush"
+msgid_plural "uprooted strawberry bushs"
+msgstr[0] "连根拔起的草莓丛"
+
+#. ~ Description for uprooted strawberry bush
+#: data/json/items/terrain.json
+msgid "A strawberry bush that's ready for transplanting."
+msgstr "一株准备移栽的草莓丛。"
+
+#. ~ Description for uprooted strawberry bush
+#: data/json/items/terrain.json
+msgid "A harvested strawberry bush that's ready for transplanting."
+msgstr "一株准备移栽的已收获的草莓丛。"
+
+#: data/json/items/terrain.json
+msgid "uprooted blackberry bush"
+msgid_plural "uprooted blackberry bushs"
+msgstr[0] "连根拔起的黑莓丛"
+
+#. ~ Description for uprooted blackberry bush
+#: data/json/items/terrain.json
+msgid "A blackberry bush that's ready for transplanting."
+msgstr "一株准备移栽的黑莓丛。"
+
+#. ~ Description for uprooted blackberry bush
+#: data/json/items/terrain.json
+msgid "A harvested blackberry bush that's ready for transplanting."
+msgstr "一株准备移栽的已收获的黑莓丛。"
+
+#: data/json/items/terrain.json
+msgid "uprooted huckleberry bush"
+msgid_plural "uprooted huckleberry bushs"
+msgstr[0] "连根拔起的越橘丛"
+
+#. ~ Description for uprooted huckleberry bush
+#: data/json/items/terrain.json
+msgid "A huckleberry bush that's ready for transplanting."
+msgstr "一株准备移栽的越橘丛。"
+
+#. ~ Description for uprooted huckleberry bush
+#: data/json/items/terrain.json
+msgid "A harvested huckleberry bush that's ready for transplanting."
+msgstr "一株准备移栽的已收获的越橘丛。"
+
+#: data/json/items/terrain.json
+msgid "uprooted raspberry bush"
+msgid_plural "uprooted raspberry bushs"
+msgstr[0] "连根拔起的树莓丛"
+
+#. ~ Description for uprooted raspberry bush
+#: data/json/items/terrain.json
+msgid "A raspberry bush that's ready for transplanting."
+msgstr "一株准备移栽的树莓丛。"
+
+#. ~ Description for uprooted raspberry bush
+#: data/json/items/terrain.json
+msgid "A harvested raspberry bush that's ready for transplanting."
+msgstr "一株准备移栽的已收获的树莓丛。"
+
+#: data/json/items/terrain.json
+msgid "uprooted grape bush"
+msgid_plural "uprooted grape bushs"
+msgstr[0] "连根拔起的葡萄丛"
+
+#. ~ Description for uprooted grape bush
+#: data/json/items/terrain.json
+msgid "A grape bush that's ready for transplanting."
+msgstr "一株准备移栽的葡萄丛。"
+
+#. ~ Description for uprooted grape bush
+#: data/json/items/terrain.json
+msgid "A harvested grape bush that's ready for transplanting."
+msgstr "一株准备移栽的已收获的葡萄丛。"
 
 #: data/json/items/tool_armor.json
 msgid "arm splint"
@@ -115392,6 +115738,18 @@ msgid ""
 msgstr "一根柔软的橡胶软管。可以用来做东西，也可以用来从载具中抽油。"
 
 #: data/json/items/tool/workshop.json
+msgid "utility maintenance kit"
+msgid_plural "utility maintenance kits"
+msgstr[0] "设施维护工具包"
+
+#. ~ Description for {'str': 'utility maintenance kit'}
+#: data/json/items/tool/workshop.json
+msgid ""
+"A compact kit for probing, joining, and extending fluid grid connections in "
+"buildings."
+msgstr "一个紧凑的工具包，用于探测、连接和扩展建筑物内的流体管网。"
+
+#: data/json/items/tool/workshop.json
 msgid "bottle jack"
 msgid_plural "bottle jacks"
 msgstr[0] "瓶式千斤顶"
@@ -127026,57 +127384,57 @@ msgstr "这个丧尸曾经是一个像你一样的幸存者，而且是一个相
 
 #: data/json/mutations/mutation_appearance.json
 msgid "Hair color: black"
-msgstr ""
+msgstr "发色：黑色"
 
 #. ~ Description for {'str': 'Hair color: black'}
 #: data/json/mutations/mutation_appearance.json
 msgid "You have black hair."
-msgstr ""
+msgstr "你的头发是黑色的。"
 
 #: data/json/mutations/mutation_appearance.json
 msgid "Hair color: brown"
-msgstr ""
+msgstr "发色：棕色"
 
 #. ~ Description for {'str': 'Hair color: brown'}
 #: data/json/mutations/mutation_appearance.json
 msgid "You have brown hair."
-msgstr ""
+msgstr "你的头发是棕色的。"
 
 #: data/json/mutations/mutation_appearance.json
 msgid "Hair color: blond"
-msgstr ""
+msgstr "发色：金色"
 
 #. ~ Description for {'str': 'Hair color: blond'}
 #: data/json/mutations/mutation_appearance.json
 msgid "You have blond hair."
-msgstr ""
+msgstr "你的头发是金色的。"
 
 #: data/json/mutations/mutation_appearance.json
 msgid "Hair color: red"
-msgstr ""
+msgstr "发色：红色"
 
 #. ~ Description for {'str': 'Hair color: red'}
 #: data/json/mutations/mutation_appearance.json
 msgid "You have red hair."
-msgstr ""
+msgstr "你的头发是红色的。"
 
 #: data/json/mutations/mutation_appearance.json
 msgid "Hair color: gray"
-msgstr ""
+msgstr "发色：灰色"
 
 #. ~ Description for {'str': 'Hair color: gray'}
 #: data/json/mutations/mutation_appearance.json
 msgid "You have gray hair."
-msgstr ""
+msgstr "你的头发是灰色的。"
 
 #: data/json/mutations/mutation_appearance.json
 msgid "Hair color: white"
-msgstr ""
+msgstr "发色：白色"
 
 #. ~ Description for {'str': 'Hair color: white'}
 #: data/json/mutations/mutation_appearance.json
 msgid "You have white hair."
-msgstr ""
+msgstr "你的头发是白色的。"
 
 #: data/json/mutations/mutation_appearance.json
 msgid "Hair style: crew-cut"
@@ -137586,10 +137944,6 @@ msgid ""
 " mutinied because of your abuse and incompetence.  They will kill you if "
 "they can."
 msgstr "这些曾经相信跟随你可以生活得更好的幸存者如今由于你的无能和虐待叛变了。如果可能的话，他们会杀了你。"
-
-#: data/json/npcs/factions.json
-msgid "Hub 01"
-msgstr "HUB 01"
 
 #. ~ Description for Hub 01
 #: data/json/npcs/factions.json
@@ -192811,48 +193165,48 @@ msgstr "你的眼睛是令人不安的漆黑色。"
 
 #: data/mods/Color_Expansion/mutations.json
 msgid "Hair color: pink"
-msgstr ""
+msgstr "发色：粉色"
 
 #. ~ Description for {'str': 'Hair color: pink'}
 #: data/mods/Color_Expansion/mutations.json
 msgid "You have pink hair."
-msgstr ""
+msgstr "你的头发是粉色的。"
 
 #: data/mods/Color_Expansion/mutations.json
 msgid "Hair color: blue"
-msgstr ""
+msgstr "发色：蓝色"
 
 #. ~ Description for {'str': 'Hair color: blue'}
 #: data/mods/Color_Expansion/mutations.json
 msgid "You have blue hair."
-msgstr ""
+msgstr "你的头发是蓝色的。"
 
 #: data/mods/Color_Expansion/mutations.json
 msgid "Hair color: green"
-msgstr ""
+msgstr "发色：绿色"
 
 #. ~ Description for {'str': 'Hair color: green'}
 #: data/mods/Color_Expansion/mutations.json
 msgid "You have green hair."
-msgstr ""
+msgstr "你的头发是绿色的。"
 
 #: data/mods/Color_Expansion/mutations.json
 msgid "Hair color: purple"
-msgstr ""
+msgstr "发色：紫色"
 
 #. ~ Description for {'str': 'Hair color: purple'}
 #: data/mods/Color_Expansion/mutations.json
 msgid "You have purple hair."
-msgstr ""
+msgstr "你的头发是紫色的。"
 
 #: data/mods/Color_Expansion/mutations.json
 msgid "Hair color: cyan"
-msgstr ""
+msgstr "发色：青色"
 
 #. ~ Description for {'str': 'Hair color: cyan'}
 #: data/mods/Color_Expansion/mutations.json
 msgid "You have cyan hair."
-msgstr ""
+msgstr "你的头发是青色的。"
 
 #: data/mods/CrazyCataclysm/crazy_aperturepotato.json
 msgid "companion potato"
@@ -218249,6 +218603,15 @@ msgid ""
 "Removes all monsters from the game, save for those in the WILDLIFE category."
 msgstr "移除游戏中除野生动物之外的所有怪物。"
 
+#: data/mods/Spawn_Hook_Test/modinfo.json
+msgid "Spawn hook testing"
+msgstr "生成钩子测试"
+
+#. ~ Description for Spawn hook testing
+#: data/mods/Spawn_Hook_Test/modinfo.json
+msgid "Testing spawn hooks. It should be obsolete after testing!"
+msgstr "正在测试生成钩子。测试结束后该内容应被废弃！"
+
 #: data/mods/StatsThroughSkills/modinfo.json
 msgid "Stats Through Skills"
 msgstr "技能提升属性"
@@ -218371,12 +218734,12 @@ msgstr "CBN核心内容"
 
 #: data/mods/callback_lua_test/modinfo.json
 msgid "Callback Lua Test"
-msgstr ""
+msgstr "Lua 回调测试"
 
 #. ~ Description for Callback Lua Test
 #: data/mods/callback_lua_test/modinfo.json
 msgid "Mod for testing callbacks for items, bionics, and mutations."
-msgstr ""
+msgstr "用于测试物品、仿生插件和变异的回调函数的模组。"
 
 #: data/mods/cbm_slots/modinfo.json
 msgid "Bionic Slots"
@@ -244201,9 +244564,48 @@ msgid "You squeeze the last drops of %s from the vat."
 msgstr "你从瓮里挤出最后一滴%s。"
 
 #: src/iexamine.cpp
+msgid ""
+"Adding clean water to this grid containing tainted water will contaminate "
+"your clean water.  Continue?"
+msgstr "向含有污水的管网中添加净水会污染你的净水。继续吗？"
+
+#: src/iexamine.cpp
+msgid ""
+"Adding tainted water to this grid containing clean water will contaminate "
+"your clean water.  Continue?"
+msgstr "向含有净水的管网中添加污水会污染你的净水。继续吗？"
+
+#: src/iexamine.cpp
 #, c-format
-msgid "You don't have any drinks to fill the %s with."
-msgstr "你没有任何可以注入 %s 的饮品。"
+msgid "Adding %s will contaminate the fluid grid's water supply.  Continue?"
+msgstr "添加 %s 会污染流体管网的供水。继续吗？"
+
+#: src/iexamine.cpp
+#, c-format
+msgid "The %s contains non-water liquids and cannot be connected."
+msgstr "%s 含有非水液体，无法连接。"
+
+#: src/iexamine.cpp
+#, c-format
+msgid "Dispense or dump %s"
+msgstr "取出 %s"
+
+#: src/iexamine.cpp src/vehicle_use.cpp
+msgid "Have a drink"
+msgstr "喝一杯"
+
+#: src/iexamine.cpp
+msgid "Fill"
+msgstr "装填"
+
+#: src/iexamine.cpp
+msgid "Disconnect from fluid grid"
+msgstr "断开与流体管网的连接"
+
+#: src/iexamine.cpp
+#, c-format
+msgid "You don't have any water to fill the %s with."
+msgstr "你没有任何水来填充 %s。"
 
 #: src/iexamine.cpp
 msgid "Store which drink?"
@@ -244216,22 +244618,55 @@ msgstr "给 %1$s 注入 %2$s？"
 
 #: src/iexamine.cpp
 #, c-format
-msgid "You completely fill the %1$s with %2$s."
-msgstr "你给 %1$s 注满了 %2$s。"
+msgid "The %s cannot hold any more water."
+msgstr "%s 无法容纳更多的水了。"
 
 #: src/iexamine.cpp
 #, c-format
 msgid "You fill the %1$s with %2$s."
 msgstr "你给 %1$s 注入了 %2$s。"
 
+#: src/iexamine.cpp src/iuse.cpp
+#, c-format
+msgid "Fluid stored: %1$s/%2$s %3$s."
+msgstr "存储的流体：%1$s/%2$s %3$s。"
+
+#: src/iexamine.cpp src/iuse.cpp src/vehicle_display.cpp
+msgid "empty"
+msgstr "耗光"
+
+#: src/iexamine.cpp src/iuse.cpp
+msgid "mixed fluids"
+msgstr "混合流体"
+
+#: src/iexamine.cpp src/iuse.cpp
+#, c-format
+msgid "Fluid type: %s."
+msgstr "流体类型：%s。"
+
 #: src/iexamine.cpp
 #, c-format
-msgid "Dispense or dump %s"
-msgstr "取出 %s"
+msgid "You disconnect the %s from the fluid grid."
+msgstr "你断开了 %s 与流体管网的连接。"
 
-#: src/iexamine.cpp src/vehicle_use.cpp
-msgid "Have a drink"
-msgstr "喝一杯"
+#: src/iexamine.cpp
+msgid "Add to fluid grid"
+msgstr "添加到流体管网"
+
+#: src/iexamine.cpp
+#, c-format
+msgid "You connect the %s to the fluid grid."
+msgstr "你将 %s 连接到了流体管网。"
+
+#: src/iexamine.cpp
+#, c-format
+msgid "You don't have any drinks to fill the %s with."
+msgstr "你没有任何可以注入 %s 的饮品。"
+
+#: src/iexamine.cpp
+#, c-format
+msgid "You completely fill the %1$s with %2$s."
+msgstr "你给 %1$s 注满了 %2$s。"
 
 #: src/iexamine.cpp
 msgid "Refill"
@@ -244256,6 +244691,11 @@ msgstr "你没有任何 %1$s 来填充 %2$s。"
 #, c-format
 msgid "It contains %s (%d), %0.f%% full."
 msgstr "它装着 %s（%d），%0.f%% 满。"
+
+#: src/iexamine.cpp
+#, c-format
+msgid "The %s only accepts water."
+msgstr "%s 只接受水。"
 
 #: src/iexamine.cpp
 #, c-format
@@ -244442,6 +244882,20 @@ msgstr "那里有一个 %s。拿下来吗？"
 #, c-format
 msgid "There is a %s there.  Disarm?"
 msgstr "那里有一个 %s。是否拆除？"
+
+#: src/iexamine.cpp
+msgid "It is not connected to a fluid grid fixture."
+msgstr "它未连接到流体管网固定装置。"
+
+#: src/iexamine.cpp
+#, c-format
+msgid "The %s has no usable output."
+msgstr "%s 没有可用的输出口。"
+
+#: src/iexamine.cpp
+#, c-format
+msgid "The %s is dry."
+msgstr "%s 是干的。"
 
 #: src/iexamine.cpp
 msgid "What would you like to change?"
@@ -247700,6 +248154,10 @@ msgstr "（插上）"
 #: src/item.cpp src/wish.cpp
 msgid " (friendly)"
 msgstr "（友好）"
+
+#: src/item.cpp
+msgid " (hostile)"
+msgstr "（敌对）"
 
 #: src/item.cpp
 msgid " *"
@@ -251279,6 +251737,15 @@ msgid "You will no longer recharge the %s via UPS."
 msgstr "你将不再通过 UPS 为 %s 充电。"
 
 #: src/iuse.cpp
+msgid "This fluid grid has no connections."
+msgstr "此流体管网没有连接。"
+
+#: src/iuse.cpp
+#, c-format
+msgid "This fluid grid has connections: %s."
+msgstr "此流体管网有以下连接：%s。"
+
+#: src/iuse.cpp
 #, c-format
 msgid "You are connecting two locations in the same grid, with %lu elements."
 msgstr "您正在连接同一电网中的两个位置（包含 %lu 个元件）。"
@@ -251309,6 +251776,16 @@ msgid ""
 "This action will not consume any resources.\n"
 "Are you sure?"
 msgstr ""
+
+#: src/iuse.cpp
+#, c-format
+msgid "Remove fluid grid connection in direction: %s"
+msgstr "移除方向上的流体管网连接：%s"
+
+#: src/iuse.cpp
+#, c-format
+msgid "Add fluid grid connection in direction: %s"
+msgstr "添加方向上的流体管网连接：%s"
 
 #: src/iuse.cpp
 msgid "Select body part to amputate:"
@@ -272083,8 +272560,8 @@ msgid "You lose control as the vehicle starts skidding."
 msgstr "你无法控制载具，开始打滑。"
 
 #: src/vehicle_autodrive.cpp
-msgid "Autodrive is not good enough for planes."
-msgstr "自动驾驶功能不适用于飞机。"
+msgid "Autodrive is not good enough for flying planes."
+msgstr "自动驾驶技术还不够成熟，无法用来驾驶飞机。"
 
 #: src/vehicle_autodrive.cpp
 msgid "Can't see a path forward."
@@ -272152,10 +272629,6 @@ msgstr "千焦"
 #: src/vehicle_display.cpp
 msgid "full"
 msgstr "充满"
-
-#: src/vehicle_display.cpp
-msgid "empty"
-msgstr "耗光"
 
 #: src/vehicle_display.cpp
 #, c-format
