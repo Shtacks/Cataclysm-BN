@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-02-11 21:36+0000\n"
+"POT-Creation-Date: 2026-02-12 01:08+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/bn-team/teams/113585/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -5712,6 +5712,10 @@ msgstr "Construir Armário"
 
 #: data/json/construction_group.json
 msgid "Build Warehouse Shelf"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Build Rain Collector"
 msgstr ""
 
 #: data/json/construction_group.json
@@ -34413,7 +34417,10 @@ msgstr ""
 #. ~ Description for abstract air conditioner
 #. ~ Description for abstract space heater
 #. ~ Description for overhead light
+#. ~ Description for abstract water purifier
+#. ~ Description for abstract electric well pump
 #: data/json/furniture_and_terrain/furniture-appliances.json
+#: data/json/furniture_and_terrain/furniture-plumbing.json
 msgid "Abstract furniture.  If you see this, something went wrong."
 msgstr ""
 
@@ -37683,6 +37690,31 @@ msgid ""
 msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "abstract water purifier"
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "water purifier (off)"
+msgstr ""
+
+#. ~ Description for water purifier (off)
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid ""
+"This removes ions dissolved in the water, making it pretty clean, if you "
+"care about that kind of thing.  It is hooked into a fluid grid and switched "
+"off."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "Switch on the water purifier."
+msgstr ""
+
+#. ~ Message for furniture 'water purifier (off)'
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "You switch on the water purifier."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
 #: data/json/items/tool/cooking.json data/json/vehicleparts/vehicle_parts.json
 msgid "water purifier"
 msgid_plural "water purifiers"
@@ -37694,7 +37726,88 @@ msgstr[2] ""
 #: data/json/furniture_and_terrain/furniture-plumbing.json
 msgid ""
 "This removes ions dissolved in the water, making it pretty clean, if you "
-"care about that kind of thing."
+"care about that kind of thing.  It is hooked into a fluid grid."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "Switch off the water purifier."
+msgstr ""
+
+#. ~ Message for furniture 'water purifier'
+#. ~ Message for furniture 'water purifier (on)'
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "You switch off the water purifier."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "water purifier (on)"
+msgstr ""
+
+#. ~ Description for water purifier (on)
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid ""
+"This removes ions dissolved in the water, making it pretty clean, if you "
+"care about that kind of thing.  It is hooked into a fluid grid and switched "
+"on."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "abstract electric well pump"
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "electric well pump (off)"
+msgstr ""
+
+#. ~ Description for electric well pump (off)
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "An electric well pump connected to a fluid grid.  It is switched off."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "Switch on the electric well pump."
+msgstr ""
+
+#. ~ Message for furniture 'electric well pump (off)'
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "You switch on the electric well pump."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "electric well pump"
+msgstr ""
+
+#. ~ Description for electric well pump
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "An electric well pump connected to a fluid grid.  It has no power."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "Switch off the electric well pump."
+msgstr ""
+
+#. ~ Message for furniture 'electric well pump'
+#. ~ Message for furniture 'electric well pump (on)'
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "You switch off the electric well pump."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "electric well pump (on)"
+msgstr ""
+
+#. ~ Description for electric well pump (on)
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "An electric well pump connected to a fluid grid.  It is switched on."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "rain collector (plumbed)"
+msgstr ""
+
+#. ~ Description for rain collector (plumbed)
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "A plumbed rain collector that feeds a fluid grid when it is raining."
 msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-recreation.json
@@ -269928,15 +270041,15 @@ msgstr ""
 msgid "Fluid stored: %1$s/%2$s %3$s."
 msgstr ""
 
-#: src/iexamine.cpp src/iuse.cpp src/vehicle_display.cpp
+#: src/iexamine.cpp src/vehicle_display.cpp
 msgid "empty"
 msgstr "esvaziar"
 
-#: src/iexamine.cpp src/iuse.cpp
+#: src/iexamine.cpp
 msgid "mixed fluids"
 msgstr ""
 
-#: src/iexamine.cpp src/iuse.cpp
+#: src/iexamine.cpp
 #, c-format
 msgid "Fluid type: %s."
 msgstr ""
@@ -277142,6 +277255,20 @@ msgstr ""
 #: src/iuse.cpp
 #, c-format
 msgid "This fluid grid has connections: %s."
+msgstr ""
+
+#: src/iuse.cpp
+#, c-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: src/iuse.cpp
+msgid "Fluids: empty."
+msgstr ""
+
+#: src/iuse.cpp
+#, c-format
+msgid "Fluids: %s."
 msgstr ""
 
 #: src/iuse.cpp

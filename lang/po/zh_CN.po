@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-02-11 21:36+0000\n"
+"POT-Creation-Date: 2026-02-12 01:08+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -4213,6 +4213,7 @@ msgid ""
 " 1000 charges producing 10kW of power.  Produces 50W of power while "
 "inactive."
 msgstr ""
+"这种简化型微型反应堆能产生惊人的生化能量，但在运作时会缓慢地对使用者产生辐射。1个钚燃料电池可提供1000点电量，输出功率为10kW。非激活状态下产生50W功率。"
 
 #: data/json/bionics.json
 msgid "Advanced Micro Reactor"
@@ -4225,6 +4226,7 @@ msgid ""
 "efficient and safer than the base model.  1 plutonium fuel cell provides "
 "1500 charges producing 10kW of power.  Produces 75W of power while inactive."
 msgstr ""
+"这种简化型微型反应堆经过了深度改装，比基础型号更加高效且安全。1个钚燃料电池可提供1500点充能，产生10千瓦的功率。非激活状态下产生75W功率。"
 
 #: data/json/bionics.json
 msgid "Micro Reactor Safety Override"
@@ -4247,7 +4249,7 @@ msgstr "原子电池"
 msgid ""
 "A compact alphavoltaic power source, producing a steady source of limitless "
 "bionic power.  Produces 50W of power while active."
-msgstr ""
+msgstr "一个紧凑的阿尔法伏特电源，能提供源源不断的生化能量。激活状态下产生50W功率。"
 
 #: data/json/bionics.json
 msgid "Intravenous Needletip"
@@ -5450,6 +5452,10 @@ msgstr "建造衣柜"
 #: data/json/construction_group.json
 msgid "Build Warehouse Shelf"
 msgstr "建造仓库货架"
+
+#: data/json/construction_group.json
+msgid "Build Rain Collector"
+msgstr "建造雨水收集器"
 
 #: data/json/construction_group.json
 msgid "Build Water Well"
@@ -25541,13 +25547,13 @@ msgstr "安全的建筑"
 #: data/json/scenarios.json
 msgctxt "scenario_male"
 msgid "Survivor Holdout"
-msgstr ""
+msgstr "幸存者据点"
 
 #. ~ Name for scenario 'Survivor Holdout' for a female character
 #: data/json/scenarios.json
 msgctxt "scenario_female"
 msgid "Survivor Holdout"
-msgstr ""
+msgstr "幸存者据点"
 
 #. ~ Description for scenario 'Survivor Holdout' for a male character.
 #: data/json/scenarios.json
@@ -25555,7 +25561,7 @@ msgctxt "scen_desc_male"
 msgid ""
 "A few days after fleeing the chaos of the cities, you've finally found a "
 "place still inhabited by the living."
-msgstr ""
+msgstr "在逃离城市的混乱几天后，你终于找到了一个仍有活人居住的地方。"
 
 #. ~ Description for scenario 'Survivor Holdout' for a female character.
 #: data/json/scenarios.json
@@ -25563,13 +25569,13 @@ msgctxt "scen_desc_female"
 msgid ""
 "A few days after fleeing the chaos of the cities, you've finally found a "
 "place still inhabited by the living."
-msgstr ""
+msgstr "在逃离城市的混乱几天后，你终于找到了一个仍有活人居住的地方。"
 
 #. ~ Starting location for scenario 'Survivor Holdout'.
 #: data/json/scenarios.json
 msgctxt "start_name"
 msgid "Inhabited Refuge"
-msgstr ""
+msgstr "有人的避难所"
 
 #. ~ Name for scenario 'Infected' for a male character
 #: data/json/scenarios.json
@@ -26412,13 +26418,13 @@ msgstr "紧急着陆点"
 #: data/json/scenarios.json
 msgctxt "scenario_male"
 msgid "Basement Dweller"
-msgstr ""
+msgstr "地下室居民"
 
 #. ~ Name for scenario 'Basement Dweller' for a female character
 #: data/json/scenarios.json
 msgctxt "scenario_female"
 msgid "Basement Dweller"
-msgstr ""
+msgstr "地下室居民"
 
 #. ~ Description for scenario 'Basement Dweller' for a male character.
 #: data/json/scenarios.json
@@ -26426,7 +26432,7 @@ msgctxt "scen_desc_male"
 msgid ""
 "You were happiest tucked away below street level, tinkering and hiding in "
 "your basement."
-msgstr ""
+msgstr "躲在街道水平面之下的地下室里修修补补、以此藏身，是你最快乐的时光。"
 
 #. ~ Description for scenario 'Basement Dweller' for a female character.
 #: data/json/scenarios.json
@@ -26434,13 +26440,13 @@ msgctxt "scen_desc_female"
 msgid ""
 "You were happiest tucked away below street level, tinkering and hiding in "
 "your basement."
-msgstr ""
+msgstr "躲在街道水平面之下的地下室里修修补补、以此藏身，是你最快乐的时光。"
 
 #. ~ Starting location for scenario 'Basement Dweller'.
 #: data/json/scenarios.json
 msgctxt "start_name"
 msgid "Basement Hideout"
-msgstr ""
+msgstr "地下室藏身处"
 
 #. ~ Name for scenario 'High Tech, Low Life' for a male character
 #: data/json/scenarios.json
@@ -29665,7 +29671,7 @@ msgstr "小屋"
 
 #: data/json/start_locations.json
 msgid "Warrener's Cabin"
-msgstr ""
+msgstr "养兔人的小屋"
 
 #: data/json/start_locations.json src/gamemode_defense.cpp
 msgid "Hospital"
@@ -29780,7 +29786,7 @@ msgstr "农场"
 
 #: data/json/start_locations.json
 msgid "Isherwood Farms"
-msgstr ""
+msgstr "伊舍伍德农场"
 
 #: data/json/start_locations.json
 msgid "Church"
@@ -29797,31 +29803,31 @@ msgstr "阴暗的地下室"
 
 #: data/json/start_locations.json
 msgid "Game Room Basement"
-msgstr ""
+msgstr "游戏室地下室"
 
 #: data/json/start_locations.json
 msgid "Chemistry Basement"
-msgstr ""
+msgstr "化学地下室"
 
 #: data/json/start_locations.json
 msgid "Hidden Lab Stairs"
-msgstr ""
+msgstr "隐藏实验室楼梯"
 
 #: data/json/start_locations.json
 msgid "Meth Lab Basement"
-msgstr ""
+msgstr "冰毒实验室地下室"
 
 #: data/json/start_locations.json
 msgid "Ruined Basement"
-msgstr ""
+msgstr "废墟地下室"
 
 #: data/json/start_locations.json
 msgid "Prepper Basement"
-msgstr ""
+msgstr "生存狂地下室"
 
 #: data/json/start_locations.json
 msgid "Grow Operation Basement"
-msgstr ""
+msgstr "大麻种植地下室"
 
 #: data/json/start_locations.json
 msgid "Zoo (Giftshop)"
@@ -29853,15 +29859,15 @@ msgstr "牧马场"
 
 #: data/json/start_locations.json
 msgid "Chemist's Cabin"
-msgstr ""
+msgstr "化学家的小屋"
 
 #: data/json/start_locations.json
 msgid "Inhabited Scrap Yard"
-msgstr ""
+msgstr "有人的废品站"
 
 #: data/json/start_locations.json
 msgid "Inhabited Lumbermill"
-msgstr ""
+msgstr "有人的伐木场"
 
 #: data/json/start_locations.json
 msgid "Lake Cabin"
@@ -33208,7 +33214,10 @@ msgstr "虚拟落地灯"
 #. ~ Description for abstract air conditioner
 #. ~ Description for abstract space heater
 #. ~ Description for overhead light
+#. ~ Description for abstract water purifier
+#. ~ Description for abstract electric well pump
 #: data/json/furniture_and_terrain/furniture-appliances.json
+#: data/json/furniture_and_terrain/furniture-plumbing.json
 msgid "Abstract furniture.  If you see this, something went wrong."
 msgstr "虚拟家具。如果你看到这个，就说明游戏出问题了。"
 
@@ -36398,6 +36407,31 @@ msgid ""
 msgstr "一个带有几个水龙头的机器，可以提供干净的水。也被称为饮水机，只要水箱装满水，它就非常有用。"
 
 #: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "abstract water purifier"
+msgstr "虚拟净水器"
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "water purifier (off)"
+msgstr "净水器（关）"
+
+#. ~ Description for water purifier (off)
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid ""
+"This removes ions dissolved in the water, making it pretty clean, if you "
+"care about that kind of thing.  It is hooked into a fluid grid and switched "
+"off."
+msgstr "这台机器能去除溶解在水中的离子，让水变得相当干净——如果你在乎这种事的话。它已连接到液体管网，当前处于关闭状态。"
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "Switch on the water purifier."
+msgstr "开启净水器。"
+
+#. ~ Message for furniture 'water purifier (off)'
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "You switch on the water purifier."
+msgstr "你开启了净水器。"
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
 #: data/json/items/tool/cooking.json data/json/vehicleparts/vehicle_parts.json
 msgid "water purifier"
 msgid_plural "water purifiers"
@@ -36407,8 +36441,89 @@ msgstr[0] "净水器"
 #: data/json/furniture_and_terrain/furniture-plumbing.json
 msgid ""
 "This removes ions dissolved in the water, making it pretty clean, if you "
-"care about that kind of thing."
-msgstr "这样可以去除溶解在水中的离子，使之变得非常干净，如果你关心这类事情的话。"
+"care about that kind of thing.  It is hooked into a fluid grid."
+msgstr "这台机器能去除溶解在水中的离子，让水变得相当干净——如果你在乎这种事的话。它已连接到液体管网。"
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "Switch off the water purifier."
+msgstr "关闭净水器。"
+
+#. ~ Message for furniture 'water purifier'
+#. ~ Message for furniture 'water purifier (on)'
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "You switch off the water purifier."
+msgstr "你关闭了净水器。"
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "water purifier (on)"
+msgstr "净水器（开）"
+
+#. ~ Description for water purifier (on)
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid ""
+"This removes ions dissolved in the water, making it pretty clean, if you "
+"care about that kind of thing.  It is hooked into a fluid grid and switched "
+"on."
+msgstr "这台机器能去除溶解在水中的离子，让水变得相当干净——如果你在乎这种事的话。它已连接到液体管网，当前处于开启状态。"
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "abstract electric well pump"
+msgstr "虚拟电动水井泵"
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "electric well pump (off)"
+msgstr "电动水井泵（关）"
+
+#. ~ Description for electric well pump (off)
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "An electric well pump connected to a fluid grid.  It is switched off."
+msgstr "一个连接到液体管网的电动水井泵。当前处于关闭状态。"
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "Switch on the electric well pump."
+msgstr "开启电动水井泵。"
+
+#. ~ Message for furniture 'electric well pump (off)'
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "You switch on the electric well pump."
+msgstr "你开启了电动水井泵。"
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "electric well pump"
+msgstr "电动水井泵"
+
+#. ~ Description for electric well pump
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "An electric well pump connected to a fluid grid.  It has no power."
+msgstr "一个连接到液体管网的电动水井泵。它没有电力供应。"
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "Switch off the electric well pump."
+msgstr "关闭电动水井泵。"
+
+#. ~ Message for furniture 'electric well pump'
+#. ~ Message for furniture 'electric well pump (on)'
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "You switch off the electric well pump."
+msgstr "你关闭了电动水井泵。"
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "electric well pump (on)"
+msgstr "电动水井泵（开）"
+
+#. ~ Description for electric well pump (on)
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "An electric well pump connected to a fluid grid.  It is switched on."
+msgstr "一个连接到液体管网的电动水井泵。当前处于开启状态。"
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "rain collector (plumbed)"
+msgstr "雨水收集器（接管）"
+
+#. ~ Description for rain collector (plumbed)
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "A plumbed rain collector that feeds a fluid grid when it is raining."
+msgstr "一个接了水管的雨水收集器，下雨时可向液体管网供水。"
 
 #: data/json/furniture_and_terrain/furniture-recreation.json
 #: data/json/items/fake.json data/json/items/furniture.json
@@ -47738,6 +47853,7 @@ msgid ""
 "provides 1000 charges producing 10kW of power.  Produces 50W of power while "
 "inactive."
 msgstr ""
+"这种精简过的微型反应堆能产生惊人的生化能量，但安装它可能不太安全。1个钚燃料电池可提供1000点电量，输出功率为10kW。非激活状态下产生50W功率。"
 
 #: data/json/items/bionics.json
 msgid "Advanced Microreactor CBM"
@@ -47752,6 +47868,7 @@ msgid ""
 "fuel cell provides 1500 charges producing 10kW of power.  Produces 75W of "
 "power while inactive."
 msgstr ""
+"该模块可升级预装的微型反应堆，提高其最大输出功率并提供有限的自动辐射清除功能。1个钚燃料电池可提供1500点充能，产生10千瓦的功率。非激活状态下产生75W功率。"
 
 #: data/json/items/bionics.json
 msgid "Micro Reactor Safety Override CBM"
@@ -47782,7 +47899,7 @@ msgstr "这实际上是将钚燃料电池改装成了α伏特电池。该生化�
 #: data/json/items/bionics.json
 msgid "Atomic Battery Upgrade CBM"
 msgid_plural "Atomic Battery Upgrade CBMs"
-msgstr[0] ""
+msgstr[0] "原子电池升级CBM"
 
 #. ~ Description for {'str': 'Atomic Battery Upgrade CBM'}
 #: data/json/items/bionics.json
@@ -47790,7 +47907,7 @@ msgid ""
 "A kit for upgrading a pre-installed atomic battery into a Microreactor, "
 "providing options for significantly more power generation potential and fuel"
 " capacity at the cost of increased radiation exposure."
-msgstr ""
+msgstr "一个用于将预装原子电池升级为微型反应堆的套件，能显著提高发电潜力和燃料容量，但代价是增加辐射暴露。"
 
 #: data/json/items/bionics.json
 msgid "Microreactor Upgrade CBM"
@@ -244631,15 +244748,15 @@ msgstr "你给 %1$s 注入了 %2$s。"
 msgid "Fluid stored: %1$s/%2$s %3$s."
 msgstr "存储的流体：%1$s/%2$s %3$s。"
 
-#: src/iexamine.cpp src/iuse.cpp src/vehicle_display.cpp
+#: src/iexamine.cpp src/vehicle_display.cpp
 msgid "empty"
 msgstr "耗光"
 
-#: src/iexamine.cpp src/iuse.cpp
+#: src/iexamine.cpp
 msgid "mixed fluids"
 msgstr "混合流体"
 
-#: src/iexamine.cpp src/iuse.cpp
+#: src/iexamine.cpp
 #, c-format
 msgid "Fluid type: %s."
 msgstr "流体类型：%s。"
@@ -251744,6 +251861,20 @@ msgstr "此流体管网没有连接。"
 #, c-format
 msgid "This fluid grid has connections: %s."
 msgstr "此流体管网有以下连接：%s。"
+
+#: src/iuse.cpp
+#, c-format
+msgid "%1$s: %2$s"
+msgstr "%1$s：%2$s"
+
+#: src/iuse.cpp
+msgid "Fluids: empty."
+msgstr "液体：空。"
+
+#: src/iuse.cpp
+#, c-format
+msgid "Fluids: %s."
+msgstr "液体：%s。"
 
 #: src/iuse.cpp
 #, c-format

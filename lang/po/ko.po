@@ -30,14 +30,14 @@
 # 47a81cb9738d39622e1b1fde74c42b2a_791bd4f <20fb875a401cb03ba4fd8103e46da6b9_1176784>, 2026
 # Coolthulhu <Coolthulhu@gmail.com>, 2026
 # Tae Heon Lim, 2026
-# CatCoffee, 2026
 # Choi Dong-uk, 2026
+# CatCoffee, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-02-11 21:36+0000\n"
-"Last-Translator: Choi Dong-uk, 2026\n"
+"POT-Creation-Date: 2026-02-12 01:08+0000\n"
+"Last-Translator: CatCoffee, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4626,6 +4626,8 @@ msgid ""
 " 1000 charges producing 10kW of power.  Produces 50W of power while "
 "inactive."
 msgstr ""
+"상당한 양의 전력을 생산하지만 사용자를 서서히 방사능에 중독시키는 분해된 소형반응로입니다. 플루토늄 연료 전지 1개가 1000 충전량으로"
+" 전환되어 전력을 10kW만큼 생산합니다. 비활성화 상태일 때는 지속적으로 전력을 50W씩 생산합니다."
 
 #: data/json/bionics.json
 msgid "Advanced Micro Reactor"
@@ -4638,6 +4640,8 @@ msgid ""
 "efficient and safer than the base model.  1 plutonium fuel cell provides "
 "1500 charges producing 10kW of power.  Produces 75W of power while inactive."
 msgstr ""
+"대폭 개조되어 구형에 비해 효율이 높고 안전한 분해된 소형반응로입니다. 플루토늄 연료 전지 1개가 1500 충전량으로 전환되어 전력을 "
+"10kW만큼 생산합니다. 비활성화 상태일 때는 지속적으로 전력을 75W씩 생산합니다."
 
 #: data/json/bionics.json
 msgid "Micro Reactor Safety Override"
@@ -4663,6 +4667,7 @@ msgid ""
 "A compact alphavoltaic power source, producing a steady source of limitless "
 "bionic power.  Produces 50W of power while active."
 msgstr ""
+"바이오닉 전력을 지속적으로, 무한히 생산하는 휴대용 알파붕괴 전력원입니다. 작동 중일 때 바이오닉 전력을 50W씩 생산합니다."
 
 #: data/json/bionics.json
 msgid "Intravenous Needletip"
@@ -5882,6 +5887,10 @@ msgstr "옷장 제작"
 #: data/json/construction_group.json
 msgid "Build Warehouse Shelf"
 msgstr "창고 선반 제작"
+
+#: data/json/construction_group.json
+msgid "Build Rain Collector"
+msgstr "빗물 수집기 제작"
 
 #: data/json/construction_group.json
 msgid "Build Water Well"
@@ -18153,7 +18162,7 @@ msgstr "비료 폭탄의 뇌관에 불이 붙어 소리를 내고 있습니다. 
 #: data/json/not_really_obsolete.json
 msgid "fragment bomb"
 msgid_plural "fragment bombs"
-msgstr[0] "파편폭탄"
+msgstr[0] "파편 폭탄"
 
 #. ~ Use action msg for {'str': 'fragment bomb'}.
 #. ~ Use action msg for {'str': 'nail bomb'}.
@@ -26882,13 +26891,13 @@ msgstr "안전가옥"
 #: data/json/scenarios.json
 msgctxt "scenario_male"
 msgid "Survivor Holdout"
-msgstr ""
+msgstr "생존자의 은신처"
 
 #. ~ Name for scenario 'Survivor Holdout' for a female character
 #: data/json/scenarios.json
 msgctxt "scenario_female"
 msgid "Survivor Holdout"
-msgstr ""
+msgstr "생존자의 은신처"
 
 #. ~ Description for scenario 'Survivor Holdout' for a male character.
 #: data/json/scenarios.json
@@ -26896,7 +26905,7 @@ msgctxt "scen_desc_male"
 msgid ""
 "A few days after fleeing the chaos of the cities, you've finally found a "
 "place still inhabited by the living."
-msgstr ""
+msgstr "도시에서 벌어진 혼돈으로부터 도망치고 며칠이 지난 뒤, 당신은 마침내 아직 살아있는 사람들이 살고 있는 곳에 다다랐습니다."
 
 #. ~ Description for scenario 'Survivor Holdout' for a female character.
 #: data/json/scenarios.json
@@ -26904,13 +26913,13 @@ msgctxt "scen_desc_female"
 msgid ""
 "A few days after fleeing the chaos of the cities, you've finally found a "
 "place still inhabited by the living."
-msgstr ""
+msgstr "도시에서 벌어진 혼돈으로부터 도망치고 며칠이 지난 뒤, 당신은 마침내 아직 살아있는 사람들이 살고 있는 곳에 다다랐습니다."
 
 #. ~ Starting location for scenario 'Survivor Holdout'.
 #: data/json/scenarios.json
 msgctxt "start_name"
 msgid "Inhabited Refuge"
-msgstr ""
+msgstr "사람이 있는 피난처"
 
 #. ~ Name for scenario 'Infected' for a male character
 #: data/json/scenarios.json
@@ -27809,13 +27818,13 @@ msgstr "비상 착륙 지점"
 #: data/json/scenarios.json
 msgctxt "scenario_male"
 msgid "Basement Dweller"
-msgstr ""
+msgstr "지하실 거주자"
 
 #. ~ Name for scenario 'Basement Dweller' for a female character
 #: data/json/scenarios.json
 msgctxt "scenario_female"
 msgid "Basement Dweller"
-msgstr ""
+msgstr "지하실 거주자"
 
 #. ~ Description for scenario 'Basement Dweller' for a male character.
 #: data/json/scenarios.json
@@ -27823,7 +27832,7 @@ msgctxt "scen_desc_male"
 msgid ""
 "You were happiest tucked away below street level, tinkering and hiding in "
 "your basement."
-msgstr ""
+msgstr "당신은 지표 아래의 지하실에 숨어 무언가를 뚱땅거릴 때 가장 행복했습니다."
 
 #. ~ Description for scenario 'Basement Dweller' for a female character.
 #: data/json/scenarios.json
@@ -27831,13 +27840,13 @@ msgctxt "scen_desc_female"
 msgid ""
 "You were happiest tucked away below street level, tinkering and hiding in "
 "your basement."
-msgstr ""
+msgstr "당신은 지표 아래의 지하실에 숨어 무언가를 뚱땅거릴 때 가장 행복했습니다."
 
 #. ~ Starting location for scenario 'Basement Dweller'.
 #: data/json/scenarios.json
 msgctxt "start_name"
 msgid "Basement Hideout"
-msgstr ""
+msgstr "지하실 은신처"
 
 #. ~ Name for scenario 'High Tech, Low Life' for a male character
 #: data/json/scenarios.json
@@ -31118,7 +31127,7 @@ msgstr "오두막"
 
 #: data/json/start_locations.json
 msgid "Warrener's Cabin"
-msgstr ""
+msgstr "농장주의 오두막"
 
 #: data/json/start_locations.json src/gamemode_defense.cpp
 msgid "Hospital"
@@ -31233,7 +31242,7 @@ msgstr "농장"
 
 #: data/json/start_locations.json
 msgid "Isherwood Farms"
-msgstr ""
+msgstr "이셔우드 농장"
 
 #: data/json/start_locations.json
 msgid "Church"
@@ -31250,31 +31259,31 @@ msgstr "어두운 지하실"
 
 #: data/json/start_locations.json
 msgid "Game Room Basement"
-msgstr ""
+msgstr "지하실 게임방"
 
 #: data/json/start_locations.json
 msgid "Chemistry Basement"
-msgstr ""
+msgstr "지하실 화학 연구방"
 
 #: data/json/start_locations.json
 msgid "Hidden Lab Stairs"
-msgstr ""
+msgstr "숨겨진 연구소 계단"
 
 #: data/json/start_locations.json
 msgid "Meth Lab Basement"
-msgstr ""
+msgstr "지하실 약쟁이 연구소"
 
 #: data/json/start_locations.json
 msgid "Ruined Basement"
-msgstr ""
+msgstr "무너진 지하실"
 
 #: data/json/start_locations.json
 msgid "Prepper Basement"
-msgstr ""
+msgstr "생존주의자의 지하실"
 
 #: data/json/start_locations.json
 msgid "Grow Operation Basement"
-msgstr ""
+msgstr "지하실 재배 시설"
 
 #: data/json/start_locations.json
 msgid "Zoo (Giftshop)"
@@ -31306,15 +31315,15 @@ msgstr "말 목장"
 
 #: data/json/start_locations.json
 msgid "Chemist's Cabin"
-msgstr ""
+msgstr "제약사의 오두막"
 
 #: data/json/start_locations.json
 msgid "Inhabited Scrap Yard"
-msgstr ""
+msgstr "사람이 있는 고철 하치장"
 
 #: data/json/start_locations.json
 msgid "Inhabited Lumbermill"
-msgstr ""
+msgstr "사람이 있는 제재소"
 
 #: data/json/start_locations.json
 msgid "Lake Cabin"
@@ -34690,7 +34699,10 @@ msgstr "추상화 실내용 전등"
 #. ~ Description for abstract air conditioner
 #. ~ Description for abstract space heater
 #. ~ Description for overhead light
+#. ~ Description for abstract water purifier
+#. ~ Description for abstract electric well pump
 #: data/json/furniture_and_terrain/furniture-appliances.json
+#: data/json/furniture_and_terrain/furniture-plumbing.json
 msgid "Abstract furniture.  If you see this, something went wrong."
 msgstr "추상적 가구입니다. 이걸 보고 있다는건 뭔가 잘못됐다는 뜻입니다."
 
@@ -37973,6 +37985,33 @@ msgid ""
 msgstr "맑은 물을 제공하는 수도꼭지가 달린, 정수기로도 불리는 기계입니다. 탱크에 물이 있다는 전제 하에 쓸모가 있을겁니다."
 
 #: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "abstract water purifier"
+msgstr "추상화 정수기"
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "water purifier (off)"
+msgstr "정수기 (꺼짐)"
+
+#. ~ Description for water purifier (off)
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid ""
+"This removes ions dissolved in the water, making it pretty clean, if you "
+"care about that kind of thing.  It is hooked into a fluid grid and switched "
+"off."
+msgstr ""
+"이 장치는 물에 용해된 이온을 제거해 그럭저럭 깨끗하게 만듭니다. 그런 것에 신경쓴다면 말입니다. 현재 수도망에 연결되어 있으며 전원이 "
+"꺼져있습니다."
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "Switch on the water purifier."
+msgstr "정수기 켜기"
+
+#. ~ Message for furniture 'water purifier (off)'
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "You switch on the water purifier."
+msgstr "정수기를 켰습니다."
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
 #: data/json/items/tool/cooking.json data/json/vehicleparts/vehicle_parts.json
 msgid "water purifier"
 msgid_plural "water purifiers"
@@ -37982,8 +38021,92 @@ msgstr[0] "정수기"
 #: data/json/furniture_and_terrain/furniture-plumbing.json
 msgid ""
 "This removes ions dissolved in the water, making it pretty clean, if you "
-"care about that kind of thing."
-msgstr "이 장치는 물에 용해된 이온을 제거해, 그럭저럭 깨끗하게 만듭니다. 그런 것에 신경쓴다면 말이죠."
+"care about that kind of thing.  It is hooked into a fluid grid."
+msgstr ""
+"이 장치는 물에 용해된 이온을 제거해 그럭저럭 깨끗하게 만듭니다. 그런 것에 신경쓴다면 말입니다. 현재 수도망에 연결되어 있습니다."
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "Switch off the water purifier."
+msgstr "정수기 끄기"
+
+#. ~ Message for furniture 'water purifier'
+#. ~ Message for furniture 'water purifier (on)'
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "You switch off the water purifier."
+msgstr "정수기를 껐습니다."
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "water purifier (on)"
+msgstr "정수기 (켜짐)"
+
+#. ~ Description for water purifier (on)
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid ""
+"This removes ions dissolved in the water, making it pretty clean, if you "
+"care about that kind of thing.  It is hooked into a fluid grid and switched "
+"on."
+msgstr ""
+"이 장치는 물에 용해된 이온을 제거해 그럭저럭 깨끗하게 만듭니다. 그런 것에 신경쓴다면 말입니다. 현재 수도망에 연결되어 있으며 전원이 "
+"켜져있습니다."
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "abstract electric well pump"
+msgstr "추상화 전동 우물 펌프"
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "electric well pump (off)"
+msgstr "전동 우물 펌프 (꺼짐)"
+
+#. ~ Description for electric well pump (off)
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "An electric well pump connected to a fluid grid.  It is switched off."
+msgstr "수도망에 연결된 전동 우물 펌프입니다. 현재 전원이 꺼져있습니다."
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "Switch on the electric well pump."
+msgstr "전동 우물 펌프 켜기"
+
+#. ~ Message for furniture 'electric well pump (off)'
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "You switch on the electric well pump."
+msgstr "전동 우물 펌프를 켰습니다."
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "electric well pump"
+msgstr "전동 우물 펌프"
+
+#. ~ Description for electric well pump
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "An electric well pump connected to a fluid grid.  It has no power."
+msgstr "수도망에 연결된 전동 우물 펌프입니다. 현재 전력이 공급되지 않고 있습니다."
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "Switch off the electric well pump."
+msgstr "전동 우물 펌프 끄기"
+
+#. ~ Message for furniture 'electric well pump'
+#. ~ Message for furniture 'electric well pump (on)'
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "You switch off the electric well pump."
+msgstr "전동 우물 펌프를 껐습니다."
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "electric well pump (on)"
+msgstr "전동 우물 펌프 (켜짐)"
+
+#. ~ Description for electric well pump (on)
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "An electric well pump connected to a fluid grid.  It is switched on."
+msgstr "수도망에 연결된 전동 우물 펌프입니다. 현재 전원이 켜져있습니다."
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "rain collector (plumbed)"
+msgstr "빗물 수집기 (연결됨)"
+
+#. ~ Description for rain collector (plumbed)
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid "A plumbed rain collector that feeds a fluid grid when it is raining."
+msgstr "비가 올 때 빗물을 받아 수도망에 채우는 빗물 수집기입니다. 현재 수도망에 연결되어 있습니다."
 
 #: data/json/furniture_and_terrain/furniture-recreation.json
 #: data/json/items/fake.json data/json/items/furniture.json
@@ -48220,7 +48343,7 @@ msgstr "7.62x39mm"
 
 #: data/json/items/ammo_types.json
 msgid "5.56x45mm"
-msgstr "5.56x45mm 탄"
+msgstr "5.56x45mm"
 
 #: data/json/items/ammo_types.json
 msgid ".30-06"
@@ -49746,6 +49869,8 @@ msgid ""
 "provides 1000 charges producing 10kW of power.  Produces 50W of power while "
 "inactive."
 msgstr ""
+"상당한 양의 전력을 생산하지만 설치하기에 썩 안전해보이지는 않는 분해된 소형반응로입니다. 플루토늄 연료 전지 1개가 1000 충전량으로 "
+"전환되어 전력을 10kW만큼 생산합니다. 비활성화 상태일 때는 지속적으로 전력을 50W씩 생산합니다."
 
 #: data/json/items/bionics.json
 msgid "Advanced Microreactor CBM"
@@ -49760,6 +49885,8 @@ msgid ""
 "fuel cell provides 1500 charges producing 10kW of power.  Produces 75W of "
 "power while inactive."
 msgstr ""
+"기존에 설치된 소형반응로를 업그레이드하여 전력 생산량을 높이고 제한적인 자동 방사능 제염 기능을 추가하는 모듈입니다. 플루토늄 연료 전지"
+" 1개가 1500 충전량으로 전환되어 전력을 10kW 만큼 생산합니다. 비활성화 상태일 때는 지속적으로 전력을 75W씩 생산합니다."
 
 #: data/json/items/bionics.json
 msgid "Micro Reactor Safety Override CBM"
@@ -49794,7 +49921,7 @@ msgstr ""
 #: data/json/items/bionics.json
 msgid "Atomic Battery Upgrade CBM"
 msgid_plural "Atomic Battery Upgrade CBMs"
-msgstr[0] ""
+msgstr[0] "CBM:원자력 배터리 업그레이드"
 
 #. ~ Description for {'str': 'Atomic Battery Upgrade CBM'}
 #: data/json/items/bionics.json
@@ -49803,6 +49930,8 @@ msgid ""
 "providing options for significantly more power generation potential and fuel"
 " capacity at the cost of increased radiation exposure."
 msgstr ""
+"기존에 설치된 원자력 배터리를 소형 반응로로 업그레이드하는데 필요한 부품모음입니다. 전력 생산략과 연료 용량이 증가하지만, 방사능 노출의"
+" 위험도 커집니다."
 
 #: data/json/items/bionics.json
 msgid "Microreactor Upgrade CBM"
@@ -59410,7 +59539,7 @@ msgstr[0] ".22 LR, 흑색화약"
 #: data/json/items/ammo/223.json
 msgid "5.56x45mm '.223 Remington'"
 msgid_plural "5.56x45mm '.223 Remington's"
-msgstr[0] "5.56x45mm 223구경 레밍턴 탄"
+msgstr[0] "5.56x45mm 223구경 레밍턴"
 
 #. ~ Description for {'str': "5.56x45mm '.223 Remington'"}
 #: data/json/items/ammo/223.json
@@ -59426,7 +59555,7 @@ msgstr ""
 #: data/json/items/ammo/223.json
 msgid "5.56x45mm NATO M855A1"
 msgid_plural "5.56x45mm NATO M855A1s"
-msgstr[0] "5.56x45mm NATO M855A1 탄"
+msgstr[0] "5.56x45mm NATO M855A1"
 
 #. ~ Description for {'str': '5.56x45mm NATO M855A1'}
 #: data/json/items/ammo/223.json
@@ -59455,12 +59584,12 @@ msgstr ""
 #: data/json/items/ammo/223.json
 msgid "5.56x45mm '.223 Remington', black powder"
 msgid_plural "5.56x45mm '.223 Remington', black powders"
-msgstr[0] "5.56x45mm 223 레밍턴 탄, 흑색화약"
+msgstr[0] "5.56x45mm 223 레밍턴, 흑색화약"
 
 #: data/json/items/ammo/223.json
 msgid "5.56x45mm NATO, black powder"
 msgid_plural "5.56x45mm NATO, black powders"
-msgstr[0] "5.56x45mm NATO 탄, 흑색화약"
+msgstr[0] "5.56x45mm NATO, 흑색화약"
 
 #: data/json/items/ammo/223.json
 msgid "5.56x45mm NATO tracer, black powder"
@@ -253859,15 +253988,15 @@ msgstr "%1$s에 %2$s(을)를 담았다."
 msgid "Fluid stored: %1$s/%2$s %3$s."
 msgstr "저장된 액체: %1$s/%2$s %3$s."
 
-#: src/iexamine.cpp src/iuse.cpp src/vehicle_display.cpp
+#: src/iexamine.cpp src/vehicle_display.cpp
 msgid "empty"
 msgstr "비어있음"
 
-#: src/iexamine.cpp src/iuse.cpp
+#: src/iexamine.cpp
 msgid "mixed fluids"
 msgstr "혼합된 액체"
 
-#: src/iexamine.cpp src/iuse.cpp
+#: src/iexamine.cpp
 #, c-format
 msgid "Fluid type: %s."
 msgstr "액체 종류: %s."
@@ -261004,6 +261133,20 @@ msgstr "이 수도망에 연결이 존재하지 않습니다."
 #, c-format
 msgid "This fluid grid has connections: %s."
 msgstr "이 수도망에 다음의 연결이 존재합니다: %s."
+
+#: src/iuse.cpp
+#, c-format
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: src/iuse.cpp
+msgid "Fluids: empty."
+msgstr "액체: 비어있음."
+
+#: src/iuse.cpp
+#, c-format
+msgid "Fluids: %s."
+msgstr "액체: %s."
 
 #: src/iuse.cpp
 #, c-format
@@ -281951,7 +282094,7 @@ msgstr "차가 미끄러지자 통제력을 잃습니다."
 
 #: src/vehicle_autodrive.cpp
 msgid "Autodrive is not good enough for flying planes."
-msgstr ""
+msgstr "자동주행 기능은 아직 비행선에 쓸 만큼 뛰어나지 못합니다."
 
 #: src/vehicle_autodrive.cpp
 msgid "Can't see a path forward."
